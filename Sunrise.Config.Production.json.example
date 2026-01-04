@@ -1,0 +1,62 @@
+{
+  "Note": "Don't forget to remove .example at the end of this file for it to work!",
+  "General": {
+    "WelcomeMessage": "Welcome to Sunrise!",
+    "MedalMirrorUrl": "https://raw.githubusercontent.com/SunriseCommunity/Server-Assets/main/medals/",
+    "IgnoreBeatmapRanking": false,
+    "IncludeUserTokenInLogs": false,
+    "UseCustomBackgrounds": true,
+    "OnMaintenance": false,
+    "CountryChangeCooldownInDays": 90,
+    "UsernameChangeCooldownInDays": 30,
+    "RateLimit": {
+      "CallsPerWindow": 200,
+      "Window": 10,
+      "QueueLimit": 20
+    },
+    "UseNewPerformanceCalculationAlgorithm": false
+  },
+  "BeatmapHype": {
+    "UserHypesWeekly": 10,
+    "HypesToStartHypeTrain": 2,
+    "AllowMultipleHypeFromSameUser": false
+  },
+  "Moderation": {
+      "BannablePPThreshold": 2500,
+      "BannedIps": []
+  },
+  "Database": {
+    "SlowQueryThresholdMilliseconds": 1000
+  },
+  "Files": {
+    "DataPath": "./Data",
+    "BannedUsernamesName": "banned-usernames.txt"
+  },
+  "Redis": {
+    "CacheLifeTime": 600,
+    "UseCache": true,
+    "UseRedisAsSecondCachingForDatabase": true,
+    "ClearCacheOnStartup": false
+  },
+  "Hangfire": {
+      "UseHangfireServer": true,
+      "MaxDailyBackupCount": 14
+  },
+  "Telemetry": {
+    "UseMetrics": true,
+    "Logging": {
+      "UseW3CFileLogging": false
+    }
+  },
+  "Bot": {
+    "Username": "Sunshine Bot",
+    "Prefix": "!"
+  },
+  "API": {
+    "RateLimit": {
+      "CallsPerWindow": 100,
+      "Window": 30
+    },
+    "TokenExpiresIn": 3600
+  }
+}

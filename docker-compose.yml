@@ -1,0 +1,335 @@
+name: osu-sunrise-infrastructure
+services:
+  # --- Application ---
+  sunrise-server:
+    build:
+      context: ./Sunrise
+      dockerfile: Dockerfile
+    ports:
+      - ${SUNRISE_SERVER_PORT}:${SUNRISE_SERVER_PORT}
+    volumes:
+      - ./Sunrise/Data:/app/Data
+      - ./Sunrise.Config.Production.json:/app/appsettings.Production.json
+    restart: unless-stopped
+    networks:
+      - container_network
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      ASPNETCORE_URLS: https://+:${SUNRISE_SERVER_PORT};http://+:5147
+      ASPNETCORE_Kestrel__Certificates__Default__Password: ${SUNRISE_KESTREL_CERTIFICATES_DEFAULT_PASSWORD}
+      ASPNETCORE_Kestrel__Certificates__Default__Path: /app/certificate.pfx
+      OTEL_DOTNET_EXPERIMENTAL_ASPNETCORE_DISABLE_URL_QUERY_REDACTION: true
+      WEB_DOMAIN: ${WEB_DOMAIN}
+      API_TOKEN_SECRET: ${SUNRISE_API_TOKEN_SECRET}
+      OBSERVATORY_HOST: observatory
+      OBSERVATORY_PORT: 3000
+      OBSERVATORY_API_KEY: ${OBSERVATORY_IGNORE_RATELIMIT_KEY}
+      MYSQL_HOST: mysql-sunrise-db
+      MYSQL_PORT: 3306
+      MYSQL_USER: root
+      MYSQL_PASSWORD: ${SUNRISE_MYSQL_PASSWORD}
+      MYSQL_DATABASE: ${SUNRISE_MYSQL_DATABASE}
+      HANGFIRE_HOST: mysql-sunrise-db
+      HANGFIRE_PORT: 3306
+      HANGFIRE_USER: root
+      HANGFIRE_PASSWORD: ${SUNRISE_MYSQL_PASSWORD}
+      REDIS_HOST: sunrise-redis
+      REDIS_PORT: 6379
+      TEMPO_HOST: tempo
+      TEMPO_PORT: 4317
+      LOKI_HOST: loki
+      LOKI_PORT: 3100
+    depends_on:
+      tempo:
+        condition: service_started
+      loki:
+        condition: service_started
+      mysql-sunrise-db:
+        condition: service_healthy
+      sunrise-redis:
+        condition: service_healthy
+      observatory:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5147/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  observatory:
+    build:
+      context: ./Observatory
+      dockerfile: Dockerfile
+    volumes:
+      - ./Observatory/data:/app/data
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      REDIS_HOST: observatory-redis
+      LOKI_HOST: http://loki:3100
+      PORT: 3000
+      POSTGRES_USER: ${OBSERVATORY_POSTGRES_USER}
+      POSTGRES_PASSWORD: ${OBSERVATORY_POSTGRES_PASSWORD}
+      POSTGRES_DB: ${OBSERVATORY_POSTGRES_DB}
+      POSTGRES_HOST: observatory-postgres
+      POSTGRES_PORT: 5432
+      BANCHO_CLIENT_ID: ${OBSERVATORY_BANCHO_CLIENT_ID}
+      BANCHO_CLIENT_SECRET: ${OBSERVATORY_BANCHO_CLIENT_SECRET}
+      IGNORE_RATELIMIT_KEY: ${OBSERVATORY_IGNORE_RATELIMIT_KEY}
+      RATELIMIT_CALLS_PER_WINDOW: ${OBSERVATORY_RATELIMIT_CALLS_PER_WINDOW}
+      RATELIMIT_TIME_WINDOW: ${OBSERVATORY_RATELIMIT_TIME_WINDOW}
+      OSZ_FILES_LIFE_SPAN: ${OBSERVATORY_OSZ_FILES_LIFE_SPAN}
+      MIRRORS_TO_IGNORE: ${OBSERVATORY_MIRRORS_TO_IGNORE}
+      DISABLE_SAFE_RATELIMIT_MODE: ${OBSERVATORY_DISABLE_SAFE_RATELIMIT_MODE}
+      DISABLE_DAILY_RATE_LIMIT: ${OBSERVATORY_DISABLE_DAILY_RATE_LIMIT}
+      ENABLE_CRON_TO_CLEAR_OUTDATED_BEATMAPS: ${OBSERVATORY_ENABLE_CRON_TO_CLEAR_OUTDATED_BEATMAPS}
+    networks:
+      - container_network
+    ports:
+      - ${OBSERVATORY_PORT}:3000
+    depends_on:
+      loki:
+        condition: service_started
+      observatory-postgres:
+        condition: service_healthy
+      observatory-redis:
+        condition: service_healthy
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "bun",
+          "-e",
+          '"fetch(''http://localhost:3000/'').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"',
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  ## --- Databases ---
+
+  sunrise-redis:
+    image: redis:8.2.2
+    restart: unless-stopped
+    volumes:
+      - sunrise_redis_data:/data
+    networks:
+      - container_network
+    healthcheck:
+      test: ["CMD", "redis-cli", "--raw", "incr", "ping"]
+
+  observatory-redis:
+    image: redis:8.2.2
+    restart: unless-stopped
+    command:
+      [
+        "redis-server",
+        "--maxmemory",
+        "256mb",
+        "--maxmemory-policy",
+        "allkeys-lfu",
+      ]
+    volumes:
+      - observatory_redis_data:/data
+    networks:
+      - container_network
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+        reservations:
+          memory: 64M
+    healthcheck:
+      test: ["CMD", "redis-cli", "--raw", "incr", "ping"]
+
+  mysql-sunrise-db:
+    image: mysql:oraclelinux9
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${SUNRISE_MYSQL_PASSWORD}
+      MYSQL_DATABASE: ${SUNRISE_MYSQL_DATABASE}
+    volumes:
+      - mysql_data:/var/lib/mysql
+    ports:
+      - ${SUNRISE_MYSQL_PORT}:3306
+    networks:
+      - container_network
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  observatory-postgres:
+    image: postgres:17
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${OBSERVATORY_POSTGRES_USER}
+      POSTGRES_PASSWORD: ${OBSERVATORY_POSTGRES_PASSWORD}
+      POSTGRES_DB: ${OBSERVATORY_POSTGRES_DB}
+    ports:
+      - ${OBSERVATORY_POSTGRES_PORT}:5432
+    volumes:
+      - ./database/postgres_observatory_data:/var/lib/postgresql/data:Z
+    networks:
+      - container_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # --- Telemetry ---
+
+  victoria-metrics:
+    image: victoriametrics/victoria-metrics:v1.93.12
+    volumes:
+      - "./config/production/victoria/promscrape.yml:/etc/victoria/promscrape.yml"
+      - "victoria_metrics_data:/storage"
+    command:
+      - "--promscrape.config=/etc/victoria/promscrape.yml"
+      - "--storageDataPath=/storage"
+    networks:
+      - container_network
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: 1G
+        reservations:
+          cpus: "0.2"
+          memory: 256M
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "wget -qO- http://127.0.0.1:8428/health | grep -q 'OK' || exit 1",
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  loki:
+    image: grafana/loki:3.6.3
+    command: ["-config.file=/etc/loki/loki.yml"]
+    volumes:
+      - ./config/production/loki/loki.yml:/etc/loki/loki.yml
+      - "loki_data:/loki"
+    networks:
+      - container_network
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: 2G
+        reservations:
+          cpus: "0.2"
+          memory: 256M
+
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:v0.55.1
+    restart: unless-stopped
+    privileged: true
+    command:
+      - --docker_only=true
+      - --disable_root_cgroup_stats=true
+      # - --enable_load_reader=true # https://github.com/google/cadvisor/issues/3430
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:rw
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+    networks:
+      - container_network
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: 128M
+        reservations:
+          cpus: "0.2"
+          memory: 64M
+    depends_on:
+      tempo:
+        condition: service_started
+    healthcheck:
+      test: ["CMD", "wget", "-O", "/dev/null", "http://localhost:8080/healthz"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  tempo:
+    image: grafana/tempo:latest
+    command: ["--config.file=/etc/tempo.yml"]
+    restart: unless-stopped
+    volumes:
+      - ./config/production/tempo/tempo.yml:/etc/tempo.yml
+      - tempo_data:/var/tempo
+    networks:
+      - container_network
+    depends_on:
+      - victoria-metrics
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: 2G
+        reservations:
+          cpus: "0.2"
+          memory: 256M
+
+  grafana:
+    image: grafana/grafana:12.3
+    volumes:
+      - "grafana_data:/var/lib/grafana"
+      - "./config/production/grafana/datasources.yml:/etc/grafana/provisioning/datasources/datasources.yml"
+      - "./config/production/grafana/dashboards:/etc/grafana/provisioning/dashboards"
+    user: "1000:1000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_USERS_ALLOW_SIGN_UP=false
+    ports:
+      - "3060:3000"
+    networks:
+      - container_network
+    depends_on:
+      victoria-metrics:
+        condition: service_healthy
+      tempo:
+        condition: service_started
+      loki:
+        condition: service_started
+      cadvisor:
+        condition: service_healthy
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: 1G
+        reservations:
+          cpus: "0.2"
+          memory: 256M
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "wget --spider -q http://localhost:3000/api/health || exit 1",
+        ]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+volumes:
+  mysql_data:
+  observatory_redis_data:
+  sunrise_redis_data:
+  loki_data:
+  tempo_data:
+  grafana_data:
+  victoria_metrics_data:
+
+networks:
+  container_network:
+    driver: bridge
