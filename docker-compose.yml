@@ -127,6 +127,14 @@ services:
     #   NODE_TLS_REJECT_UNAUTHORIZED: 0
     ports:
       - ${SUNSET_PORT}:3000
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 512M
+        reservations:
+          cpus: "0.1"
+          memory: 64M
 
   sunshine-discord-bot:
     build:
@@ -141,6 +149,14 @@ services:
       NEW_SCORES_CHANNED_ID: ${SUNSHINE_NEW_SCORES_CHANNED_ID}
       BEATMAPS_STATUSES_CHANNED_ID: ${SUNSHINE_BEATMAPS_STATUSES_CHANNED_ID}
       SUNRISE_URI: ${WEB_DOMAIN}
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: 512M
+        reservations:
+          cpus: "0.2"
+          memory: 128M
 
   ## --- Databases ---
 
