@@ -15,9 +15,14 @@ services:
       - container_network
     environment:
       ASPNETCORE_ENVIRONMENT: Production
-      ASPNETCORE_URLS: https://+:${SUNRISE_SERVER_PORT};http://+:5147
+
+      #ASPNETCORE_URLS: http://+:${SUNRISE_SERVER_PORT};http://+:5147
+
+      # -- Switch to this if you are hosting Sunrise **locally** (with self-signed certificate)
+      ASPNETCORE_URLS: https://+:443;http://+:5147
       ASPNETCORE_Kestrel__Certificates__Default__Password: ${SUNRISE_KESTREL_CERTIFICATES_DEFAULT_PASSWORD}
       ASPNETCORE_Kestrel__Certificates__Default__Path: /app/certificate.pfx
+
       OTEL_DOTNET_EXPERIMENTAL_ASPNETCORE_DISABLE_URL_QUERY_REDACTION: true
       WEB_DOMAIN: ${WEB_DOMAIN}
       API_TOKEN_SECRET: ${SUNRISE_API_TOKEN_SECRET}
@@ -105,6 +110,23 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
+
+  sunset-website:
+    build:
+      context: ./Sunset
+      dockerfile: ../docker/Sunset.Dockerfile
+      args:
+        NEXT_PUBLIC_SERVER_DOMAIN: ${WEB_DOMAIN}
+        NEXT_PUBLIC_DISCORD_LINK: ${SUNSET_NEXT_PUBLIC_DISCORD_LINK}
+        NEXT_PUBLIC_OSU_SERVER_LIST_LINK: ${SUNSET_NEXT_PUBLIC_OSU_SERVER_LIST_LINK}
+        NEXT_PUBLIC_KOFI_LINK: ${SUNSET_NEXT_PUBLIC_KOFI_LINK}
+        NEXT_PUBLIC_BOOSTY_LINK: ${SUNSET_NEXT_PUBLIC_BOOSTY_LINK}
+    restart: unless-stopped
+    environment:
+      # -- Uncomment this if you are hosting Sunrise **locally** (with self-signed certificate)
+      NODE_TLS_REJECT_UNAUTHORIZED: 0
+    ports:
+      - ${SUNSET_PORT}:3000
 
   ## --- Databases ---
 
