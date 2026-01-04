@@ -10,6 +10,37 @@
 ## [Unreleased]
 
 
+[[ca612fc](https://github.com/SunriseCommunity/Solar-System/commit/ca612fc452e168f1d6e452ad668e2d5daaa28068)...[cce39c4](https://github.com/SunriseCommunity/Solar-System/commit/cce39c4aaa3cc0e6015a4968f43004c9a8b6f066)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/ca612fc452e168f1d6e452ad668e2d5daaa28068...cce39c4aaa3cc0e6015a4968f43004c9a8b6f066))
+
+
+### 🔀 Merge Commits
+
+- [chore] Merge Branch 'main' of https://github.com/SunriseCommunity/sunrise-instance [`(d1f6aa9)`](https://github.com/SunriseCommunity/Solar-System/commit/d1f6aa9f82c65e5803044bbd20ae8561da2be613)
+
+
+
+### ⚙️ Miscellaneous Tasks
+
+- Update submodules [`(cce39c4)`](https://github.com/SunriseCommunity/Solar-System/commit/cce39c4aaa3cc0e6015a4968f43004c9a8b6f066)
+
+
+- Update CHANGELOG.md [`(ca612fc)`](https://github.com/SunriseCommunity/Solar-System/commit/ca612fc452e168f1d6e452ad668e2d5daaa28068)
+
+
+
+
+
+### 🌅 Sunrise
+
+#### <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- Update README.md
+
+
+
+## [0.0.6] - 2026-01-04
+
+
 [[8a36272](https://github.com/SunriseCommunity/Solar-System/commit/8a36272aa2c7b0ff93602b68bab1df54c2e4a0b8)...[3692168](https://github.com/SunriseCommunity/Solar-System/commit/369216862cd97905d5c3f4084f810479d7217b2d)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/8a36272aa2c7b0ff93602b68bab1df54c2e4a0b8...369216862cd97905d5c3f4084f810479d7217b2d))
 
 
@@ -30,6 +61,9 @@
 - Update submodules [`(3692168)`](https://github.com/SunriseCommunity/Solar-System/commit/369216862cd97905d5c3f4084f810479d7217b2d)
 
 
+- Add emoji postprocessors [`(6155629)`](https://github.com/SunriseCommunity/Solar-System/commit/61556297e769783fbaf4fb0da6aa506456f91f88)
+
+
 - Update CHANGELOG.md [`(148af1f)`](https://github.com/SunriseCommunity/Solar-System/commit/148af1f50952c7785b3de933dfea5cf4e737ab7f)
 
 
@@ -39,7 +73,7 @@
 
 
 
-### Sunrise
+### 🌅 Sunrise
 
 #### <!-- 7 -->⚙️ Miscellaneous Tasks
 
@@ -118,7 +152,7 @@
 
 
 
-### Sunshine
+### 🌻 Sunshine
 
 #### <!-- 0 -->🚀 Features
 
@@ -266,7 +300,7 @@ feat: Mention reason for closing connection for websocket;
 
 
 
-### Observatory
+### 🔭 Solar System
 
 #### <!-- 0 -->🚀 Features
 
@@ -514,7 +548,7 @@ fix: Let API latency be empty for comparison if doesn't has needed Ability
 - Move and edit some types
 
 
-### Sunrise
+### 🌅 Sunrise
 
 #### <!-- 0 -->🚀 Features
 
@@ -2000,7 +2034,7 @@ chore(deps): bump System.Linq.Dynamic.Core from 1.4.5 to 1.6.0
 - [dependency] Update System.Linq.Dynamic.Core from 1.4.5 to 1.6.0
 
 
-### Sunset
+### 🌇 Sunset
 
 #### <!-- 0 -->🚀 Features
 
