@@ -8,8 +8,11 @@ on:
 
 jobs:
   changelog:
+    permissions:
+      contents: write
     name: Create GitHub release and changelog
     runs-on: ubuntu-latest
+
     env:
       GH_TOKEN: ${{ github.token }}
     steps:
