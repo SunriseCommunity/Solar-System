@@ -1,0 +1,75 @@
+name: osu-sunrise-infrastructure-dev
+services:
+  redis:
+    image: redis:8.2.2
+    restart: unless-stopped
+    volumes:
+      - redis_data:/data
+    networks:
+      - container_network
+    ports:
+      - 6379:6379
+    healthcheck:
+      test: ["CMD", "redis-cli", "--raw", "incr", "ping"]
+
+  mysql-sunrise-db:
+    image: mysql:oraclelinux9
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${SUNRISE_MYSQL_PASSWORD}
+      MYSQL_DATABASE: ${SUNRISE_MYSQL_DATABASE}
+    volumes:
+      - mysql_data:/var/lib/mysql
+    ports:
+      - ${SUNRISE_MYSQL_PORT}:3306
+    networks:
+      - container_network
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  observatory-postgres:
+    image: postgres:17
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${OBSERVATORY_POSTGRES_USER}
+      POSTGRES_PASSWORD: ${OBSERVATORY_POSTGRES_PASSWORD}
+      POSTGRES_DB: ${OBSERVATORY_POSTGRES_DB}
+    ports:
+      - ${OBSERVATORY_POSTGRES_PORT}:5432
+    volumes:
+      - postgres_data:/var/lib/postgresql/data:Z
+    networks:
+      - container_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  redisinsight:
+    image: redislabs/redisinsight:latest
+    ports:
+      - 5540:5540
+    environment:
+      - RI_REDIS_HOST=redis
+    volumes:
+      - redisinsight_data:/db
+    networks:
+      - container_network
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+
+volumes:
+  redisinsight_data:
+  postgres_data:
+  mysql_data:
+  redis_data:
+
+networks:
+  container_network:
+    driver: bridge
