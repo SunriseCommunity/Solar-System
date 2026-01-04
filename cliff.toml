@@ -75,6 +75,12 @@ postprocessors = [
   { pattern = 'Bump ([a-zA-Z0-9@\-\/]+) to.*?(\n\n.*?)*', replace = "[dependency] Update $1" },
   # Generic bump message cleanup
   { pattern = 'Bump', replace = "[dependency] Update" },
+
+  # Add emoji to submodules namings
+  { pattern = '### Sunrise', replace = "### 🌅 Sunrise" },
+  { pattern = '### Sunset', replace = "### 🌇 Sunset" },
+  { pattern = '### Observatory', replace = "### 🔭 Solar System" },
+  { pattern = '### Sunshine', replace = "### 🌻 Sunshine" },
 ]
 
 [git]
