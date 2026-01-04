@@ -13,6 +13,12 @@ Monorepo with all services to run instance of Sunrise server
 
 Solar System is a **monorepo** containing all the essential components required to run a complete Sunrise server stack. Each major piece is managed as a submodule within this repository, allowing you to orchestrate, develop, and deploy everything together with ease.
 
+## Preview 🖼️
+
+TODO: Add preview image with frontend + osu client + discord bot + grafana
+
+![New Project (3)](https://github.com/user-attachments/assets/5cba5334-3455-4a56-aa9a-8930bb16abfd)
+
 ## Components 🧩
 
 - [**🌅 Sunrise**](https://github.com/SunriseCommunity/Sunrise)  
@@ -57,12 +63,6 @@ Before you begin, ensure you have the following installed:
 
 > [!TIP]
 > Join our [Discord server](https://discord.gg/BjV7c9VRfn) if you have any questions or just want to chill with us!
-
-## Preview 🖼️
-
-TODO: Add preview image with frontend + osu client + discord bot + grafana
-
-![New Project (3)](https://github.com/user-attachments/assets/5cba5334-3455-4a56-aa9a-8930bb16abfd)
 
 ## Contributing 💖
 
