@@ -1,10 +1,19 @@
-
 name: Create GitHub release and changelog
 on:
   workflow_dispatch:
+    inputs:
+      version_bump:
+        description: "Version bump type"
+        required: true
+        type: choice
+        options:
+          - major
+          - minor
+          - patch
+          - initial
   push:
     tags:
-      - 'v*'
+      - "v*"
 
 jobs:
   changelog:
@@ -21,6 +30,48 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Get latest tag or set initial version
+        id: version
+        run: |
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
+            BUMP_TYPE="${{ github.event.inputs.version_bump }}"
+            
+            if [ -z "$LATEST_TAG" ] || [ "$BUMP_TYPE" == "initial" ]; then
+              NEW_VERSION="v0.0.1"
+            else
+              # Remove 'v' prefix if present
+              VERSION=${LATEST_TAG#v}
+              IFS='.' read -r -a VERSION_PARTS <<< "$VERSION"
+              MAJOR=${VERSION_PARTS[0]}
+              MINOR=${VERSION_PARTS[1]}
+              PATCH=${VERSION_PARTS[2]}
+              
+              case "$BUMP_TYPE" in
+                major)
+                  MAJOR=$((MAJOR + 1))
+                  MINOR=0
+                  PATCH=0
+                  ;;
+                minor)
+                  MINOR=$((MINOR + 1))
+                  PATCH=0
+                  ;;
+                patch)
+                  PATCH=$((PATCH + 1))
+                  ;;
+              esac
+              
+              NEW_VERSION="v${MAJOR}.${MINOR}.${PATCH}"
+            fi
+            
+            echo "new_version=$NEW_VERSION" >> $GITHUB_OUTPUT
+            echo "Created new version: $NEW_VERSION"
+          else
+            # When triggered by tag push, use the tag name
+            echo "new_version=${{ github.ref_name }}" >> $GITHUB_OUTPUT
+          fi
+
       - name: Generate a changelog
         uses: orhun/git-cliff-action@v1
         id: git-cliff
@@ -33,15 +84,23 @@ jobs:
       - name: Commit the changelog
         uses: EndBug/add-and-commit@v9
         with:
-          add: 'CHANGELOG.md'
+          add: "CHANGELOG.md"
           author_name: Git Cliff
           committer_name: Git Cliff
-          message: 'chore: update CHANGELOG.md'
+          message: "chore: update CHANGELOG.md"
           push: origin HEAD:main
-      
+
+      - name: Create and push tag (manual trigger only)
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git tag -a "${{ steps.version.outputs.new_version }}" -m "Release ${{ steps.version.outputs.new_version }}"
+          git push origin "${{ steps.version.outputs.new_version }}"
+
       - name: Set up git-cliff
         uses: kenji-miyake/setup-git-cliff@v1
-      
+
       - name: Build Changelog URL and create release
         run: |
           TAG_NAME=${{ github.ref_name }}
