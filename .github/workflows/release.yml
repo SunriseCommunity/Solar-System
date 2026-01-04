@@ -103,6 +103,6 @@ jobs:
 
       - name: Build Changelog URL and create release
         run: |
-          TAG_NAME=${{ github.ref_name }}
+          TAG_NAME="${{ steps.version.outputs.new_version }}"
           NOTES=$(git cliff --latest)
           gh release create "$TAG_NAME" --verify-tag --title "$TAG_NAME" --notes "$NOTES"
