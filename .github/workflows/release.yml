@@ -14,7 +14,7 @@ jobs:
       GH_TOKEN: ${{ github.token }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -35,6 +35,9 @@ jobs:
           committer_name: Git Cliff
           message: 'chore: update CHANGELOG.md'
           push: origin HEAD:main
+      
+      - name: Set up git-cliff
+        uses: kenji-miyake/setup-git-cliff@v1
       
       - name: Build Changelog URL and create release
         run: |
