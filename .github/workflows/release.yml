@@ -1,0 +1,43 @@
+
+name: Create GitHub release and changelog
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  changelog:
+    name: Create GitHub release and changelog
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Generate a changelog
+        uses: orhun/git-cliff-action@v1
+        id: git-cliff
+        with:
+          config: cliff.toml
+          args: --verbose
+        env:
+          OUTPUT: CHANGELOG.md
+
+      - name: Commit the changelog
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: 'CHANGELOG.md'
+          author_name: Git Cliff
+          committer_name: Git Cliff
+          message: 'chore: update CHANGELOG.md'
+          push: origin HEAD:main
+      
+      - name: Build Changelog URL and create release
+        run: |
+          TAG_NAME=${{ github.ref_name }}
+          NOTES=$(git cliff --latest)
+          gh release create "$TAG_NAME" --verify-tag --title "$TAG_NAME" --notes "$NOTES"
