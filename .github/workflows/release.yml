@@ -81,15 +81,6 @@ jobs:
         env:
           OUTPUT: CHANGELOG.md
 
-      - name: Commit the changelog
-        uses: EndBug/add-and-commit@v9
-        with:
-          add: "CHANGELOG.md"
-          author_name: Git Cliff
-          committer_name: Git Cliff
-          message: "chore: update CHANGELOG.md"
-          push: origin HEAD:main
-
       - name: Create and push tag (manual trigger only)
         if: github.event_name == 'workflow_dispatch'
         run: |
@@ -106,3 +97,12 @@ jobs:
           TAG_NAME="${{ steps.version.outputs.new_version }}"
           NOTES=$(git cliff --latest -c cliff.toml)
           gh release create "$TAG_NAME" --verify-tag --title "$TAG_NAME" --notes "$NOTES"
+
+      - name: Commit the changelog
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: "CHANGELOG.md"
+          author_name: Git Cliff
+          committer_name: Git Cliff
+          message: "chore: update CHANGELOG.md"
+          push: origin HEAD:main
