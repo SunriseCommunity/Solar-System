@@ -1,8 +1,5 @@
 # configuration file for git-cliff (0.1.0)
 
-[git]
-recurse_submodules = true
-
 [changelog]
 # changelog header
 header = """
@@ -44,6 +41,7 @@ footer = """
 [git]
 # parse the commits based on https://www.conventionalcommits.org
 conventional_commits = true
+recurse_submodules = true
 # filter out the commits that are not conventional
 filter_unconventional = true
 # regex for parsing and grouping commits
