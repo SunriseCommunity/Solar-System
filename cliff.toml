@@ -79,7 +79,7 @@ postprocessors = [
   # Add emoji to submodules namings
   { pattern = '### Sunrise', replace = "### 🌅 Sunrise" },
   { pattern = '### Sunset', replace = "### 🌇 Sunset" },
-  { pattern = '### Observatory', replace = "### 🔭 Solar System" },
+  { pattern = '### Observatory', replace = "### 🔭 Observatory" },
   { pattern = '### Sunshine', replace = "### 🌻 Sunshine" },
 ]
 
