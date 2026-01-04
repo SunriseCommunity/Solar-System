@@ -1,0 +1,177 @@
+name: sunrise-dev-monitoring
+services:
+  victoria-metrics:
+    image: victoriametrics/victoria-metrics:v1.93.12
+    volumes:
+      - "./config/dev/victoria/promscrape.yml:/etc/victoria/promscrape.yml"
+      - "victoria_metrics_dev_data:/storage"
+    command:
+      - "--promscrape.config=/etc/victoria/promscrape.yml"
+      - "--storageDataPath=/storage"
+    ports:
+      - "8428:8428"
+      - "9090:9090"
+    networks:
+      - monitoring
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: 1G
+        reservations:
+          cpus: "0.2"
+          memory: 256M
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "wget -qO- http://127.0.0.1:8428/health | grep -q 'OK' || exit 1",
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  loki:
+    image: grafana/loki:3.6.3
+    command: ["-config.file=/etc/loki/loki.yml"]
+    volumes:
+      - ./config/dev/loki/loki.yml:/etc/loki/loki.yml
+      - "loki_dev_data:/loki"
+    ports:
+      - "3100:3100"
+    networks:
+      - monitoring
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: 2G
+        reservations:
+          cpus: "0.2"
+          memory: 256M
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "wget --spider -q http://localhost:3100/loki/api/v1/status/buildinfo || exit 1",
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor:v0.55.1
+    restart: unless-stopped
+    privileged: true
+    command:
+      - --docker_only=true
+      - --disable_root_cgroup_stats=true
+      # - --enable_load_reader=true # https://github.com/google/cadvisor/issues/3430
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:rw
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+    networks:
+      - monitoring
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: 128M
+        reservations:
+          cpus: "0.2"
+          memory: 64M
+    depends_on:
+      tempo:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-O", "/dev/null", "http://localhost:8080/healthz"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  tempo:
+    image: grafana/tempo:latest
+    command: ["--config.file=/etc/tempo.yml"]
+    restart: unless-stopped
+    volumes:
+      - ./config/dev/tempo/tempo.yml:/etc/tempo.yml
+      - tempo_dev_data:/var/tempo
+    ports:
+      - "4317:4317"
+      - "3200:3200"
+    networks:
+      - monitoring
+    depends_on:
+      - victoria-metrics
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: 2G
+        reservations:
+          cpus: "0.2"
+          memory: 256M
+    healthcheck:
+      test:
+        ["CMD", "wget", "--spider", "--quiet", "http://localhost:3200/metrics"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+
+  grafana:
+    image: grafana/grafana:12.3
+    volumes:
+      - "grafana_dev_data:/var/lib/grafana"
+      - "./config/dev/grafana/datasources.yml:/etc/grafana/provisioning/datasources/datasources.yml"
+      - "./config/dev/grafana/dashboards:/etc/grafana/dashboards"
+    user: "1000:1000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_USERS_ALLOW_SIGN_UP=false
+      - GF_INSTALL_PLUGINS=victoriametrics-metrics-datasource
+    ports:
+      - "3060:3000"
+    networks:
+      - monitoring
+    depends_on:
+      victoria-metrics:
+        condition: service_healthy
+      tempo:
+        condition: service_healthy
+      loki:
+        condition: service_healthy
+      cadvisor:
+        condition: service_healthy
+    deploy:
+      resources:
+        limits:
+          cpus: "1"
+          memory: 1G
+        reservations:
+          cpus: "0.2"
+          memory: 256M
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "wget --spider -q http://localhost:3000/api/health || exit 1",
+        ]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+volumes:
+  loki_dev_data:
+  tempo_dev_data:
+  grafana_dev_data:
+  victoria_metrics_dev_data:
+
+networks:
+  monitoring:
+    driver: bridge

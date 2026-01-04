@@ -1,0 +1,7 @@
+[submodule "Sunrise"]
+	path = Sunrise
+	url = https://github.com/SunriseCommunity/Sunrise
+	branch = feat/better-telemetry
+[submodule "Observatory"]
+	path = Observatory
+	url = https://github.com/SunriseCommunity/Observatory
