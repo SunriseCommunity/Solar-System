@@ -11,7 +11,7 @@ header = """
 <!-- markdownlint-disable -->
 <!-- eslint-disable markdown/no-missing-label-refs -->
 # Changelog\n
-All notable changes to this project will be documented in this file.\n![462894956-551fc5b1-2f73-4792-9284-2c2f3452e42b](https://github.com/user-attachments/assets/1dbddcfa-1b08-4a04-8f64-bfbe8c5dcc45)\n
+### All notable changes to this project will be documented in this file.\n\n![462894956-551fc5b1-2f73-4792-9284-2c2f3452e42b](https://github.com/user-attachments/assets/1dbddcfa-1b08-4a04-8f64-bfbe8c5dcc45)\n\n
 """
 # template for the changelog body
 # https://keats.github.io/tera/docs/#introduction
@@ -22,9 +22,7 @@ body = """
   ## [Unreleased]
 {% endif %}
 {% if commit_range and commit_range.from and commit_range.to %}
-  [[{{ commit_range.from | truncate(length=7, end="") }}](https://github.com/SunriseCommunity/Solar-System/commit/{{ commit_range.from }})...
-  [{{ commit_range.to | truncate(length=7, end="") }}](https://github.com/SunriseCommunity/Solar-System/commit/{{ commit_range.to }})]
-  ([compare](https://github.com/SunriseCommunity/Solar-System/compare/{{ commit_range.from }}...{{ commit_range.to }}))
+  [[{{ commit_range.from | truncate(length=7, end="") }}](https://github.com/SunriseCommunity/Solar-System/commit/{{ commit_range.from }})...[{{ commit_range.to | truncate(length=7, end="") }}](https://github.com/SunriseCommunity/Solar-System/commit/{{ commit_range.to }})]([compare](https://github.com/SunriseCommunity/Solar-System/compare/{{ commit_range.from }}...{{ commit_range.to }}))
 {% endif %}
 {% for group, commits in commits | group_by(attribute="group") %}
   ### {{ group | striptags | trim | upper_first }}
