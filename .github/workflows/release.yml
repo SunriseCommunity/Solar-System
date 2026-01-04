@@ -73,7 +73,7 @@ jobs:
           fi
 
       - name: Generate a changelog
-        uses: orhun/git-cliff-action@v1
+        uses: orhun/git-cliff-action@v4
         id: git-cliff
         with:
           config: cliff.toml
@@ -104,5 +104,5 @@ jobs:
       - name: Build Changelog URL and create release
         run: |
           TAG_NAME="${{ steps.version.outputs.new_version }}"
-          NOTES=$(git cliff --latest)
+          NOTES=$(git cliff --latest -c cliff.toml)
           gh release create "$TAG_NAME" --verify-tag --title "$TAG_NAME" --notes "$NOTES"
