@@ -31,6 +31,7 @@ SILENCED_KEYS=(
 SUNRISE_ENV="Sunrise/.env.example"
 OBSERVATORY_ENV="Observatory/.env.example"
 SUNSET_ENV="Sunset/.env.local.example"
+SUNSHINE_ENV="Sunshine/.env.example"
 
 ROOT_ENV=".env.example"
 
@@ -67,8 +68,9 @@ fi
 SUNRISE_KEYS=$(extract_keys "$SUNRISE_ENV" | sed 's/^/SUNRISE_/')
 OBSERVATORY_KEYS=$(extract_keys "$OBSERVATORY_ENV" | sed 's/^/OBSERVATORY_/')
 SUNSET_KEYS=$(extract_keys "$SUNSET_ENV" | sed 's/^/SUNSET_/')
+SUNSHINE_KEYS=$(extract_keys "$SUNSHINE_ENV" | sed 's/^/SUNSHINE_/')
 
-ALL_SOURCE_KEYS=$(echo -e "$SUNRISE_KEYS\n$OBSERVATORY_KEYS\n$SUNSET_KEYS" | sort -u)
+ALL_SOURCE_KEYS=$(echo -e "$SUNRISE_KEYS\n$OBSERVATORY_KEYS\n$SUNSET_KEYS\n$SUNSHINE_KEYS" | sort -u)
 
 if [ ! -f "$ROOT_ENV" ]; then
     echo -e "${YELLOW}⚠ Warning: $ROOT_ENV not found. Creating it...${NC}"

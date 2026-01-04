@@ -122,11 +122,25 @@ services:
         NEXT_PUBLIC_KOFI_LINK: ${SUNSET_NEXT_PUBLIC_KOFI_LINK}
         NEXT_PUBLIC_BOOSTY_LINK: ${SUNSET_NEXT_PUBLIC_BOOSTY_LINK}
     restart: unless-stopped
-    environment:
-      # -- Uncomment this if you are hosting Sunrise **locally** (with self-signed certificate)
-      # NODE_TLS_REJECT_UNAUTHORIZED: 0
+    # -- Uncomment this if you are hosting Sunrise **locally** (with self-signed certificate)
+    #environment:
+    #   NODE_TLS_REJECT_UNAUTHORIZED: 0
     ports:
       - ${SUNSET_PORT}:3000
+
+  sunshine-discord-bot:
+    build:
+      context: ./Sunshine
+      dockerfile: Dockerfile
+    volumes:
+      - ./Sunshine/data:/app/data
+    restart: unless-stopped
+    environment:
+      NODE_ENV: prod
+      DISCORD_TOKEN: ${SUNSHINE_DISCORD_TOKEN}
+      NEW_SCORES_CHANNED_ID: ${SUNSHINE_NEW_SCORES_CHANNED_ID}
+      BEATMAPS_STATUSES_CHANNED_ID: ${SUNSHINE_BEATMAPS_STATUSES_CHANNED_ID}
+      SUNRISE_URI: ${WEB_DOMAIN}
 
   ## --- Databases ---
 

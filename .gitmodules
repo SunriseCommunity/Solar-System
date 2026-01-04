@@ -8,3 +8,6 @@
 [submodule "Sunset"]
 	path = Sunset
 	url = https://github.com/SunriseCommunity/Sunset
+[submodule "Sunshine"]
+	path = Sunshine
+	url = https://github.com/SunriseCommunity/Sunshine
