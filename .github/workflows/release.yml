@@ -108,11 +108,6 @@ jobs:
           git tag -a "${{ steps.version.outputs.new_version }}" -m "Release ${{ steps.version.outputs.new_version }}"
           git push origin "${{ steps.version.outputs.new_version }}"
 
-      - name: Fetch tags (manual trigger only)
-        if: github.event_name == 'workflow_dispatch'
-        run: |
-          git fetch --tags --force
-
       - name: Set up git-cliff
         uses: kenji-miyake/setup-git-cliff@v1
 
