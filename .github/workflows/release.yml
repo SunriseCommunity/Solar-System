@@ -91,6 +91,14 @@ jobs:
             echo "new_version=${{ github.ref_name }}" >> $GITHUB_OUTPUT
           fi
 
+      - name: Create and push tag (manual trigger only)
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git tag -a "${{ steps.version.outputs.new_version }}" -m "Release ${{ steps.version.outputs.new_version }}"
+          git push origin "${{ steps.version.outputs.new_version }}"
+
       - name: Generate a changelog
         uses: orhun/git-cliff-action@v4
         id: git-cliff
@@ -99,14 +107,6 @@ jobs:
           args: --verbose
         env:
           OUTPUT: CHANGELOG.md
-
-      - name: Create and push tag (manual trigger only)
-        if: github.event_name == 'workflow_dispatch'
-        run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
-          git tag -a "${{ steps.version.outputs.new_version }}" -m "Release ${{ steps.version.outputs.new_version }}"
-          git push origin "${{ steps.version.outputs.new_version }}"
 
       - name: Set up git-cliff
         uses: kenji-miyake/setup-git-cliff@v1
