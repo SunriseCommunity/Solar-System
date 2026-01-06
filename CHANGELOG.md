@@ -10,6 +10,36 @@
 ## [Unreleased]
 
 
+[[70a69de](https://github.com/SunriseCommunity/Solar-System/commit/70a69dea42b7f4e90679ea9bc9d51b89d19eb8f1)...[70a69de](https://github.com/SunriseCommunity/Solar-System/commit/70a69dea42b7f4e90679ea9bc9d51b89d19eb8f1)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/70a69dea42b7f4e90679ea9bc9d51b89d19eb8f1...70a69dea42b7f4e90679ea9bc9d51b89d19eb8f1))
+
+
+### ⚙️ Miscellaneous Tasks
+
+- Prefer --latest for release notes generation [`(70a69de)`](https://github.com/SunriseCommunity/Solar-System/commit/70a69dea42b7f4e90679ea9bc9d51b89d19eb8f1)
+
+
+
+
+
+
+## [0.0.12] - 2026-01-06
+
+
+[[246c7bf](https://github.com/SunriseCommunity/Solar-System/commit/246c7bf79dd7141d6aff1b1f9c4edafa7efdafc8)...[246c7bf](https://github.com/SunriseCommunity/Solar-System/commit/246c7bf79dd7141d6aff1b1f9c4edafa7efdafc8)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/246c7bf79dd7141d6aff1b1f9c4edafa7efdafc8...246c7bf79dd7141d6aff1b1f9c4edafa7efdafc8))
+
+
+### ⚙️ Miscellaneous Tasks
+
+- Update CHANGELOG.md [`(246c7bf)`](https://github.com/SunriseCommunity/Solar-System/commit/246c7bf79dd7141d6aff1b1f9c4edafa7efdafc8)
+
+
+
+
+
+
+## [0.0.11] - 2026-01-06
+
+
 [[399aab9](https://github.com/SunriseCommunity/Solar-System/commit/399aab941fbd98362d01c3701b5279711fd07e2e)...[87f69f3](https://github.com/SunriseCommunity/Solar-System/commit/87f69f393d3c10b312bdd42c79a180ba3c673bea)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/399aab941fbd98362d01c3701b5279711fd07e2e...87f69f393d3c10b312bdd42c79a180ba3c673bea))
 
 
