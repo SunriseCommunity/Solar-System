@@ -10,6 +10,33 @@
 ## [Unreleased]
 
 
+[[9feecbe](https://github.com/SunriseCommunity/Solar-System/commit/9feecbe46ac2a012b81e01128492d2c5cccd4d0d)...[62b97ec](https://github.com/SunriseCommunity/Solar-System/commit/62b97ec75668989d7a655410cc27a9142b397da5)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/9feecbe46ac2a012b81e01128492d2c5cccd4d0d...62b97ec75668989d7a655410cc27a9142b397da5))
+
+
+### 🐛 Bug Fixes
+
+- Don't prefer topological order for cliff changelog [`(9feecbe)`](https://github.com/SunriseCommunity/Solar-System/commit/9feecbe46ac2a012b81e01128492d2c5cccd4d0d)
+
+
+
+### 🔀 Merge Commits
+
+- [chore] Merge Branch 'main' of https://github.com/SunriseCommunity/sunrise-instance [`(62b97ec)`](https://github.com/SunriseCommunity/Solar-System/commit/62b97ec75668989d7a655410cc27a9142b397da5)
+
+
+
+### ⚙️ Miscellaneous Tasks
+
+- Update CHANGELOG.md [`(ee65153)`](https://github.com/SunriseCommunity/Solar-System/commit/ee651537d2d65dcc9871f1120ab093ce1adabf80)
+
+
+
+
+
+
+## [0.0.13] - 2026-01-06
+
+
 [[70a69de](https://github.com/SunriseCommunity/Solar-System/commit/70a69dea42b7f4e90679ea9bc9d51b89d19eb8f1)...[70a69de](https://github.com/SunriseCommunity/Solar-System/commit/70a69dea42b7f4e90679ea9bc9d51b89d19eb8f1)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/70a69dea42b7f4e90679ea9bc9d51b89d19eb8f1...70a69dea42b7f4e90679ea9bc9d51b89d19eb8f1))
 
 
