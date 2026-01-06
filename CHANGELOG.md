@@ -10,6 +10,30 @@
 ## [Unreleased]
 
 
+[[e2f293e](https://github.com/SunriseCommunity/Solar-System/commit/e2f293e481d5f5a3acf0f14dd58f2ee9de815ae4)...[d6ec991](https://github.com/SunriseCommunity/Solar-System/commit/d6ec991e4d5521c1fcbce6ceca7c50b1cf981ad0)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/e2f293e481d5f5a3acf0f14dd58f2ee9de815ae4...d6ec991e4d5521c1fcbce6ceca7c50b1cf981ad0))
+
+
+### 🔀 Merge Commits
+
+- [chore] Merge Branch 'main' of https://github.com/SunriseCommunity/sunrise-instance [`(d6ec991)`](https://github.com/SunriseCommunity/Solar-System/commit/d6ec991e4d5521c1fcbce6ceca7c50b1cf981ad0)
+
+
+
+### ⚙️ Miscellaneous Tasks
+
+- Update CHANGELOG.md [`(67c9496)`](https://github.com/SunriseCommunity/Solar-System/commit/67c9496b17f22f9363a3caab0546e0524b9e9c23)
+
+
+- Include SUNSET_NEXT_PUBLIC_STATUS_PAGE_LINK in the .env.example file [`(e2f293e)`](https://github.com/SunriseCommunity/Solar-System/commit/e2f293e481d5f5a3acf0f14dd58f2ee9de815ae4)
+
+
+
+
+
+
+## [0.0.14] - 2026-01-06
+
+
 [[9feecbe](https://github.com/SunriseCommunity/Solar-System/commit/9feecbe46ac2a012b81e01128492d2c5cccd4d0d)...[62b97ec](https://github.com/SunriseCommunity/Solar-System/commit/62b97ec75668989d7a655410cc27a9142b397da5)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/9feecbe46ac2a012b81e01128492d2c5cccd4d0d...62b97ec75668989d7a655410cc27a9142b397da5))
 
 
