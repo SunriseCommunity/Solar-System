@@ -10,6 +10,90 @@
 ## [Unreleased]
 
 
+[[5ab4518](https://github.com/SunriseCommunity/Solar-System/commit/5ab45187bfc302df7af6f8672b70fd69b9ccec15)...[e43a9b6](https://github.com/SunriseCommunity/Solar-System/commit/e43a9b6c273c372756d46b27fab5a4931b8b25f9)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/5ab45187bfc302df7af6f8672b70fd69b9ccec15...e43a9b6c273c372756d46b27fab5a4931b8b25f9))
+
+
+### 🚀 Features
+
+- Add uptime-kuma [`(0a782f5)`](https://github.com/SunriseCommunity/Solar-System/commit/0a782f5244f42a67c64c793f20127ae35bcb660b)
+
+
+- Add generate-api-sunrise-key.sh [`(b009fd9)`](https://github.com/SunriseCommunity/Solar-System/commit/b009fd9ae160fc8a9654ed55c96a9a9d57e88d5b)
+
+
+- Add Caddyfile [`(933a520)`](https://github.com/SunriseCommunity/Solar-System/commit/933a52062bdefeeecd60b8b45f336f49321b6bf8)
+
+
+- Upload missing grafana dashboards [`(a37d434)`](https://github.com/SunriseCommunity/Solar-System/commit/a37d434b804ab1db5f6b26639953cbf447bf0983)
+
+
+
+### 🐛 Bug Fixes
+
+- Include NEXT_PUBLIC_SERVER_DOMAIN in the environment for sunset [`(93e93fb)`](https://github.com/SunriseCommunity/Solar-System/commit/93e93fb002248340d4995d824afa4a73999a49e4)
+
+
+- Cliff don't override observatory submodule name to the solar system [`(bab87e3)`](https://github.com/SunriseCommunity/Solar-System/commit/bab87e30aabe793f41a8baa744213cd29dfd011d)
+
+
+
+### ⚙️ Miscellaneous Tasks
+
+- Update submodules [`(e43a9b6)`](https://github.com/SunriseCommunity/Solar-System/commit/e43a9b6c273c372756d46b27fab5a4931b8b25f9)
+
+
+- Add new observatory env [`(e46a87d)`](https://github.com/SunriseCommunity/Solar-System/commit/e46a87db9ae5ed33a02375ffe73ca09f611d00e1)
+
+
+- Remove extraneous spaces for uptime kuma spaces [`(1555585)`](https://github.com/SunriseCommunity/Solar-System/commit/1555585609291dc49d8ae02449ff63432c04300b)
+
+
+- Update Sunrise [`(90e40ca)`](https://github.com/SunriseCommunity/Solar-System/commit/90e40ca358e204891bc74011a8dccfe85f48e287)
+
+
+- Move setup files into lib folder [`(2d043ff)`](https://github.com/SunriseCommunity/Solar-System/commit/2d043ffa357f7d7d2bb729ac3c29f4e02fda6730)
+
+
+- Prettify .env.example file [`(835c15d)`](https://github.com/SunriseCommunity/Solar-System/commit/835c15db48af48eaf4c86cc21eb2f74408f56a9f)
+
+
+- Move image preview higher [`(1b686ab)`](https://github.com/SunriseCommunity/Solar-System/commit/1b686ab5ce8f5f683d6e0a1630739f91cb2a7026)
+
+
+- Update README.md [`(2f12ae5)`](https://github.com/SunriseCommunity/Solar-System/commit/2f12ae5427decb9ff49cbad40ec137cbf2b48a8b)
+
+
+- Upload image [`(258a257)`](https://github.com/SunriseCommunity/Solar-System/commit/258a2577e9c8777aabec57d430d9a56b99f2c811)
+
+
+- Update CHANGELOG.md [`(5ab4518)`](https://github.com/SunriseCommunity/Solar-System/commit/5ab45187bfc302df7af6f8672b70fd69b9ccec15)
+
+
+
+
+
+### 🔭 Observatory
+
+#### <!-- 0 -->🚀 Features
+
+- Add SHOW_INTERNAL_VALUES_IN_PUBLIC_STATS_ENDPOINT env
+
+#### <!-- 1 -->🐛 Bug Fixes
+
+- Tests
+
+
+### 🌇 Sunset
+
+#### <!-- 0 -->🚀 Features
+
+- Update icon and add manifest.json
+
+
+
+## [0.0.7] - 2026-01-04
+
+
 [[ca612fc](https://github.com/SunriseCommunity/Solar-System/commit/ca612fc452e168f1d6e452ad668e2d5daaa28068)...[cce39c4](https://github.com/SunriseCommunity/Solar-System/commit/cce39c4aaa3cc0e6015a4968f43004c9a8b6f066)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/ca612fc452e168f1d6e452ad668e2d5daaa28068...cce39c4aaa3cc0e6015a4968f43004c9a8b6f066))
 
 
@@ -28,13 +112,6 @@
 
 
 
-
-
-### 🌅 Sunrise
-
-#### <!-- 7 -->⚙️ Miscellaneous Tasks
-
-- Update README.md
 
 
 
@@ -71,13 +148,6 @@
 
 
 
-
-
-### 🌅 Sunrise
-
-#### <!-- 7 -->⚙️ Miscellaneous Tasks
-
-- Update README.md
 
 
 
@@ -300,7 +370,7 @@ feat: Mention reason for closing connection for websocket;
 
 
 
-### 🔭 Solar System
+### 🔭 Observatory
 
 #### <!-- 0 -->🚀 Features
 
