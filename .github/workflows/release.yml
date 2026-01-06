@@ -59,7 +59,6 @@ jobs:
             if [ -z "$LATEST_TAG" ] || [ "$BUMP_TYPE" == "initial" ]; then
               NEW_VERSION="v0.0.1"
             else
-              # Remove 'v' prefix if present
               VERSION=${LATEST_TAG#v}
               IFS='.' read -r -a VERSION_PARTS <<< "$VERSION"
               MAJOR=${VERSION_PARTS[0]}
@@ -87,9 +86,29 @@ jobs:
             echo "new_version=$NEW_VERSION" >> $GITHUB_OUTPUT
             echo "Created new version: $NEW_VERSION"
           else
-            # When triggered by tag push, use the tag name
             echo "new_version=${{ github.ref_name }}" >> $GITHUB_OUTPUT
           fi
+
+      - name: Set up git-cliff
+        uses: kenji-miyake/setup-git-cliff@v1
+
+      - name: Generate changelog file
+        uses: orhun/git-cliff-action@v4
+        id: git-cliff
+        with:
+          config: cliff.toml
+          args: --verbose --tag ${{ steps.version.outputs.new_version }}
+        env:
+          OUTPUT: CHANGELOG.md
+
+      - name: Commit changelog
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: "CHANGELOG.md"
+          author_name: Git Cliff
+          committer_name: Git Cliff
+          message: "chore: update CHANGELOG.md"
+          push: origin HEAD:main
 
       - name: Create and push tag (manual trigger only)
         if: github.event_name == 'workflow_dispatch'
@@ -99,28 +118,7 @@ jobs:
           git tag -a "${{ steps.version.outputs.new_version }}" -m "Release ${{ steps.version.outputs.new_version }}"
           git push origin "${{ steps.version.outputs.new_version }}"
 
-      - name: Generate a changelog
-        uses: orhun/git-cliff-action@v4
-        id: git-cliff
-        with:
-          config: cliff.toml
-          args: --verbose
-        env:
-          OUTPUT: CHANGELOG.md
-
-      - name: Commit the changelog
-        uses: EndBug/add-and-commit@v9
-        with:
-          add: "CHANGELOG.md"
-          author_name: Git Cliff
-          committer_name: Git Cliff
-          message: "chore: update CHANGELOG.md"
-          push: origin HEAD:main
-
-      - name: Set up git-cliff
-        uses: kenji-miyake/setup-git-cliff@v1
-
-      - name: Build Changelog URL and create release
+      - name: Generate release notes and create release
         run: |
           TAG_NAME="${{ steps.version.outputs.new_version }}"
           NOTES=$(git cliff --latest -c cliff.toml)
