@@ -10,6 +10,38 @@
 ## [Unreleased]
 
 
+[[4ea0f8f](https://github.com/SunriseCommunity/Solar-System/commit/4ea0f8f6789ead5a8bd7b70fe18674bf326ad723)...[ea19a56](https://github.com/SunriseCommunity/Solar-System/commit/ea19a56315438d69a07146352d2c5f1720c23635)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/4ea0f8f6789ead5a8bd7b70fe18674bf326ad723...ea19a56315438d69a07146352d2c5f1720c23635))
+
+
+### 🚀 Features
+
+- Return Sunrise onto master branch [`(ea19a56)`](https://github.com/SunriseCommunity/Solar-System/commit/ea19a56315438d69a07146352d2c5f1720c23635)
+
+
+
+### ⚙️ Miscellaneous Tasks
+
+- Update CHANGELOG.md [`(4ea0f8f)`](https://github.com/SunriseCommunity/Solar-System/commit/4ea0f8f6789ead5a8bd7b70fe18674bf326ad723)
+
+
+
+
+
+### 🌅 Sunrise
+
+#### <!-- 13 -->💼 Other
+
+- Merge pull request #92 from SunriseCommunity/feat/better-telemetry
+
+#### <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- Update README.md
+
+
+
+## [0.0.8] - 2026-01-06
+
+
 [[5ab4518](https://github.com/SunriseCommunity/Solar-System/commit/5ab45187bfc302df7af6f8672b70fd69b9ccec15)...[e43a9b6](https://github.com/SunriseCommunity/Solar-System/commit/e43a9b6c273c372756d46b27fab5a4931b8b25f9)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/5ab45187bfc302df7af6f8672b70fd69b9ccec15...e43a9b6c273c372756d46b27fab5a4931b8b25f9))
 
 
