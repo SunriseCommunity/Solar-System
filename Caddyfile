@@ -1,0 +1,26 @@
+# Sunrise
+b.{$WEB_DOMAIN},
+c.{$WEB_DOMAIN},
+cho.{$WEB_DOMAIN},
+c4.{$WEB_DOMAIN},
+a.{$WEB_DOMAIN},
+api.{$WEB_DOMAIN},
+osu.{$WEB_DOMAIN},
+assets.{$WEB_DOMAIN} {
+    reverse_proxy localhost:{$SUNRISE_SERVER_PORT:3912}
+}
+
+# Sunset
+{$WEB_DOMAIN} {
+    reverse_proxy localhost:{$SUNSET_PORT:3090}
+}
+
+# Grafana
+grafana.{$WEB_DOMAIN} {
+    reverse_proxy localhost:{$GRAFANA_PORT:3060}
+}
+
+# # Observatory
+# observatory.{$WEB_DOMAIN} {
+#     reverse_proxy localhost:{$OBSERVATORY_PORT:3333}
+# }
