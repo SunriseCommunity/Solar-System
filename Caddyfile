@@ -24,3 +24,8 @@ grafana.{$WEB_DOMAIN} {
 # observatory.{$WEB_DOMAIN} {
 #     reverse_proxy localhost:{$OBSERVATORY_PORT:3333}
 # }
+
+# # Uptime Kuma
+# uptime.{$WEB_DOMAIN} {
+#     reverse_proxy localhost:{$UPTIME_KUMA_PORT:3001}
+# }

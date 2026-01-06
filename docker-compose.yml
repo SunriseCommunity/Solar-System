@@ -374,6 +374,21 @@ services:
       retries: 5
       start_period: 30s
 
+  # Uncomment if you want to use Uptime-Kuma for monitoring
+  # uptime-kuma:
+  #   image: louislam/uptime-kuma:2
+  #   restart: unless-stopped
+  #   volumes:
+  #     - /database/uptime-kuma-data:/app/data
+  #   ports:
+  #     - ${UPTIME_KUMA_PORT-3001}:3001  
+  #   deploy:
+  #     resources:
+  #       limits:
+  #         memory: 256M
+  #       reservations:
+  #         memory: 64M
+
 volumes:
   mysql_data:
   observatory_redis_data:
