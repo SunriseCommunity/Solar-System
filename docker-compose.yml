@@ -122,8 +122,9 @@ services:
         NEXT_PUBLIC_KOFI_LINK: ${SUNSET_NEXT_PUBLIC_KOFI_LINK}
         NEXT_PUBLIC_BOOSTY_LINK: ${SUNSET_NEXT_PUBLIC_BOOSTY_LINK}
     restart: unless-stopped
+    environment:
+      NEXT_PUBLIC_SERVER_DOMAIN: ${WEB_DOMAIN} # I like how Next.js hardcodes env for pages at build time, but for next.config.mjs he will use runtime env. Brilliant.
     # -- Uncomment this if you are hosting Sunrise **locally** (with self-signed certificate)
-    #environment:
     #   NODE_TLS_REJECT_UNAUTHORIZED: 0
     ports:
       - ${SUNSET_PORT}:3000
@@ -342,7 +343,7 @@ services:
       - GF_SECURITY_ADMIN_PASSWORD=admin
       - GF_USERS_ALLOW_SIGN_UP=false
     ports:
-      - "3060:3000"
+      - ${GRAFANA_PORT-3060}:3000
     networks:
       - container_network
     depends_on:
