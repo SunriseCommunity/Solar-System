@@ -10,6 +10,35 @@
 ## [Unreleased]
 
 
+[[cf73349](https://github.com/SunriseCommunity/Solar-System/commit/cf73349f77d654862768cda5d3f950de96d1576e)...[45ed3fa](https://github.com/SunriseCommunity/Solar-System/commit/45ed3fa637ad89a0924de4369f2add0329b23811)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/cf73349f77d654862768cda5d3f950de96d1576e...45ed3fa637ad89a0924de4369f2add0329b23811))
+
+
+### ⚙️ Miscellaneous Tasks
+
+- Update submodule [`(45ed3fa)`](https://github.com/SunriseCommunity/Solar-System/commit/45ed3fa637ad89a0924de4369f2add0329b23811)
+
+
+- Update CHANGELOG.md [`(cf73349)`](https://github.com/SunriseCommunity/Solar-System/commit/cf73349f77d654862768cda5d3f950de96d1576e)
+
+
+
+
+
+### 🌇 Sunset
+
+#### <!-- 0 -->🚀 Features
+
+- Get server status link from NEXT_PUBLIC_STATUS_PAGE_LINK
+
+#### <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- Update copyright year
+
+
+
+## [0.0.9] - 2026-01-06
+
+
 [[4ea0f8f](https://github.com/SunriseCommunity/Solar-System/commit/4ea0f8f6789ead5a8bd7b70fe18674bf326ad723)...[ea19a56](https://github.com/SunriseCommunity/Solar-System/commit/ea19a56315438d69a07146352d2c5f1720c23635)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/4ea0f8f6789ead5a8bd7b70fe18674bf326ad723...ea19a56315438d69a07146352d2c5f1720c23635))
 
 
