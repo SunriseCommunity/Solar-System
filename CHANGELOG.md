@@ -7,7 +7,40 @@
 ![462894956-551fc5b1-2f73-4792-9284-2c2f3452e42b](https://github.com/user-attachments/assets/1dbddcfa-1b08-4a04-8f64-bfbe8c5dcc45)
 
 
-## [Unreleased]
+## [0.0.16] - 2026-01-06
+
+
+[[fca9a25](https://github.com/SunriseCommunity/Solar-System/commit/fca9a256bb319255c948e93d2707da53cd10b625)...[2d94ad9](https://github.com/SunriseCommunity/Solar-System/commit/2d94ad93270639a7a2ace5fb424eee19792e52ae)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/fca9a256bb319255c948e93d2707da53cd10b625...2d94ad93270639a7a2ace5fb424eee19792e52ae))
+
+
+### 🚀 Features
+
+- Add update.sh [`(fca9a25)`](https://github.com/SunriseCommunity/Solar-System/commit/fca9a256bb319255c948e93d2707da53cd10b625)
+
+
+
+### 🐛 Bug Fixes
+
+- Generate a changelog only after a tag push [`(a1722f6)`](https://github.com/SunriseCommunity/Solar-System/commit/a1722f67db1e6e3c46fd621620229f45061a3102)
+
+
+
+### 🔀 Merge Commits
+
+- [chore] Merge Branch 'main' of https://github.com/SunriseCommunity/sunrise-instance [`(2d94ad9)`](https://github.com/SunriseCommunity/Solar-System/commit/2d94ad93270639a7a2ace5fb424eee19792e52ae)
+
+
+
+### ⚙️ Miscellaneous Tasks
+
+- Update CHANGELOG.md [`(7ceefd8)`](https://github.com/SunriseCommunity/Solar-System/commit/7ceefd8e75fa5e5555f1a13393c16ade3281fdaa)
+
+
+
+
+
+
+## [0.0.15] - 2026-01-06
 
 
 [[e2f293e](https://github.com/SunriseCommunity/Solar-System/commit/e2f293e481d5f5a3acf0f14dd58f2ee9de815ae4)...[d6ec991](https://github.com/SunriseCommunity/Solar-System/commit/d6ec991e4d5521c1fcbce6ceca7c50b1cf981ad0)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/e2f293e481d5f5a3acf0f14dd58f2ee9de815ae4...d6ec991e4d5521c1fcbce6ceca7c50b1cf981ad0))
