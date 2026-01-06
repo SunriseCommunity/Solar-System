@@ -119,9 +119,7 @@ jobs:
       - name: Build Changelog URL and create release
         run: |
           TAG_NAME="${{ steps.version.outputs.new_version }}"
-          # Use --tag to explicitly generate notes for this specific tag
-          # This ensures we get the correct commit range for this release
-          NOTES=$(git cliff --tag "$TAG_NAME" -c cliff.toml)
+          NOTES=$(git cliff --latest -c cliff.toml)
           gh release create "$TAG_NAME" --verify-tag --title "$TAG_NAME" --notes "$NOTES"
 
       - name: Commit the changelog
