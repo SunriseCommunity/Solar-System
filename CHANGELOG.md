@@ -7,6 +7,30 @@
 ![462894956-551fc5b1-2f73-4792-9284-2c2f3452e42b](https://github.com/user-attachments/assets/1dbddcfa-1b08-4a04-8f64-bfbe8c5dcc45)
 
 
+## [0.0.17] - 2026-01-06
+
+
+[[dc1db49](https://github.com/SunriseCommunity/Solar-System/commit/dc1db494b7d313a1fb4e0198b1cf903b95ca35a9)...[787500f](https://github.com/SunriseCommunity/Solar-System/commit/787500ff49c23c37996cd328618bae98ccaed138)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/dc1db494b7d313a1fb4e0198b1cf903b95ca35a9...787500ff49c23c37996cd328618bae98ccaed138))
+
+
+### 🔀 Merge Commits
+
+- [chore] Merge Branch 'main' of https://github.com/SunriseCommunity/sunrise-instance [`(787500f)`](https://github.com/SunriseCommunity/Solar-System/commit/787500ff49c23c37996cd328618bae98ccaed138)
+
+
+
+### ⚙️ Miscellaneous Tasks
+
+- Update CHANGELOG.md [`(f935652)`](https://github.com/SunriseCommunity/Solar-System/commit/f9356528c454c1d554d15d10930bb7e41a288379)
+
+
+- Include the newest changelog in the release [`(dc1db49)`](https://github.com/SunriseCommunity/Solar-System/commit/dc1db494b7d313a1fb4e0198b1cf903b95ca35a9)
+
+
+
+
+
+
 ## [0.0.16] - 2026-01-06
 
 
