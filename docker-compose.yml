@@ -114,7 +114,7 @@ services:
   sunset-website:
     build:
       context: ./Sunset
-      dockerfile: ../docker/Sunset.Dockerfile
+      dockerfile: ../lib/docker/Sunset.Dockerfile
       args:
         NEXT_PUBLIC_SERVER_DOMAIN: ${WEB_DOMAIN}
         NEXT_PUBLIC_DISCORD_LINK: ${SUNSET_NEXT_PUBLIC_DISCORD_LINK}
