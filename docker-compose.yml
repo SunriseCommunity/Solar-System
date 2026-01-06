@@ -343,7 +343,7 @@ services:
       - GF_SECURITY_ADMIN_PASSWORD=admin
       - GF_USERS_ALLOW_SIGN_UP=false
     ports:
-      - ${GRAFANA_PORT-3060}:3000
+      - ${GRAFANA_PORT}:3000
     networks:
       - container_network
     depends_on:

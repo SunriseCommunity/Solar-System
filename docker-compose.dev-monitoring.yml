@@ -135,7 +135,7 @@ services:
       - GF_USERS_ALLOW_SIGN_UP=false
       - GF_INSTALL_PLUGINS=victoriametrics-metrics-datasource
     ports:
-      - "3060:3000"
+      - ${GRAFANA_PORT:-3060}:3000
     networks:
       - monitoring
     depends_on:
