@@ -10,6 +10,33 @@
 ## [Unreleased]
 
 
+[[399aab9](https://github.com/SunriseCommunity/Solar-System/commit/399aab941fbd98362d01c3701b5279711fd07e2e)...[87f69f3](https://github.com/SunriseCommunity/Solar-System/commit/87f69f393d3c10b312bdd42c79a180ba3c673bea)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/399aab941fbd98362d01c3701b5279711fd07e2e...87f69f393d3c10b312bdd42c79a180ba3c673bea))
+
+
+### 🐛 Bug Fixes
+
+- Race condition for release workflow [`(399aab9)`](https://github.com/SunriseCommunity/Solar-System/commit/399aab941fbd98362d01c3701b5279711fd07e2e)
+
+
+
+### 🔀 Merge Commits
+
+- [chore] Merge Branch 'main' of https://github.com/SunriseCommunity/sunrise-instance [`(87f69f3)`](https://github.com/SunriseCommunity/Solar-System/commit/87f69f393d3c10b312bdd42c79a180ba3c673bea)
+
+
+
+### ⚙️ Miscellaneous Tasks
+
+- Update CHANGELOG.md [`(986cd1f)`](https://github.com/SunriseCommunity/Solar-System/commit/986cd1fe377113550731baa8f38cb730849860de)
+
+
+
+
+
+
+## [0.0.10] - 2026-01-06
+
+
 [[cf73349](https://github.com/SunriseCommunity/Solar-System/commit/cf73349f77d654862768cda5d3f950de96d1576e)...[45ed3fa](https://github.com/SunriseCommunity/Solar-System/commit/45ed3fa637ad89a0924de4369f2add0329b23811)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/cf73349f77d654862768cda5d3f950de96d1576e...45ed3fa637ad89a0924de4369f2add0329b23811))
 
 
