@@ -7,10 +7,46 @@
 ![462894956-551fc5b1-2f73-4792-9284-2c2f3452e42b](https://github.com/user-attachments/assets/1dbddcfa-1b08-4a04-8f64-bfbe8c5dcc45)
 
 
+## [0.0.19] - 2026-01-07
+
+
+[[8113ede](https://github.com/SunriseCommunity/Solar-System/commit/8113edeeff701c7bd66c2f6d06c2cf2533fd5a9a)...[7722b8d](https://github.com/SunriseCommunity/Solar-System/commit/7722b8d48fccd33872e0ebd4920d2efc1bb7eb8a)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/8113edeeff701c7bd66c2f6d06c2cf2533fd5a9a...7722b8d48fccd33872e0ebd4920d2efc1bb7eb8a))
+
+
+### 🐛 Bug Fixes
+
+- Update docker-compose.dev-monitoring.yml [`(8113ede)`](https://github.com/SunriseCommunity/Solar-System/commit/8113edeeff701c7bd66c2f6d06c2cf2533fd5a9a)
+
+
+
+### ⚙️ Miscellaneous Tasks
+
+- Update submodules [`(7722b8d)`](https://github.com/SunriseCommunity/Solar-System/commit/7722b8d48fccd33872e0ebd4920d2efc1bb7eb8a)
+
+
+
+
+
+### 🌅 Sunrise
+
+#### <!-- 0 -->🚀 Features
+
+- Add ability to change sunrise port with .env
+
+#### <!-- 13 -->💼 Other
+
+- Update README.md
+
+#### <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- Move comments in .env.example
+
+
+
 ## [0.0.18] - 2026-01-06
 
 
-[[c3c149a](https://github.com/SunriseCommunity/Solar-System/commit/c3c149ad66561c84fa04a5833ef454f695bf641c)...[a35fac1](https://github.com/SunriseCommunity/Solar-System/commit/a35fac1b46f003e305aed80fc418b8034300a5d2)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/c3c149ad66561c84fa04a5833ef454f695bf641c...a35fac1b46f003e305aed80fc418b8034300a5d2))
+[[c3c149a](https://github.com/SunriseCommunity/Solar-System/commit/c3c149ad66561c84fa04a5833ef454f695bf641c)...[400bf86](https://github.com/SunriseCommunity/Solar-System/commit/400bf865de038d924459a94b04e14d838f32cc7f)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/c3c149ad66561c84fa04a5833ef454f695bf641c...400bf865de038d924459a94b04e14d838f32cc7f))
 
 
 ### 🔀 Merge Commits
@@ -20,6 +56,9 @@
 
 
 ### ⚙️ Miscellaneous Tasks
+
+- Update CHANGELOG.md [`(400bf86)`](https://github.com/SunriseCommunity/Solar-System/commit/400bf865de038d924459a94b04e14d838f32cc7f)
+
 
 - Update CHANGELOG.md [`(7649619)`](https://github.com/SunriseCommunity/Solar-System/commit/76496195852e1392d598e7f29048091201a933e1)
 
