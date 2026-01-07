@@ -50,16 +50,6 @@ services:
         reservations:
           cpus: "0.2"
           memory: 256M
-    healthcheck:
-      test:
-        [
-          "CMD-SHELL",
-          "wget --spider -q http://localhost:3100/loki/api/v1/status/buildinfo || exit 1",
-        ]
-      interval: 10s
-      timeout: 5s
-      retries: 3
-      start_period: 10s
 
   cadvisor:
     image: gcr.io/cadvisor/cadvisor:v0.55.1
@@ -86,7 +76,7 @@ services:
           memory: 64M
     depends_on:
       tempo:
-        condition: service_healthy
+        condition: service_started
     healthcheck:
       test: ["CMD", "wget", "-O", "/dev/null", "http://localhost:8080/healthz"]
       interval: 30s
@@ -115,20 +105,13 @@ services:
         reservations:
           cpus: "0.2"
           memory: 256M
-    healthcheck:
-      test:
-        ["CMD", "wget", "--spider", "--quiet", "http://localhost:3200/metrics"]
-      interval: 10s
-      timeout: 5s
-      retries: 3
-      start_period: 15s
 
   grafana:
     image: grafana/grafana:12.3
     volumes:
       - "grafana_dev_data:/var/lib/grafana"
       - "./config/dev/grafana/datasources.yml:/etc/grafana/provisioning/datasources/datasources.yml"
-      - "./config/dev/grafana/dashboards:/etc/grafana/dashboards"
+      - "./config/dev/grafana/dashboards:/etc/grafana/provisioning/dashboards"
     user: "1000:1000"
     environment:
       - GF_SECURITY_ADMIN_PASSWORD=admin
@@ -142,9 +125,9 @@ services:
       victoria-metrics:
         condition: service_healthy
       tempo:
-        condition: service_healthy
+        condition: service_started
       loki:
-        condition: service_healthy
+        condition: service_started
       cadvisor:
         condition: service_healthy
     deploy:
