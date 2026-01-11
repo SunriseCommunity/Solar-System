@@ -7,15 +7,57 @@
 ![462894956-551fc5b1-2f73-4792-9284-2c2f3452e42b](https://github.com/user-attachments/assets/1dbddcfa-1b08-4a04-8f64-bfbe8c5dcc45)
 
 
+## [0.0.23] - 2026-01-11
+
+
+[[c13e303](https://github.com/SunriseCommunity/Solar-System/commit/c13e303f2434869628867c668428e1809b7e2290)...[c13e303](https://github.com/SunriseCommunity/Solar-System/commit/c13e303f2434869628867c668428e1809b7e2290)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/c13e303f2434869628867c668428e1809b7e2290...c13e303f2434869628867c668428e1809b7e2290))
+
+
+### ⚙️ Miscellaneous Tasks
+
+- Update submodules [`(c13e303)`](https://github.com/SunriseCommunity/Solar-System/commit/c13e303f2434869628867c668428e1809b7e2290)
+
+
+
+
+
+### 🌅 Sunrise
+
+#### <!-- 0 -->🚀 Features
+
+- Exclude websocket, telemetry, ping and health endpoints from tracing
+- Add api /version endpoint to show SOLAR_SYSTEM_VERSION env if exists
+
+#### <!-- 13 -->💼 Other
+
+- Merge pull request #98 from SunriseCommunity/feat/minor-enchancements
+
+Minor enhancements
+
+
+### 🌇 Sunset
+
+#### <!-- 0 -->🚀 Features
+
+- Print solar system link if is probided by server /version endpoint
+
+
+
 ## [0.0.22] - 2026-01-11
 
 
-[[7c6fa1d](https://github.com/SunriseCommunity/Solar-System/commit/7c6fa1d8dd2d1e21c22a1cdd41682661203661f7)...[7c6fa1d](https://github.com/SunriseCommunity/Solar-System/commit/7c6fa1d8dd2d1e21c22a1cdd41682661203661f7)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/7c6fa1d8dd2d1e21c22a1cdd41682661203661f7...7c6fa1d8dd2d1e21c22a1cdd41682661203661f7))
+[[7c6fa1d](https://github.com/SunriseCommunity/Solar-System/commit/7c6fa1d8dd2d1e21c22a1cdd41682661203661f7)...[20e2291](https://github.com/SunriseCommunity/Solar-System/commit/20e229112b0ff40c15316c8af98b882e561ec9de)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/7c6fa1d8dd2d1e21c22a1cdd41682661203661f7...20e229112b0ff40c15316c8af98b882e561ec9de))
 
 
 ### 🚀 Features
 
 - Write version in .version on release action [`(7c6fa1d)`](https://github.com/SunriseCommunity/Solar-System/commit/7c6fa1d8dd2d1e21c22a1cdd41682661203661f7)
+
+
+
+### ⚙️ Miscellaneous Tasks
+
+- Update CHANGELOG.md and .version [`(20e2291)`](https://github.com/SunriseCommunity/Solar-System/commit/20e229112b0ff40c15316c8af98b882e561ec9de)
 
 
 
