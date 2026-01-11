@@ -101,13 +101,17 @@ jobs:
         env:
           OUTPUT: CHANGELOG.md
 
-      - name: Commit changelog
+      - name: Update .version file
+        run: |
+          echo "SOLAR_SYSTEM_VERSION=${{ steps.version.outputs.new_version }}" > .version
+
+      - name: Commit changelog and version file
         uses: EndBug/add-and-commit@v9
         with:
-          add: "CHANGELOG.md"
+          add: "CHANGELOG.md .version"
           author_name: Git Cliff
           committer_name: Git Cliff
-          message: "chore: update CHANGELOG.md"
+          message: "chore: update CHANGELOG.md and .version"
           push: origin HEAD:main
 
       - name: Create and push tag (manual trigger only)

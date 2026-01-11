@@ -13,6 +13,8 @@ services:
     restart: unless-stopped
     networks:
       - container_network
+    env_file:
+      - .version
     environment:
       ASPNETCORE_ENVIRONMENT: Production
 
