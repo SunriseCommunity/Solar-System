@@ -106,11 +106,57 @@ Before you begin, ensure you have the following installed:
    
    This should start the server without any problems.
 
+5. **Verify the server is running:**
+   
+   You can check that all containers are running with:
+   
+   ```console
+   docker ps
+   ```
+   
+   You should see containers for Sunrise server, Sunset website, Observatory, Sunshine Discord bot, and supporting services (PostgreSQL, Redis, Grafana, etc.) all running.
+
 > [!NOTE]
 > For more in-depth documentation with detailed setup instructions, visit [https://docs.sunrize.uk/](https://docs.sunrize.uk/).
 
 > [!TIP]
 > Join our [Discord server](https://discord.gg/BjV7c9VRfn) if you have any questions or just want to chill with us!
+
+### Hosting to the Internet 🌐
+
+To make your server accessible on the internet:
+
+1. **Configure DNS records:**
+   
+   Make sure you have DNS records pointing the following subdomains to your server's IP address:
+   
+   - `*` (wildcard)
+   - `api`
+   - `osu`
+   - `a`
+   - `c`
+   - `assets`
+   - `cho`
+   - `c4`
+   - `b`
+   - `grafana`
+   
+   These subdomains are required for the server to function properly.
+
+2. **Start Caddy reverse proxy:**
+   
+   For simplicity, we use Caddy as a reverse proxy. By default, the `Caddyfile` is configured to host the website, server, and Grafana. You can uncomment additional configurations in the `Caddyfile` if needed.
+
+   Start Caddy by running:
+   
+   ```console
+   sudo caddy start --envfile .env
+   ```
+   
+   Your server should now be up and accessible!
+
+  > [!IMPORTANT]
+  > After starting Caddy, make sure to visit `grafana.*` subdomain and change the default password for the admin account!
 
 ## Contributing 💖
 
