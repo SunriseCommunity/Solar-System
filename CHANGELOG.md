@@ -7,13 +7,31 @@
 ![462894956-551fc5b1-2f73-4792-9284-2c2f3452e42b](https://github.com/user-attachments/assets/1dbddcfa-1b08-4a04-8f64-bfbe8c5dcc45)
 
 
+## [0.0.22] - 2026-01-11
+
+
+[[7c6fa1d](https://github.com/SunriseCommunity/Solar-System/commit/7c6fa1d8dd2d1e21c22a1cdd41682661203661f7)...[7c6fa1d](https://github.com/SunriseCommunity/Solar-System/commit/7c6fa1d8dd2d1e21c22a1cdd41682661203661f7)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/7c6fa1d8dd2d1e21c22a1cdd41682661203661f7...7c6fa1d8dd2d1e21c22a1cdd41682661203661f7))
+
+
+### 🚀 Features
+
+- Write version in .version on release action [`(7c6fa1d)`](https://github.com/SunriseCommunity/Solar-System/commit/7c6fa1d8dd2d1e21c22a1cdd41682661203661f7)
+
+
+
+
+
+
 ## [0.0.21] - 2026-01-11
 
 
-[[879c5b2](https://github.com/SunriseCommunity/Solar-System/commit/879c5b23bcae66cd49268d17184c077dfa2d5997)...[879c5b2](https://github.com/SunriseCommunity/Solar-System/commit/879c5b23bcae66cd49268d17184c077dfa2d5997)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/879c5b23bcae66cd49268d17184c077dfa2d5997...879c5b23bcae66cd49268d17184c077dfa2d5997))
+[[879c5b2](https://github.com/SunriseCommunity/Solar-System/commit/879c5b23bcae66cd49268d17184c077dfa2d5997)...[bc4f2dc](https://github.com/SunriseCommunity/Solar-System/commit/bc4f2dcf4eeaaad195170e3d4f2423263998d50b)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/879c5b23bcae66cd49268d17184c077dfa2d5997...bc4f2dcf4eeaaad195170e3d4f2423263998d50b))
 
 
 ### ⚙️ Miscellaneous Tasks
+
+- Update CHANGELOG.md [`(bc4f2dc)`](https://github.com/SunriseCommunity/Solar-System/commit/bc4f2dcf4eeaaad195170e3d4f2423263998d50b)
+
 
 - Update submodules [`(879c5b2)`](https://github.com/SunriseCommunity/Solar-System/commit/879c5b23bcae66cd49268d17184c077dfa2d5997)
 
