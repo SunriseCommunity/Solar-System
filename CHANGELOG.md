@@ -7,13 +7,74 @@
 ![462894956-551fc5b1-2f73-4792-9284-2c2f3452e42b](https://github.com/user-attachments/assets/1dbddcfa-1b08-4a04-8f64-bfbe8c5dcc45)
 
 
-## [0.0.20] - 2026-01-11
+## [0.0.21] - 2026-01-11
 
 
-[[7c8b8e9](https://github.com/SunriseCommunity/Solar-System/commit/7c8b8e9ec24f31db642c032dfe16e82bad45f85d)...[7c8b8e9](https://github.com/SunriseCommunity/Solar-System/commit/7c8b8e9ec24f31db642c032dfe16e82bad45f85d)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/7c8b8e9ec24f31db642c032dfe16e82bad45f85d...7c8b8e9ec24f31db642c032dfe16e82bad45f85d))
+[[879c5b2](https://github.com/SunriseCommunity/Solar-System/commit/879c5b23bcae66cd49268d17184c077dfa2d5997)...[879c5b2](https://github.com/SunriseCommunity/Solar-System/commit/879c5b23bcae66cd49268d17184c077dfa2d5997)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/879c5b23bcae66cd49268d17184c077dfa2d5997...879c5b23bcae66cd49268d17184c077dfa2d5997))
 
 
 ### ⚙️ Miscellaneous Tasks
+
+- Update submodules [`(879c5b2)`](https://github.com/SunriseCommunity/Solar-System/commit/879c5b23bcae66cd49268d17184c077dfa2d5997)
+
+
+
+
+
+### 🌅 Sunrise
+
+#### <!-- 0 -->🚀 Features
+
+- Add restrict/unrestrict test
+- Use LoadAsync to load user for stats if not included
+- Include user in user stats for performance calculations
+- Add FetchSuperUserAndEitherPrintSecretOrDemote
+- Add test TestReturnLogoutIfServerOnMaintenanceOnLoginRequestForPrivilege
+- Group SuperUser and System Commands by folders
+- Update ServerBot bit flag + Disallow edit server bot privileges
+- Replace Developer privilege to the SuperUser
+- Use highest privilege to silence user
+- Require SuperUser to bypass maintenance
+- Add SuperUser Privilege
+
+#### <!-- 1 -->🐛 Bug Fixes
+
+- Class import for tests
+- Db migration down
+- Set Configuration.OnMaintenance to false after test suite
+
+#### <!-- 11 -->🔀 Merge Commits
+
+- [chore] Merge Branch 'master' into feat/add-setup-master-account
+
+#### <!-- 13 -->💼 Other
+
+- Merge pull request #97 from SunriseCommunity/feat/add-setup-master-account
+- Merge pull request #96 from SunriseCommunity/feat/optimise-refresh-user-stats
+
+#### <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- Remove double assets subdomain from README.md
+
+
+### 🌇 Sunset
+
+#### <!-- 0 -->🚀 Features
+
+- Get PRIVILEGE_OPTIONS for admin panel dynamically + update api
+
+
+
+## [0.0.20] - 2026-01-11
+
+
+[[7c8b8e9](https://github.com/SunriseCommunity/Solar-System/commit/7c8b8e9ec24f31db642c032dfe16e82bad45f85d)...[2fc0c1d](https://github.com/SunriseCommunity/Solar-System/commit/2fc0c1d814cbe82135a38197938b7fb817698ec1)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/7c8b8e9ec24f31db642c032dfe16e82bad45f85d...2fc0c1d814cbe82135a38197938b7fb817698ec1))
+
+
+### ⚙️ Miscellaneous Tasks
+
+- Update CHANGELOG.md [`(2fc0c1d)`](https://github.com/SunriseCommunity/Solar-System/commit/2fc0c1d814cbe82135a38197938b7fb817698ec1)
+
 
 - Update submodules [`(7c8b8e9)`](https://github.com/SunriseCommunity/Solar-System/commit/7c8b8e9ec24f31db642c032dfe16e82bad45f85d)
 
