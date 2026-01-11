@@ -7,10 +7,80 @@
 ![462894956-551fc5b1-2f73-4792-9284-2c2f3452e42b](https://github.com/user-attachments/assets/1dbddcfa-1b08-4a04-8f64-bfbe8c5dcc45)
 
 
+## [0.0.20] - 2026-01-11
+
+
+[[7c8b8e9](https://github.com/SunriseCommunity/Solar-System/commit/7c8b8e9ec24f31db642c032dfe16e82bad45f85d)...[7c8b8e9](https://github.com/SunriseCommunity/Solar-System/commit/7c8b8e9ec24f31db642c032dfe16e82bad45f85d)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/7c8b8e9ec24f31db642c032dfe16e82bad45f85d...7c8b8e9ec24f31db642c032dfe16e82bad45f85d))
+
+
+### ⚙️ Miscellaneous Tasks
+
+- Update submodules [`(7c8b8e9)`](https://github.com/SunriseCommunity/Solar-System/commit/7c8b8e9ec24f31db642c032dfe16e82bad45f85d)
+
+
+
+
+
+### 🌅 Sunrise
+
+#### <!-- 0 -->🚀 Features
+
+- Add test to check if we remore non has table values from redis sorted set
+- Optimise SaveUsersStatsSnapshots
+- Add ability to get user location from cloudflare headers
+- Redact user passhash from query
+- Resolve reviewer comment + add try/catch for sending current players
+- Send ServerChatPmBlocked if user ignores non friend pms
+- Improve login method to request user only once
+- Get all current players ranks as a single redis request
+- Add UserStatsRanksServiceTests
+- Improve SortedSet performance by using hash set to get user rank instead of Scan
+- Add user related ranks tests
+- Add test
+- Intitial optimisations for user login
+- Add test case for login resolvment time
+- Add new tests
+
+#### <!-- 1 -->🐛 Bug Fixes
+
+- Bad recursion detection for get user ranks
+- Remove all pre hashset update for sorted set entries
+- Don't increment user ranks if in recursion
+- Dont run tests in parallel
+- Mock HttpClientService as singletone
+
+#### <!-- 11 -->🔀 Merge Commits
+
+- [chore] Merge Branch 'master' into feat/optimise-save-users-stats-snapshots
+
+#### <!-- 13 -->💼 Other
+
+- Merge pull request #95 from SunriseCommunity/feat/optimise-save-users-stats-snapshots
+- Fix parse of USE_CLOUDFLARE_HEADERS_FOR_GEOLOCATION
+- Merge pull request #94 from SunriseCommunity/feat/optimise-login-request
+
+#### <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- Log elapsed milliseconds for failed test
+
+
+### 🌇 Sunset
+
+#### <!-- 0 -->🚀 Features
+
+- I don't know how many times I updated UserStatsChart in this lifetime already
+- Update user stats chart to have domain data to min/max with leeway + fix filling the missing snapshot data
+
+#### <!-- 1 -->🐛 Bug Fixes
+
+- Show full mods icon in score page
+
+
+
 ## [0.0.19] - 2026-01-07
 
 
-[[8113ede](https://github.com/SunriseCommunity/Solar-System/commit/8113edeeff701c7bd66c2f6d06c2cf2533fd5a9a)...[7722b8d](https://github.com/SunriseCommunity/Solar-System/commit/7722b8d48fccd33872e0ebd4920d2efc1bb7eb8a)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/8113edeeff701c7bd66c2f6d06c2cf2533fd5a9a...7722b8d48fccd33872e0ebd4920d2efc1bb7eb8a))
+[[8113ede](https://github.com/SunriseCommunity/Solar-System/commit/8113edeeff701c7bd66c2f6d06c2cf2533fd5a9a)...[8b6f236](https://github.com/SunriseCommunity/Solar-System/commit/8b6f2361c258ace0fb81a78879c6587194858efe)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/8113edeeff701c7bd66c2f6d06c2cf2533fd5a9a...8b6f2361c258ace0fb81a78879c6587194858efe))
 
 
 ### 🐛 Bug Fixes
@@ -20,6 +90,9 @@
 
 
 ### ⚙️ Miscellaneous Tasks
+
+- Update CHANGELOG.md [`(8b6f236)`](https://github.com/SunriseCommunity/Solar-System/commit/8b6f2361c258ace0fb81a78879c6587194858efe)
+
 
 - Update submodules [`(7722b8d)`](https://github.com/SunriseCommunity/Solar-System/commit/7722b8d48fccd33872e0ebd4920d2efc1bb7eb8a)
 
