@@ -7,13 +7,40 @@
 ![462894956-551fc5b1-2f73-4792-9284-2c2f3452e42b](https://github.com/user-attachments/assets/1dbddcfa-1b08-4a04-8f64-bfbe8c5dcc45)
 
 
-## [0.0.23] - 2026-01-11
+## [0.0.24] - 2026-01-11
 
 
-[[c13e303](https://github.com/SunriseCommunity/Solar-System/commit/c13e303f2434869628867c668428e1809b7e2290)...[c13e303](https://github.com/SunriseCommunity/Solar-System/commit/c13e303f2434869628867c668428e1809b7e2290)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/c13e303f2434869628867c668428e1809b7e2290...c13e303f2434869628867c668428e1809b7e2290))
+[[24a6c0a](https://github.com/SunriseCommunity/Solar-System/commit/24a6c0ad24294f3712429cf5f8e98bcacbdeab00)...[24a6c0a](https://github.com/SunriseCommunity/Solar-System/commit/24a6c0ad24294f3712429cf5f8e98bcacbdeab00)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/24a6c0ad24294f3712429cf5f8e98bcacbdeab00...24a6c0ad24294f3712429cf5f8e98bcacbdeab00))
 
 
 ### ⚙️ Miscellaneous Tasks
+
+- Update submodules [`(24a6c0a)`](https://github.com/SunriseCommunity/Solar-System/commit/24a6c0ad24294f3712429cf5f8e98bcacbdeab00)
+
+
+
+
+
+### 🌇 Sunset
+
+#### <!-- 0 -->🚀 Features
+
+- Add space in server title to suppor space under letters
+- Change uwuted osu!sunrsie from the translations to the {appName}
+- Remove hardcoded osu!sunrise from translations and move server naming setup in messages/config.json
+
+
+
+## [0.0.23] - 2026-01-11
+
+
+[[c13e303](https://github.com/SunriseCommunity/Solar-System/commit/c13e303f2434869628867c668428e1809b7e2290)...[22ce1c3](https://github.com/SunriseCommunity/Solar-System/commit/22ce1c3f9adced91befe951f7b82c19415ff0719)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/c13e303f2434869628867c668428e1809b7e2290...22ce1c3f9adced91befe951f7b82c19415ff0719))
+
+
+### ⚙️ Miscellaneous Tasks
+
+- Update CHANGELOG.md and .version [`(22ce1c3)`](https://github.com/SunriseCommunity/Solar-System/commit/22ce1c3f9adced91befe951f7b82c19415ff0719)
+
 
 - Update submodules [`(c13e303)`](https://github.com/SunriseCommunity/Solar-System/commit/c13e303f2434869628867c668428e1809b7e2290)
 
