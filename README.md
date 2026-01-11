@@ -15,22 +15,20 @@ Solar System is a **monorepo** containing all the essential components required 
 
 ## Preview 🖼️
 
-TODO: Add preview image with frontend + osu client + discord bot + grafana
-
-![New Project (3)](https://github.com/user-attachments/assets/5cba5334-3455-4a56-aa9a-8930bb16abfd)
+![preview](./.github/preview.jpg)
 
 ## Components 🧩
 
-- [**🌅 Sunrise**](https://github.com/SunriseCommunity/Sunrise)  
+- [x] [**🌅 Sunrise (Server Core)**](https://github.com/SunriseCommunity/Sunrise)  
   The main server backend, handling core game logic and API for osu! servers.
 
-- [**🌇 Sunset**](https://github.com/SunriseCommunity/Sunset)  
+- [x] [**🌇 Sunset (Frontend)**](https://github.com/SunriseCommunity/Sunset)  
   The frontend web interface of Sunrise. Allows to browse profiles, leaderboards, multiplayer lobbies, and manage users/beatmaps using admin panel.
 
-- [**🔭 Observatory**](https://github.com/SunriseCommunity/Observatory)  
+- [x]  [**🔭 Observatory (Beatmap Manager)**](https://github.com/SunriseCommunity/Observatory)  
   Powerful "on demand" beatmap manager which uses osu! API and popular beatmap mirrors to prioritize speed and efficiency. Used by Sunrise to fetch beatmaps and calculate performance points.
 
-- [**🌻 Sunshine**](https://github.com/SunriseCommunity/Sunshine)  
+- [x] [**🌻 Sunshine (Discord Bot)**](https://github.com/SunriseCommunity/Sunshine)  
   A Discord bot that integrates directly with your Sunrise server, delivering community features and server utilities directly into your Discord server.
 
 ## Installation 📩
