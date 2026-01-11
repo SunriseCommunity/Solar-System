@@ -1,7 +1,7 @@
 # 🚀 Solar System - The Sunrise server orchestrator
 
 <p align="center">
-  <img src="https://github.com/SunriseCommunity/Solar-System/blob/main/.github/workflows/default.png?raw=true" alt="Artwork made by kita (kitairoha). We don't own the rights to this image.">
+  <img src="https://github.com/SunriseCommunity/Solar-System/blob/main/.github/default.png?raw=true" alt="Artwork made by kita (kitairoha). We don't own the rights to this image.">
 </p>
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
