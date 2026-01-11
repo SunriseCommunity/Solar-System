@@ -10,10 +10,13 @@
 ## [0.0.25] - 2026-01-11
 
 
-[[ab61114](https://github.com/SunriseCommunity/Solar-System/commit/ab61114fd41830fddae8f1a48f017c1a706b86b3)...[ab61114](https://github.com/SunriseCommunity/Solar-System/commit/ab61114fd41830fddae8f1a48f017c1a706b86b3)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/ab61114fd41830fddae8f1a48f017c1a706b86b3...ab61114fd41830fddae8f1a48f017c1a706b86b3))
+[[ab61114](https://github.com/SunriseCommunity/Solar-System/commit/ab61114fd41830fddae8f1a48f017c1a706b86b3)...[3187581](https://github.com/SunriseCommunity/Solar-System/commit/3187581dc915e75a903bc30a1b51a8b800448bb7)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/ab61114fd41830fddae8f1a48f017c1a706b86b3...3187581dc915e75a903bc30a1b51a8b800448bb7))
 
 
 ### ⚙️ Miscellaneous Tasks
+
+- Update CHANGELOG.md and .version [`(3187581)`](https://github.com/SunriseCommunity/Solar-System/commit/3187581dc915e75a903bc30a1b51a8b800448bb7)
+
 
 - Update submodules [`(ab61114)`](https://github.com/SunriseCommunity/Solar-System/commit/ab61114fd41830fddae8f1a48f017c1a706b86b3)
 
