@@ -13,6 +13,27 @@ print_success() { echo -e "${GREEN}✓${NC} $1"; }
 print_warning() { echo -e "${YELLOW}⚠${NC} $1"; }
 print_error() { echo -e "${RED}✗${NC} $1"; }
 
+get_version_parts() {
+    local version="${1#v}"
+    IFS='.' read -r -a parts <<< "$version"
+    echo "${parts[0]} ${parts[1]} ${parts[2]}"
+}
+
+is_version_newer() {
+    local v1="${1#v}"
+    local v2="${2#v}"
+    IFS='.' read -r -a v1_parts <<< "$v1"
+    IFS='.' read -r -a v2_parts <<< "$v2"
+    
+    for i in 0 1 2; do
+        local num1=${v1_parts[$i]:-0}
+        local num2=${v2_parts[$i]:-0}
+        [ "$num1" -lt "$num2" ] && return 0
+        [ "$num1" -gt "$num2" ] && return 1
+    done
+    return 1
+}
+
 prompt_yes_no() {
     local prompt="$1"
     while true; do
@@ -23,6 +44,47 @@ prompt_yes_no() {
             *) print_error "Please answer yes or no" ;;
         esac
     done
+}
+
+check_version() {
+    set +e 
+    
+    if ! command -v git &> /dev/null; then
+        set -e
+        return 0
+    fi
+    
+    if [ ! -d ".git" ]; then
+        set -e
+        return 0
+    fi
+    
+    print_info "Checking for updates..."
+    
+    git fetch --tags --quiet 2>/dev/null
+    
+    CURRENT_TAG=$(git describe --tags --exact-match HEAD 2>/dev/null || git describe --tags --abbrev=0 HEAD 2>/dev/null || echo "")
+    
+    ALL_TAGS=($(git tag -l "v*" 2>/dev/null | sort -V 2>/dev/null || true))
+    
+    if [ ${#ALL_TAGS[@]} -eq 0 ]; then
+        set -e
+        return 0
+    fi
+    
+    LATEST_TAG="${ALL_TAGS[-1]}"
+    
+    if [ -z "$CURRENT_TAG" ]; then
+        print_warning "New version available: (no version) -> ${LATEST_TAG#v}"
+        set -e
+        return 0
+    fi
+    
+    if is_version_newer "$CURRENT_TAG" "$LATEST_TAG"; then
+        print_warning "New version available: ${CURRENT_TAG#v} -> ${LATEST_TAG#v}"
+    fi
+    
+    set -e
 }
 
 MISSING_FILES=()
@@ -101,7 +163,9 @@ if [ ${#MISSING_FILES[@]} -gt 0 ]; then
     exit 1
 fi
 
+check_version
 echo ""
+
 print_info "Do you want to build the setup?"
 print_info "Note: You should run this if you updated .env, config, or any other configuration files."
 echo ""
