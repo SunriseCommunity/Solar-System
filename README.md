@@ -45,19 +45,69 @@ Before you begin, ensure you have the following installed:
 
 1. **Clone the repository with submodules:**
 
-   ```bash
+   ```console
    git clone --recursive https://github.com/SunriseCommunity/Solar-System.git
    cd Solar-System
    ```
 
    Or if you've already cloned without submodules:
 
-   ```bash
+   ```console
    git submodule update --init --recursive --remote
    ```
 
-2. **Follow the installation guide:**
-   Visit the [documentation](https://docs.sunrize.uk/) and follow the instructions.
+2. **Set up configuration files:**
+   
+   Create copies of the example configuration files:
+   
+   ```console
+   cp .env.example .env
+   cp Sunrise.Config.Production.json.example Sunrise.Config.Production.json
+   ```
+   
+   Fill in the required parameters in both files.
+   
+  > [!IMPORTANT]
+  > Make sure to edit `WEB_DOMAIN=` in `.env` to your actual domain that you plan to host on.
+   
+  > [!TIP]
+  > You can customize the configuration files to match your requirements. For example, in `Sunrise.Config.Production.json`, you can change the bot username:
+  > ```json
+  > "Bot": {
+  >   "Username": "Sunshine Bot",
+  >   ...
+  > }
+  > ```
+
+3. **Generate API keys:**
+   
+   Generate the token secret for Sunrise API requests:
+   
+   ```console
+   chmod +x lib/scripts/generate-api-sunrise-key.sh
+   ./lib/scripts/generate-api-sunrise-key.sh
+   ```
+   
+   This will generate a token secret for the Sunrise API requests.
+   
+   Generate the Observatory API key (allows Sunrise to request Observatory without internal rate limits):
+   
+   ```console
+   chmod +x lib/scripts/generate-observatory-api-key.sh
+   ./lib/scripts/generate-observatory-api-key.sh
+   ```
+
+4. **Start the server:**
+   
+   ```console
+   chmod +x ./start.sh
+   ./start.sh
+   ```
+   
+   This should start the server without any problems.
+
+> [!NOTE]
+> For more in-depth documentation with detailed setup instructions, visit [https://docs.sunrize.uk/](https://docs.sunrize.uk/).
 
 > [!TIP]
 > Join our [Discord server](https://discord.gg/BjV7c9VRfn) if you have any questions or just want to chill with us!
