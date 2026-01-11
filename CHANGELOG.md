@@ -7,13 +7,38 @@
 ![462894956-551fc5b1-2f73-4792-9284-2c2f3452e42b](https://github.com/user-attachments/assets/1dbddcfa-1b08-4a04-8f64-bfbe8c5dcc45)
 
 
-## [0.0.24] - 2026-01-11
+## [0.0.25] - 2026-01-11
 
 
-[[24a6c0a](https://github.com/SunriseCommunity/Solar-System/commit/24a6c0ad24294f3712429cf5f8e98bcacbdeab00)...[24a6c0a](https://github.com/SunriseCommunity/Solar-System/commit/24a6c0ad24294f3712429cf5f8e98bcacbdeab00)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/24a6c0ad24294f3712429cf5f8e98bcacbdeab00...24a6c0ad24294f3712429cf5f8e98bcacbdeab00))
+[[ab61114](https://github.com/SunriseCommunity/Solar-System/commit/ab61114fd41830fddae8f1a48f017c1a706b86b3)...[ab61114](https://github.com/SunriseCommunity/Solar-System/commit/ab61114fd41830fddae8f1a48f017c1a706b86b3)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/ab61114fd41830fddae8f1a48f017c1a706b86b3...ab61114fd41830fddae8f1a48f017c1a706b86b3))
 
 
 ### ⚙️ Miscellaneous Tasks
+
+- Update submodules [`(ab61114)`](https://github.com/SunriseCommunity/Solar-System/commit/ab61114fd41830fddae8f1a48f017c1a706b86b3)
+
+
+
+
+
+### 🌇 Sunset
+
+#### <!-- 0 -->🚀 Features
+
+- Split styels to style.css and move messages/config.hjson to i18n.config.json
+
+
+
+## [0.0.24] - 2026-01-11
+
+
+[[24a6c0a](https://github.com/SunriseCommunity/Solar-System/commit/24a6c0ad24294f3712429cf5f8e98bcacbdeab00)...[57a0ad0](https://github.com/SunriseCommunity/Solar-System/commit/57a0ad01abdd7da24955873261915775ba43a691)]([compare](https://github.com/SunriseCommunity/Solar-System/compare/24a6c0ad24294f3712429cf5f8e98bcacbdeab00...57a0ad01abdd7da24955873261915775ba43a691))
+
+
+### ⚙️ Miscellaneous Tasks
+
+- Update CHANGELOG.md and .version [`(57a0ad0)`](https://github.com/SunriseCommunity/Solar-System/commit/57a0ad01abdd7da24955873261915775ba43a691)
+
 
 - Update submodules [`(24a6c0a)`](https://github.com/SunriseCommunity/Solar-System/commit/24a6c0ad24294f3712429cf5f8e98bcacbdeab00)
 
