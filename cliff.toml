@@ -34,7 +34,7 @@ body = """
 {%- set pr_number = pr_part | split(pat=" ") | first -%}
 {%- set pr_branch = pr_part | split(pat=" from ") | last | default(value="") -%}
 {%- set pr_title = pr_branch | split(pat="/") | last | replace(from="-", to=" ") | replace(from="_", to=" ") | title -%}
-- {{ pr_title }}{% if commit.github.username %} by @{{ commit.github.username }}{% endif %} in [#{{ pr_number }}](https://github.com/SunriseCommunity/Solar-System/pull/{{ pr_number }})
+- {{ pr_title }}{% if commit.author.name and not commit.author.name is containing(" ") %} by @{{ commit.author.name }}{% endif %} in [#{{ pr_number }}](https://github.com/SunriseCommunity/Solar-System/pull/{{ pr_number }})
 {% endif -%}
 {%- endfor %}
 {% set_global commit_count = 0 %}
