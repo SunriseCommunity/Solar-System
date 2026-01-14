@@ -11,40 +11,101 @@ header = """
 <!-- markdownlint-disable -->
 <!-- eslint-disable markdown/no-missing-label-refs -->
 # Changelog\n
-### All notable changes to this project will be documented in this file.\n\n![462894956-551fc5b1-2f73-4792-9284-2c2f3452e42b](https://github.com/user-attachments/assets/1dbddcfa-1b08-4a04-8f64-bfbe8c5dcc45)\n\n
+### All notable changes to this project will be documented in this file.\n\n![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)\n\n
 """
 # template for the changelog body
 # https://keats.github.io/tera/docs/#introduction
 body = """
 {% if version %}\
-  ## [{{ version | trim_start_matches(pat="v") }}] - {{ timestamp | date(format="%Y-%m-%d") }}
+## [{{ version | trim_start_matches(pat="v") }}] - {{ timestamp | date(format="%Y-%m-%d") }}
 {% else %}\
-  ## [Unreleased]
+## [Unreleased]
 {% endif %}
-{% if commit_range and commit_range.from and commit_range.to %}
-  [[{{ commit_range.from | truncate(length=7, end="") }}](https://github.com/SunriseCommunity/Solar-System/commit/{{ commit_range.from }})...[{{ commit_range.to | truncate(length=7, end="") }}](https://github.com/SunriseCommunity/Solar-System/commit/{{ commit_range.to }})]([compare](https://github.com/SunriseCommunity/Solar-System/compare/{{ commit_range.from }}...{{ commit_range.to }}))
-{% endif %}
-{% for group, commits in commits | group_by(attribute="group") %}
-  ### {{ group | striptags | trim | upper_first }}
-  {% for commit in commits %}
-    - {% if commit.scope %}*({{ commit.scope }})* {% endif %}\
-      {% if commit.breaking %}[**breaking**] {% endif %}\
-      {{ commit.message | upper_first | replace(from="\n", to="\n    ") }} [`({{ commit.id | truncate(length=7, end="") }})`](https://github.com/SunriseCommunity/Solar-System/commit/{{ commit.id }})
 
-  {% endfor %}
-{% endfor %}\n
+{% set_global shown_pr_header = false %}
+{% for commit in commits -%}
+{%- set commit_first_line = commit.message | split(pat="\n") | first | trim -%}
+{%- if commit_first_line is matching("^Merge pull request #[0-9]+") -%}
+{%- if not shown_pr_header %}
+### 🔀 Pull Requests
+{% set_global shown_pr_header = true %}
+{% endif -%}
+{%- set pr_part = commit_first_line | replace(from="Merge pull request #", to="") -%}
+{%- set pr_number = pr_part | split(pat=" ") | first -%}
+{%- set pr_branch = pr_part | split(pat=" from ") | last | default(value="") -%}
+{%- set pr_title = pr_branch | split(pat="/") | last | replace(from="-", to=" ") | replace(from="_", to=" ") | title -%}
+- {{ pr_title }}{% if commit.github.username %} by @{{ commit.github.username }}{% endif %} in [#{{ pr_number }}](https://github.com/SunriseCommunity/Solar-System/pull/{{ pr_number }})
+{% endif -%}
+{%- endfor %}
+{% set_global commit_count = 0 %}
+{% for commit in commits -%}
+{%- set commit_first_line = commit.message | split(pat="\n") | first | trim -%}
+{%- if not commit_first_line is matching("^Merge pull request #[0-9]+") -%}
+{% set_global commit_count = commit_count + 1 %}
+{%- endif -%}
+{%- endfor %}
+{% if commit_count > 0 %}
+<details>
+<summary>📝 {{ commit_count }} commit(s)</summary>
+
+{% for group, grouped_commits in commits | group_by(attribute="group") %}
+#### {{ group | striptags | trim | upper_first }}
+{% for commit in grouped_commits %}
+{%- set commit_first_line = commit.message | split(pat="\n") | first | trim %}
+{%- if not commit_first_line is matching("^Merge pull request #[0-9]+") %}
+- {{ commit_first_line }} [`{{ commit.id | truncate(length=7, end="") }}`](https://github.com/SunriseCommunity/Solar-System/commit/{{ commit.id }})
+{% endif -%}
+{% endfor %}
+{% endfor %}
+</details>
+{% endif %}
+
 {% for submodule_path, commits in submodule_commits %}
-    ### {{ submodule_path | upper_first }}
-    {% for group, commits in commits | group_by(attribute="group") %}
-        #### {{ group | upper_first }}
-        {% for commit in commits %}
-            - {{ commit.message | upper_first }}\
-        {% endfor %}
-    {% endfor %}
-{% endfor %}\n
-{% if commit.footer %}
-  <!-- Use the footer directly -->
-  {{ commit.footer | trim | indent(width=8) }}
+### {{ submodule_path | upper_first }}
+{% set_global shown_pr_header = false %}
+{% for commit in commits -%}
+{%- set commit_first_line = commit.message | split(pat="\n") | first | trim -%}
+{%- if commit_first_line is matching("^Merge pull request #[0-9]+") -%}
+{%- if not shown_pr_header %}
+#### 🔀 Pull Requests
+{% set_global shown_pr_header = true %}
+{% endif -%}
+{%- set pr_part = commit_first_line | replace(from="Merge pull request #", to="") -%}
+{%- set pr_number = pr_part | split(pat=" ") | first -%}
+{%- set pr_branch = pr_part | split(pat=" from ") | last | default(value="") -%}
+{%- set pr_title = pr_branch | split(pat="/") | last | replace(from="-", to=" ") | replace(from="_", to=" ") | title -%}
+- {{ pr_title }}{% if commit.author.name and not commit.author.name is containing(" ") %} by @{{ commit.author.name }}{% endif %} in [#{{ pr_number }}](https://github.com/SunriseCommunity/{{ submodule_path }}/pull/{{ pr_number }})
+{% endif -%}
+{%- endfor %}
+{% set_global commit_count = 0 %}
+{% for commit in commits -%}
+{%- set commit_first_line = commit.message | split(pat="\n") | first | trim -%}
+{%- if not commit_first_line is matching("^Merge pull request #[0-9]+") -%}
+{% set_global commit_count = commit_count + 1 %}
+{%- endif -%}
+{%- endfor %}
+{% if commit_count > 0 %}
+<details>
+<summary>📝 {{ commit_count }} commit(s)</summary>
+
+{% for group, grouped_commits in commits | group_by(attribute="group") %}
+##### {{ group | striptags | trim | upper_first }}
+{% for commit in grouped_commits %}
+{%- set commit_first_line = commit.message | split(pat="\n") | first | trim %}
+- {{ commit_first_line }} [`{{ commit.id | truncate(length=7, end="") }}`](https://github.com/SunriseCommunity/{{ submodule_path }}/commit/{{ commit.id }})
+{% endfor %}
+{% endfor %}
+</details>
+{% endif %}
+{% endfor %}
+{% if version %}
+{% if previous.version %}
+**Full Changelog**: [`{{ previous.version }}...{{ version }}`](https://github.com/SunriseCommunity/Solar-System/compare/{{ previous.version }}...{{ version }})
+{% endif %}
+{% else -%}
+{% if previous.version %}
+**Full Changelog**: [`{{ previous.version }}...HEAD`](https://github.com/SunriseCommunity/Solar-System/compare/{{ previous.version }}...HEAD)
+{% endif %}
 {% endif %}
 """
 # template for the changelog footer
