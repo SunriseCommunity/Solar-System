@@ -17,11 +17,24 @@ header = """
 # https://keats.github.io/tera/docs/#introduction
 body = """
 {% if version %}\
-## [{{ version | trim_start_matches(pat="v") }}] - {{ timestamp | date(format="%Y-%m-%d") }}
+## 🏷️ [{{ version | trim_start_matches(pat="v") }}](https://github.com/SunriseCommunity/Solar-System/releases/tag/{{ version }}) - {{ timestamp | date(format="%Y-%m-%d") }}
 {% else %}\
 ## [Unreleased]
 {% endif %}
 
+{% set_global has_main_prs = false %}
+{% set_global main_commit_count = 0 %}
+{% for commit in commits -%}
+{%- set commit_first_line = commit.message | split(pat="\n") | first | trim -%}
+{%- if commit_first_line is matching("^Merge pull request #[0-9]+") -%}
+{% set_global has_main_prs = true %}
+{%- endif -%}
+{%- if not commit_first_line is matching("^Merge pull request #[0-9]+") -%}
+{% set_global main_commit_count = main_commit_count + 1 %}
+{%- endif -%}
+{%- endfor %}
+{% if has_main_prs or main_commit_count > 0 %}
+### 🚀 Solar System
 {% set_global shown_pr_header = false %}
 {% for commit in commits -%}
 {%- set commit_first_line = commit.message | split(pat="\n") | first | trim -%}
@@ -37,16 +50,9 @@ body = """
 - {{ pr_title }}{% if commit.author.name and not commit.author.name is containing(" ") %} by @{{ commit.author.name }}{% endif %} in [#{{ pr_number }}](https://github.com/SunriseCommunity/Solar-System/pull/{{ pr_number }})
 {% endif -%}
 {%- endfor %}
-{% set_global commit_count = 0 %}
-{% for commit in commits -%}
-{%- set commit_first_line = commit.message | split(pat="\n") | first | trim -%}
-{%- if not commit_first_line is matching("^Merge pull request #[0-9]+") -%}
-{% set_global commit_count = commit_count + 1 %}
-{%- endif -%}
-{%- endfor %}
-{% if commit_count > 0 %}
+{% if main_commit_count > 0 %}
 <details>
-<summary>📝 {{ commit_count }} commit(s)</summary>
+<summary>📝 {{ main_commit_count }} commit(s)</summary>
 
 {% for group, grouped_commits in commits | group_by(attribute="group") %}
 #### {{ group | striptags | trim | upper_first }}
@@ -58,6 +64,7 @@ body = """
 {% endfor %}
 {% endfor %}
 </details>
+{% endif %}
 {% endif %}
 
 {% for submodule_path, commits in submodule_commits %}
