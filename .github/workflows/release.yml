@@ -100,6 +100,7 @@ jobs:
           args: --verbose --tag ${{ steps.version.outputs.new_version }}
         env:
           OUTPUT: CHANGELOG.md
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Update .version file
         run: |
@@ -123,6 +124,8 @@ jobs:
           git push origin "${{ steps.version.outputs.new_version }}"
 
       - name: Generate release notes and create release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           TAG_NAME="${{ steps.version.outputs.new_version }}"
           NOTES=$(git cliff --latest -c cliff.toml)
