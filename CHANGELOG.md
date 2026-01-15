@@ -7,6 +7,35 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
+## 🏷️ [0.0.29](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.0.29) - 2026-01-15
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+#### 🔀 Merge Commits
+
+- [chore] Merge Branch 'main' of https://github.com/SunriseCommunity/Solar-System [`83e5635`](https://github.com/SunriseCommunity/Solar-System/commit/83e5635408225cebc98eb12bf79c2159819ead9b)
+
+
+</details>
+
+
+
+
+
+
+**Full Changelog**: [`v0.0.28...v0.0.29`](https://github.com/SunriseCommunity/Solar-System/compare/v0.0.28...v0.0.29)
+
 ## 🏷️ [0.0.28](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.0.28) - 2026-01-14
 
 
@@ -19,7 +48,7 @@
 
 
 <details>
-<summary>📝 2 commit(s)</summary>
+<summary>📝 4 commit(s)</summary>
 
 
 #### 🔀 Merge Commits
@@ -28,6 +57,10 @@
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`d72d74a`](https://github.com/SunriseCommunity/Solar-System/commit/d72d74a060b98c565e3e672b5a48e6197be8b304)
+
+- Add new sunrsie env variables in docker compose and .env.example [`72e7c8e`](https://github.com/SunriseCommunity/Solar-System/commit/72e7c8ef73f459a66a08dad93b0084f757a7b05b)
 
 - Update cliff.toml [`d2c47b6`](https://github.com/SunriseCommunity/Solar-System/commit/d2c47b6c4d4b2970d69a0e7169ab5eb956b618d4)
 
