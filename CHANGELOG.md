@@ -7,16 +7,53 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
-## [0.0.27] - 2026-01-14
+## 🏷️ [0.0.28](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.0.28) - 2026-01-14
 
 
 
 
+
+
+### 🚀 Solar System
 
 
 
 <details>
-<summary>📝 12 commit(s)</summary>
+<summary>📝 2 commit(s)</summary>
+
+
+#### 🔀 Merge Commits
+
+- [chore] Merge Branch 'main' of https://github.com/SunriseCommunity/Solar-System [`25482a1`](https://github.com/SunriseCommunity/Solar-System/commit/25482a1e188c80703f54d0673405abe5cf93ade4)
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- Update cliff.toml [`d2c47b6`](https://github.com/SunriseCommunity/Solar-System/commit/d2c47b6c4d4b2970d69a0e7169ab5eb956b618d4)
+
+
+</details>
+
+
+
+
+
+
+**Full Changelog**: [`v0.0.27...v0.0.28`](https://github.com/SunriseCommunity/Solar-System/compare/v0.0.27...v0.0.28)
+
+## 🏷️ [0.0.27](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.0.27) - 2026-01-14
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 14 commit(s)</summary>
 
 
 #### 🚀 Features
@@ -40,6 +77,10 @@
 
 #### ⚙️ Miscellaneous Tasks
 
+- update CHANGELOG.md and .version [`bb9c6c6`](https://github.com/SunriseCommunity/Solar-System/commit/bb9c6c64eb5fb266f9282e4fe77dda7ed50be575)
+
+- Update changelog_prev.png [`b9b81be`](https://github.com/SunriseCommunity/Solar-System/commit/b9b81be04c5fd82b55b277affc2b769192220e6e)
+
 - Update cliff.toml [`9e23b02`](https://github.com/SunriseCommunity/Solar-System/commit/9e23b024475949903f60d211a1eb130edc65bfbd)
 
 - update submodules [`655d60c`](https://github.com/SunriseCommunity/Solar-System/commit/655d60ca62bf6246a012094728a735fa41fb7882)
@@ -56,6 +97,7 @@
 
 
 </details>
+
 
 
 
@@ -117,11 +159,14 @@
 
 **Full Changelog**: [`v0.0.26...v0.0.27`](https://github.com/SunriseCommunity/Solar-System/compare/v0.0.26...v0.0.27)
 
-## [0.0.26] - 2026-01-11
+## 🏷️ [0.0.26](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.0.26) - 2026-01-11
 
 
 
 
+
+
+### 🚀 Solar System
 
 
 
@@ -153,13 +198,17 @@
 
 
 
+
 **Full Changelog**: [`v0.0.25...v0.0.26`](https://github.com/SunriseCommunity/Solar-System/compare/v0.0.25...v0.0.26)
 
-## [0.0.25] - 2026-01-11
+## 🏷️ [0.0.25](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.0.25) - 2026-01-11
 
 
 
 
+
+
+### 🚀 Solar System
 
 
 
@@ -175,6 +224,7 @@
 
 
 </details>
+
 
 
 
@@ -200,11 +250,14 @@
 
 **Full Changelog**: [`v0.0.24...v0.0.25`](https://github.com/SunriseCommunity/Solar-System/compare/v0.0.24...v0.0.25)
 
-## [0.0.24] - 2026-01-11
+## 🏷️ [0.0.24](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.0.24) - 2026-01-11
 
 
 
 
+
+
+### 🚀 Solar System
 
 
 
@@ -220,6 +273,7 @@
 
 
 </details>
+
 
 
 
@@ -249,11 +303,14 @@
 
 **Full Changelog**: [`v0.0.23...v0.0.24`](https://github.com/SunriseCommunity/Solar-System/compare/v0.0.23...v0.0.24)
 
-## [0.0.23] - 2026-01-11
+## 🏷️ [0.0.23](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.0.23) - 2026-01-11
 
 
 
 
+
+
+### 🚀 Solar System
 
 
 
@@ -269,6 +326,7 @@
 
 
 </details>
+
 
 
 
@@ -323,11 +381,14 @@
 
 **Full Changelog**: [`v0.0.22...v0.0.23`](https://github.com/SunriseCommunity/Solar-System/compare/v0.0.22...v0.0.23)
 
-## [0.0.22] - 2026-01-11
+## 🏷️ [0.0.22](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.0.22) - 2026-01-11
 
 
 
 
+
+
+### 🚀 Solar System
 
 
 
@@ -351,13 +412,17 @@
 
 
 
+
 **Full Changelog**: [`v0.0.21...v0.0.22`](https://github.com/SunriseCommunity/Solar-System/compare/v0.0.21...v0.0.22)
 
-## [0.0.21] - 2026-01-11
+## 🏷️ [0.0.21](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.0.21) - 2026-01-11
 
 
 
 
+
+
+### 🚀 Solar System
 
 
 
@@ -373,6 +438,7 @@
 
 
 </details>
+
 
 
 
@@ -467,11 +533,14 @@
 
 **Full Changelog**: [`v0.0.20...v0.0.21`](https://github.com/SunriseCommunity/Solar-System/compare/v0.0.20...v0.0.21)
 
-## [0.0.20] - 2026-01-11
+## 🏷️ [0.0.20](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.0.20) - 2026-01-11
 
 
 
 
+
+
+### 🚀 Solar System
 
 
 
@@ -487,6 +556,7 @@
 
 
 </details>
+
 
 
 
@@ -602,11 +672,14 @@
 
 **Full Changelog**: [`v0.0.19...v0.0.20`](https://github.com/SunriseCommunity/Solar-System/compare/v0.0.19...v0.0.20)
 
-## [0.0.19] - 2026-01-07
+## 🏷️ [0.0.19](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.0.19) - 2026-01-07
 
 
 
 
+
+
+### 🚀 Solar System
 
 
 
@@ -627,6 +700,7 @@
 
 
 </details>
+
 
 
 
@@ -662,11 +736,14 @@
 
 **Full Changelog**: [`v0.0.18...v0.0.19`](https://github.com/SunriseCommunity/Solar-System/compare/v0.0.18...v0.0.19)
 
-## [0.0.18] - 2026-01-06
+## 🏷️ [0.0.18](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.0.18) - 2026-01-06
 
 
 
 
+
+
+### 🚀 Solar System
 
 
 
@@ -694,13 +771,17 @@
 
 
 
+
 **Full Changelog**: [`v0.0.17...v0.0.18`](https://github.com/SunriseCommunity/Solar-System/compare/v0.0.17...v0.0.18)
 
-## [0.0.17] - 2026-01-06
+## 🏷️ [0.0.17](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.0.17) - 2026-01-06
 
 
 
 
+
+
+### 🚀 Solar System
 
 
 
@@ -726,13 +807,17 @@
 
 
 
+
 **Full Changelog**: [`v0.0.16...v0.0.17`](https://github.com/SunriseCommunity/Solar-System/compare/v0.0.16...v0.0.17)
 
-## [0.0.16] - 2026-01-06
+## 🏷️ [0.0.16](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.0.16) - 2026-01-06
 
 
 
 
+
+
+### 🚀 Solar System
 
 
 
@@ -766,13 +851,17 @@
 
 
 
+
 **Full Changelog**: [`v0.0.15...v0.0.16`](https://github.com/SunriseCommunity/Solar-System/compare/v0.0.15...v0.0.16)
 
-## [0.0.15] - 2026-01-06
+## 🏷️ [0.0.15](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.0.15) - 2026-01-06
 
 
 
 
+
+
+### 🚀 Solar System
 
 
 
@@ -798,13 +887,17 @@
 
 
 
+
 **Full Changelog**: [`v0.0.14...v0.0.15`](https://github.com/SunriseCommunity/Solar-System/compare/v0.0.14...v0.0.15)
 
-## [0.0.14] - 2026-01-06
+## 🏷️ [0.0.14](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.0.14) - 2026-01-06
 
 
 
 
+
+
+### 🚀 Solar System
 
 
 
@@ -833,13 +926,17 @@
 
 
 
+
 **Full Changelog**: [`v0.0.13...v0.0.14`](https://github.com/SunriseCommunity/Solar-System/compare/v0.0.13...v0.0.14)
 
-## [0.0.13] - 2026-01-06
+## 🏷️ [0.0.13](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.0.13) - 2026-01-06
 
 
 
 
+
+
+### 🚀 Solar System
 
 
 
@@ -858,13 +955,17 @@
 
 
 
+
 **Full Changelog**: [`v0.0.12...v0.0.13`](https://github.com/SunriseCommunity/Solar-System/compare/v0.0.12...v0.0.13)
 
-## [0.0.12] - 2026-01-06
+## 🏷️ [0.0.12](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.0.12) - 2026-01-06
 
 
 
 
+
+
+### 🚀 Solar System
 
 
 
@@ -883,13 +984,17 @@
 
 
 
+
 **Full Changelog**: [`v0.0.11...v0.0.12`](https://github.com/SunriseCommunity/Solar-System/compare/v0.0.11...v0.0.12)
 
-## [0.0.11] - 2026-01-06
+## 🏷️ [0.0.11](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.0.11) - 2026-01-06
 
 
 
 
+
+
+### 🚀 Solar System
 
 
 
@@ -918,13 +1023,17 @@
 
 
 
+
 **Full Changelog**: [`v0.0.10...v0.0.11`](https://github.com/SunriseCommunity/Solar-System/compare/v0.0.10...v0.0.11)
 
-## [0.0.10] - 2026-01-06
+## 🏷️ [0.0.10](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.0.10) - 2026-01-06
 
 
 
 
+
+
+### 🚀 Solar System
 
 
 
@@ -940,6 +1049,7 @@
 
 
 </details>
+
 
 
 
@@ -970,11 +1080,14 @@
 
 **Full Changelog**: [`v0.0.9...v0.0.10`](https://github.com/SunriseCommunity/Solar-System/compare/v0.0.9...v0.0.10)
 
-## [0.0.9] - 2026-01-06
+## 🏷️ [0.0.9](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.0.9) - 2026-01-06
 
 
 
 
+
+
+### 🚀 Solar System
 
 
 
@@ -993,6 +1106,7 @@
 
 
 </details>
+
 
 
 
@@ -1027,11 +1141,14 @@
 
 **Full Changelog**: [`v0.0.8...v0.0.9`](https://github.com/SunriseCommunity/Solar-System/compare/v0.0.8...v0.0.9)
 
-## [0.0.8] - 2026-01-06
+## 🏷️ [0.0.8](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.0.8) - 2026-01-06
 
 
 
 
+
+
+### 🚀 Solar System
 
 
 
@@ -1084,6 +1201,7 @@
 
 
 
+
 ### 🔭 Observatory
 
 
@@ -1129,11 +1247,14 @@
 
 **Full Changelog**: [`v0.0.7...v0.0.8`](https://github.com/SunriseCommunity/Solar-System/compare/v0.0.7...v0.0.8)
 
-## [0.0.7] - 2026-01-04
+## 🏷️ [0.0.7](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.0.7) - 2026-01-04
 
 
 
 
+
+
+### 🚀 Solar System
 
 
 
@@ -1159,13 +1280,17 @@
 
 
 
+
 **Full Changelog**: [`v0.0.6...v0.0.7`](https://github.com/SunriseCommunity/Solar-System/compare/v0.0.6...v0.0.7)
 
-## [0.0.6] - 2026-01-04
+## 🏷️ [0.0.6](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.0.6) - 2026-01-04
 
 
 
 
+
+
+### 🚀 Solar System
 
 
 
@@ -1200,13 +1325,17 @@
 
 
 
+
 **Full Changelog**: [`v0.0.5...v0.0.6`](https://github.com/SunriseCommunity/Solar-System/compare/v0.0.5...v0.0.6)
 
-## [0.0.5] - 2026-01-04
+## 🏷️ [0.0.5](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.0.5) - 2026-01-04
 
 
 
 
+
+
+### 🚀 Solar System
 
 
 
@@ -1225,13 +1354,17 @@
 
 
 
+
 **Full Changelog**: [`v0.0.4...v0.0.5`](https://github.com/SunriseCommunity/Solar-System/compare/v0.0.4...v0.0.5)
 
-## [0.0.4] - 2026-01-04
+## 🏷️ [0.0.4](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.0.4) - 2026-01-04
 
 
 
 
+
+
+### 🚀 Solar System
 
 
 
@@ -1257,13 +1390,17 @@
 
 
 
+
 **Full Changelog**: [`v0.0.3...v0.0.4`](https://github.com/SunriseCommunity/Solar-System/compare/v0.0.3...v0.0.4)
 
-## [0.0.3] - 2026-01-04
+## 🏷️ [0.0.3](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.0.3) - 2026-01-04
 
 
 
 
+
+
+### 🚀 Solar System
 
 
 
@@ -1282,13 +1419,17 @@
 
 
 
+
 **Full Changelog**: [`v0.0.2...v0.0.3`](https://github.com/SunriseCommunity/Solar-System/compare/v0.0.2...v0.0.3)
 
-## [0.0.2] - 2026-01-04
+## 🏷️ [0.0.2](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.0.2) - 2026-01-04
 
 
 
 
+
+
+### 🚀 Solar System
 
 
 
@@ -1304,6 +1445,7 @@
 
 
 </details>
+
 
 
 
@@ -1463,11 +1605,14 @@
 
 **Full Changelog**: [`v0.0.1...v0.0.2`](https://github.com/SunriseCommunity/Solar-System/compare/v0.0.1...v0.0.2)
 
-## [0.0.1] - 2026-01-04
+## 🏷️ [0.0.1](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.0.1) - 2026-01-04
 
 
 
 
+
+
+### 🚀 Solar System
 
 
 
@@ -1516,6 +1661,7 @@
 
 
 </details>
+
 
 
 
