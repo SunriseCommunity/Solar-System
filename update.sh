@@ -49,7 +49,38 @@ prompt_yes_no() {
     done
 }
 
+detect_docker_compose() {
+    if docker compose version &> /dev/null; then
+        echo "docker compose"
+    elif command -v docker-compose &> /dev/null && docker-compose version &> /dev/null; then
+        echo "docker-compose"
+    else
+        echo ""
+    fi
+}
+
+run_docker_compose() {
+    if [[ "$DOCKER_COMPOSE_CMD" == "docker compose" ]]; then
+        docker compose "$@"
+    else
+        docker-compose "$@"
+    fi
+}
+
 print_info "Checking repository state..."
+
+DOCKER_COMPOSE_CMD=""
+if command -v docker &> /dev/null; then
+    DOCKER_COMPOSE_CMD=$(detect_docker_compose)
+    if [ -z "$DOCKER_COMPOSE_CMD" ]; then
+        print_error "Docker Compose is not available"
+        print_info "Please install Docker Compose from: https://www.docker.com/get-started/"
+        MISSING_TOOLS+=("docker-compose")
+    else
+        print_success "Docker Compose is available ($DOCKER_COMPOSE_CMD)"
+    fi
+fi
+
 
 CURRENT_COMMIT=$(git rev-parse HEAD)
 LATEST_LOCAL_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
@@ -147,7 +178,7 @@ for tag in "${MAJOR_MINOR_TAGS[@]}"; do
     echo ""
 done
 
-LATEST_TAG="${NEW_TAGS[-1]}"
+LATEST_TAG="${NEW_TAGS[${#NEW_TAGS[@]}-1]}"
 print_info "Checking out tag: $LATEST_TAG"
 
 CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo "HEAD")
@@ -168,8 +199,12 @@ print_info "Update process completed!"
 echo ""
 
 if prompt_yes_no "Do you want to rebuild the Docker containers to the newer version?"; then
+    if [ -z "$DOCKER_COMPOSE_CMD" ]; then
+        print_error "Docker Compose is not available. Please install Docker Compose first."
+        exit 1
+    fi
     print_info "Rebuilding Docker containers..."
-    docker compose up -d --build || {
+    run_docker_compose up -d --build || {
         print_error "Failed to rebuild Docker containers"
         exit 1
     }

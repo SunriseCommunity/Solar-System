@@ -46,6 +46,24 @@ prompt_yes_no() {
     done
 }
 
+detect_docker_compose() {
+    if docker compose version &> /dev/null; then
+        echo "docker compose"
+    elif command -v docker-compose &> /dev/null && docker-compose version &> /dev/null; then
+        echo "docker-compose"
+    else
+        echo ""
+    fi
+}
+
+run_docker_compose() {
+    if [[ "$DOCKER_COMPOSE_CMD" == "docker compose" ]]; then
+        docker compose "$@"
+    else
+        docker-compose "$@"
+    fi
+}
+
 check_version() {
     set +e 
     
@@ -72,7 +90,7 @@ check_version() {
         return 0
     fi
     
-    LATEST_TAG="${ALL_TAGS[-1]}"
+    LATEST_TAG="${ALL_TAGS[${#ALL_TAGS[@]}-1]}"
     
     if [ -z "$CURRENT_TAG" ]; then
         print_warning "New version available: (no version) -> ${LATEST_TAG#v}"
@@ -124,13 +142,15 @@ else
     print_success "Docker is installed"
 fi
 
+DOCKER_COMPOSE_CMD=""
 if command -v docker &> /dev/null; then
-    if ! docker compose version &> /dev/null; then
+    DOCKER_COMPOSE_CMD=$(detect_docker_compose)
+    if [ -z "$DOCKER_COMPOSE_CMD" ]; then
         print_error "Docker Compose is not available"
         print_info "Please install Docker Compose from: https://www.docker.com/get-started/"
         MISSING_TOOLS+=("docker-compose")
     else
-        print_success "Docker Compose is available"
+        print_success "Docker Compose is available ($DOCKER_COMPOSE_CMD)"
     fi
 fi
 
@@ -172,14 +192,14 @@ echo ""
 
 if prompt_yes_no "Do you want to build and start the Docker containers?"; then
     print_info "Building and starting Docker containers..."
-    docker compose up -d --build || {
+    run_docker_compose up -d --build || {
         print_error "Failed to build and start Docker containers"
         exit 1
     }
     print_success "Docker containers built and started successfully!"
 else
     print_info "Starting Docker containers without rebuild..."
-    docker compose up -d || {
+    run_docker_compose up -d || {
         print_error "Failed to start Docker containers"
         exit 1
     }
