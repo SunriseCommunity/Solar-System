@@ -7,6 +7,64 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
+## 🏷️ [0.0.30](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.0.30) - 2026-01-16
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+#### 🔀 Merge Commits
+
+- [chore] Merge Branch 'main' of https://github.com/SunriseCommunity/Solar-System [`9cbf94f`](https://github.com/SunriseCommunity/Solar-System/commit/9cbf94faf5d0716b92882152220a3564c4b4e97d)
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update submodules [`e0808b4`](https://github.com/SunriseCommunity/Solar-System/commit/e0808b4b4e2c0baf90bb22751e269f1b28b5e15a)
+
+
+</details>
+
+
+
+
+### 🌅 Sunrise
+
+
+#### 🔀 Pull Requests
+
+- Fetch Bot Username From Database by @richardscull in [#99](https://github.com/SunriseCommunity/Sunrise/pull/99)
+
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+##### 💼 Other
+
+- Merge pull request #99 from SunriseCommunity/hotfix/fetch-bot-username-from-database [`97a8714`](https://github.com/SunriseCommunity/Sunrise/commit/97a87145ba72146e6b11a8e3158565f2e64b15d1)
+
+- Refresh server bot config if username in database is different from the config [`bb4f69d`](https://github.com/SunriseCommunity/Sunrise/commit/bb4f69d34050f77497dfa97159b997513576ed1d)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.0.29...v0.0.30`](https://github.com/SunriseCommunity/Solar-System/compare/v0.0.29...v0.0.30)
+
 ## 🏷️ [0.0.29](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.0.29) - 2026-01-15
 
 
@@ -19,12 +77,19 @@
 
 
 <details>
-<summary>📝 1 commit(s)</summary>
+<summary>📝 3 commit(s)</summary>
 
 
 #### 🔀 Merge Commits
 
 - [chore] Merge Branch 'main' of https://github.com/SunriseCommunity/Solar-System [`83e5635`](https://github.com/SunriseCommunity/Solar-System/commit/83e5635408225cebc98eb12bf79c2159819ead9b)
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`46c3f62`](https://github.com/SunriseCommunity/Solar-System/commit/46c3f62b43f872f8a1be33b8ad7ee0083a8b2848)
+
+- Adapt multiple bash commands for macos and docker-compose [`1d58d59`](https://github.com/SunriseCommunity/Solar-System/commit/1d58d59287cbf8178218fd2af055b58ee1952a17)
 
 
 </details>
