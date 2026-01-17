@@ -33,6 +33,13 @@ Solar System is a **monorepo** containing all the essential components required 
 
 ## Installation 📩
 
+> [!TIP]
+> 👀 We recommend watching the **[installation video guide](https://youtu.be/ukVc4anmtIs?si=ElITsNDIXw6ijxGP)** for a step-by-step walkthrough. 
+>
+> [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ukVc4anmtIs/mqdefault.jpg)](https://youtu.be/ukVc4anmtIs?si=ElITsNDIXw6ijxGP)
+>
+> From it you will learn how to set up Solar-System and how to customize it for your branding
+
 ### Prerequisites
 
 Before you begin, ensure you have the following installed:
