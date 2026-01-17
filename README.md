@@ -87,7 +87,7 @@ Before you begin, ensure you have the following installed:
    chmod +x lib/scripts/generate-api-sunrise-key.sh
    ./lib/scripts/generate-api-sunrise-key.sh
    ```
-   
+
    This will generate a token secret for the Sunrise API requests.
    
    Generate the Observatory API key (allows Sunrise to request Observatory without internal rate limits):
@@ -96,6 +96,10 @@ Before you begin, ensure you have the following installed:
    chmod +x lib/scripts/generate-observatory-api-key.sh
    ./lib/scripts/generate-observatory-api-key.sh
    ```
+   
+  > [!TIP]
+  > You will be prompted to run multiple `.sh` scripts during setup, if you are using **Windows**, please use `.bat` equivalent scripts located in the same folder.
+   
 
 4. **Start the server:**
    
