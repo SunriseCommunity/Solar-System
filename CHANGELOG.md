@@ -7,7 +7,7 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
-## 🏷️ [0.1.1](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.1) - 2026-01-18
+## 🏷️ [0.1.2](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.2) - 2026-01-18
 
 
 
@@ -22,7 +22,43 @@
 <summary>📝 1 commit(s)</summary>
 
 
+#### 🔀 Merge Commits
+
+- [chore] Merge Branch 'main' of https://github.com/SunriseCommunity/Solar-System [`ce974b2`](https://github.com/SunriseCommunity/Solar-System/commit/ce974b20312afdda31ea727ac388ddf4cbdfc93f)
+
+
+</details>
+
+
+
+
+
+
+**Full Changelog**: [`v0.1.1...v0.1.2`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.1...v0.1.2)
+
+## 🏷️ [0.1.1](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.1) - 2026-01-18
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 3 commit(s)</summary>
+
+
+#### 🚀 Features
+
+- Use observatory_data volume for obseravtory [`cd84f34`](https://github.com/SunriseCommunity/Solar-System/commit/cd84f346bd2595231737afa0a16b91ad826cf3d6)
+
+
 #### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`4e0c48d`](https://github.com/SunriseCommunity/Solar-System/commit/4e0c48d5989a86eb8d933898000847a2f719854a)
 
 - Ignore update script [`7d8db21`](https://github.com/SunriseCommunity/Solar-System/commit/7d8db21493a5281358f5a8178e9401cacf25636f)
 
