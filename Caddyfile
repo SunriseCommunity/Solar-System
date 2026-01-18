@@ -15,10 +15,10 @@ assets.{$WEB_DOMAIN} {
     reverse_proxy localhost:{$SUNSET_PORT:3090}
 }
 
-# Grafana
-grafana.{$WEB_DOMAIN} {
-    reverse_proxy localhost:{$GRAFANA_PORT:3060}
-}
+# Grafana - Statistics Dashboard
+# grafana.{$WEB_DOMAIN} {
+#     reverse_proxy localhost:{$GRAFANA_PORT:3060}
+# }
 
 # # Observatory
 # observatory.{$WEB_DOMAIN} {

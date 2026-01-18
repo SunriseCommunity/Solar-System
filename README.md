@@ -167,6 +167,7 @@ To make your server accessible on the internet:
    Your server should now be up and accessible!
 
   > [!IMPORTANT]
+  > If you are intending to use **Grafana** for monitoring, make sure to uncomment the Grafana section in the `Caddyfile` before starting Caddy.
   > After starting Caddy, make sure to visit `grafana.*` subdomain and change the default password for the admin account!
 
 ## Contributing 💖
