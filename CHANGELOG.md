@@ -7,6 +7,108 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
+## 🏷️ [0.1.0](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.0) - 2026-01-18
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 7 commit(s)</summary>
+
+
+#### 🚀 Features
+
+- Add stop scripts [`debc1eb`](https://github.com/SunriseCommunity/Solar-System/commit/debc1ebc7edf843c38ab97102b206e1e94ae1c5f)
+
+- Add .bat scripts for setup [`bd24149`](https://github.com/SunriseCommunity/Solar-System/commit/bd241493d56ea0527e8dc4504d81e8debb5d72bf)
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update submodules [`b25ffcf`](https://github.com/SunriseCommunity/Solar-System/commit/b25ffcf5e4d30bfda9c568396744227d661a793c)
+
+- Set UseNewPerformanceCalculationAlgorithm as true in example config [`63d6453`](https://github.com/SunriseCommunity/Solar-System/commit/63d6453ffcb8d9ca72d449278066691d7039b2eb)
+
+- Comment out grafana from caddyfile by default [`c2aaf61`](https://github.com/SunriseCommunity/Solar-System/commit/c2aaf6191dccb5d7c9735d6150ca6f95c3c02aad)
+
+- Update README.md [`daa15cb`](https://github.com/SunriseCommunity/Solar-System/commit/daa15cb6c227cce23647f6fb01e24d4230e6da0a)
+
+- Update README.md [`95be159`](https://github.com/SunriseCommunity/Solar-System/commit/95be159443040b26edb774dc9e970e1a6c1a8225)
+
+
+</details>
+
+
+
+
+### 🌅 Sunrise
+
+
+#### 🔀 Pull Requests
+
+- Change Default Config To Use New Pp Method by @richardscull in [#100](https://github.com/SunriseCommunity/Sunrise/pull/100)
+
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+##### 💼 Other
+
+- Merge pull request #100 from SunriseCommunity/chore/change-default-config-to-use-new-pp-method [`69aa467`](https://github.com/SunriseCommunity/Sunrise/commit/69aa467943dceb0c5afef2789a7a82f6501fd14b)
+
+
+##### ⚙️ Miscellaneous Tasks
+
+- Update README.md [`c33a89c`](https://github.com/SunriseCommunity/Sunrise/commit/c33a89cbfa66b2c81151c0fc7ff8d3ff460bafc5)
+
+- Set UseNewPerformanceCalculationAlgorithm as `true` by default [`6c4e7f5`](https://github.com/SunriseCommunity/Sunrise/commit/6c4e7f514f4bf2e39e7b6c2c0da272e3d5130fe4)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.0.31...v0.1.0`](https://github.com/SunriseCommunity/Solar-System/compare/v0.0.31...v0.1.0)
+
+## 🏷️ [0.0.31](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.0.31) - 2026-01-17
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`9ae015b`](https://github.com/SunriseCommunity/Solar-System/commit/9ae015b037d1f99d71e8ed0aa777b4e81134cc3e)
+
+
+</details>
+
+
+
+
+
+
+**Full Changelog**: [`v0.0.30...v0.0.31`](https://github.com/SunriseCommunity/Solar-System/compare/v0.0.30...v0.0.31)
+
 ## 🏷️ [0.0.30](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.0.30) - 2026-01-16
 
 
