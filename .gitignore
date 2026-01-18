@@ -2,3 +2,6 @@ database
 
 .env
 *Production.json
+
+update.sh
+update.bat
