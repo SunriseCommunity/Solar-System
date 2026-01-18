@@ -228,7 +228,7 @@ services:
     ports:
       - ${OBSERVATORY_POSTGRES_PORT}:5432
     volumes:
-      - ./database/postgres_observatory_data:/var/lib/postgresql/data:Z
+      - observatory_data:/var/lib/postgresql/data:Z
     networks:
       - container_network
     healthcheck:
@@ -386,7 +386,7 @@ services:
   #  volumes:
   #    - /database/uptime-kuma-data:/app/data
   #  ports:
-  #    - ${UPTIME_KUMA_PORT-3001}:3001  
+  #    - ${UPTIME_KUMA_PORT-3001}:3001
   #  deploy:
   #    resources:
   #      limits:
@@ -402,6 +402,7 @@ volumes:
   tempo_data:
   grafana_data:
   victoria_metrics_data:
+  observatory_data:
 
 networks:
   container_network:
