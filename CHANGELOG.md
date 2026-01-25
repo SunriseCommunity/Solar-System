@@ -7,7 +7,7 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
-## 🏷️ [0.1.3](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.3) - 2026-01-25
+## 🏷️ [0.1.4](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.4) - 2026-01-25
 
 
 
@@ -23,6 +23,64 @@
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update submodules [`6ac82f0`](https://github.com/SunriseCommunity/Solar-System/commit/6ac82f0e6ec1726fba0486bc2e9501073b8ca638)
+
+
+</details>
+
+
+
+
+### 🌇 Sunset
+
+
+#### 🔀 Pull Requests
+
+- Show Api Error On Possible Ratelimit Beatmap Request by @richardscull in [#33](https://github.com/SunriseCommunity/Sunset/pull/33)
+
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- Show problem details error toast on request with status > 404 [`dfd4b56`](https://github.com/SunriseCommunity/Sunset/commit/dfd4b5682d9d4193a52c7971b1febed09efe62fe)
+
+
+##### 💼 Other
+
+- Merge pull request #33 from SunriseCommunity/feat/show-api-error-on-possible-ratelimit-beatmap-request [`640ae96`](https://github.com/SunriseCommunity/Sunset/commit/640ae96634b7cd787e3f15218f609a93f2ac8055)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.1.3...v0.1.4`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.3...v0.1.4)
+
+## 🏷️ [0.1.3](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.3) - 2026-01-25
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`2b61567`](https://github.com/SunriseCommunity/Solar-System/commit/2b61567a9cc72ecb1d7aee1faf59f17bb5d0f6d2)
 
 - update submodules [`02d255d`](https://github.com/SunriseCommunity/Solar-System/commit/02d255d09eaccf4ae757156ce03cecc98fdea995)
 
