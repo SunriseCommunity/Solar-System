@@ -7,7 +7,7 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
-## 🏷️ [0.1.2](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.2) - 2026-01-18
+## 🏷️ [0.1.3](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.3) - 2026-01-25
 
 
 
@@ -22,9 +22,61 @@
 <summary>📝 1 commit(s)</summary>
 
 
+#### ⚙️ Miscellaneous Tasks
+
+- update submodules [`02d255d`](https://github.com/SunriseCommunity/Solar-System/commit/02d255d09eaccf4ae757156ce03cecc98fdea995)
+
+
+</details>
+
+
+
+
+### 🌅 Sunrise
+
+
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+##### 🐛 Bug Fixes
+
+- use RefreshServerBotAccount on server launch [`aecbf96`](https://github.com/SunriseCommunity/Sunrise/commit/aecbf960b1c24c4aa3d4281366f8b7d291718796)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.1.2...v0.1.3`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.2...v0.1.3)
+
+## 🏷️ [0.1.2](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.2) - 2026-01-18
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
 #### 🔀 Merge Commits
 
 - [chore] Merge Branch 'main' of https://github.com/SunriseCommunity/Solar-System [`ce974b2`](https://github.com/SunriseCommunity/Solar-System/commit/ce974b20312afdda31ea727ac388ddf4cbdfc93f)
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`2c11c4a`](https://github.com/SunriseCommunity/Solar-System/commit/2c11c4ac964d9a2dd6820223245fd3559b1eb7a6)
 
 
 </details>
