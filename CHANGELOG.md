@@ -7,6 +7,63 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
+## 🏷️ [0.1.5](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.5) - 2026-01-27
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 3 commit(s)</summary>
+
+
+#### 🚀 Features
+
+- Split local docker compose settings to docker-compose.local.yml [`6cba2aa`](https://github.com/SunriseCommunity/Solar-System/commit/6cba2aa9b0eb6c867cd1e00a4af2771f22ee87ea)
+
+
+#### 🔀 Merge Commits
+
+- [chore] Merge Branch 'main' of https://github.com/SunriseCommunity/Solar-System [`5fd155c`](https://github.com/SunriseCommunity/Solar-System/commit/5fd155c117fb4c5f069a27bb7804e63919456c31)
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update submodules [`5c6be53`](https://github.com/SunriseCommunity/Solar-System/commit/5c6be53185cfed56776ecd279bff4ebe2fac4395)
+
+
+</details>
+
+
+
+
+### 🔭 Observatory
+
+
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+##### 🐛 Bug Fixes
+
+- Use proper volume binding for docker data [`ff304a3`](https://github.com/SunriseCommunity/Observatory/commit/ff304a391aaffec4539cacb301802997956108e0)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.1.4...v0.1.5`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.4...v0.1.5)
+
 ## 🏷️ [0.1.4](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.4) - 2026-01-25
 
 
@@ -19,10 +76,12 @@
 
 
 <details>
-<summary>📝 1 commit(s)</summary>
+<summary>📝 2 commit(s)</summary>
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`4990ca1`](https://github.com/SunriseCommunity/Solar-System/commit/4990ca15d41429fb53220b9aee0f1e4e41187cfb)
 
 - update submodules [`6ac82f0`](https://github.com/SunriseCommunity/Solar-System/commit/6ac82f0e6ec1726fba0486bc2e9501073b8ca638)
 
@@ -124,7 +183,12 @@
 
 
 <details>
-<summary>📝 2 commit(s)</summary>
+<summary>📝 3 commit(s)</summary>
+
+
+#### 🐛 Bug Fixes
+
+- Mapping for observatory data volume [`6be7c81`](https://github.com/SunriseCommunity/Solar-System/commit/6be7c81d9d52e0eb4b2bbc18e46922dabfe85a7c)
 
 
 #### 🔀 Merge Commits
