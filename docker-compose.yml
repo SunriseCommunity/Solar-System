@@ -70,7 +70,7 @@ services:
       context: ./Observatory
       dockerfile: Dockerfile
     volumes:
-      - ./Observatory/data:/app/data
+      - ./Observatory/data:/usr/src/app/data
     restart: unless-stopped
     environment:
       NODE_ENV: production
