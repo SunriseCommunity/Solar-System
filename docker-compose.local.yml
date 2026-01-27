@@ -1,4 +1,6 @@
-name: osu-sunrise-infrastructure
+# -- This docker-compose file is intended if you want to host Sunrise **locally** (with self-signed certificate)
+
+name: osu-sunrise-local-infrastructure
 services:
   # --- Application ---
   sunrise-server:
@@ -6,7 +8,7 @@ services:
       context: ./Sunrise
       dockerfile: Dockerfile
     ports:
-      - ${SUNRISE_SERVER_PORT}:${SUNRISE_SERVER_PORT}
+      - 443:443
     volumes:
       - ./Sunrise/Data:/app/Data
       - ./Sunrise.Config.Production.json:/app/appsettings.Production.json
@@ -17,7 +19,10 @@ services:
       - .version
     environment:
       ASPNETCORE_ENVIRONMENT: Production
-      ASPNETCORE_URLS: http://+:${SUNRISE_SERVER_PORT};http://+:5147
+
+      ASPNETCORE_URLS: https://+:443;http://+:5147
+      ASPNETCORE_Kestrel__Certificates__Default__Password: ${SUNRISE_KESTREL_CERTIFICATES_DEFAULT_PASSWORD}
+      ASPNETCORE_Kestrel__Certificates__Default__Path: /app/certificate.pfx
 
       OTEL_DOTNET_EXPERIMENTAL_ASPNETCORE_DISABLE_URL_QUERY_REDACTION: true
       WEB_DOMAIN: ${WEB_DOMAIN}
@@ -123,6 +128,7 @@ services:
     restart: unless-stopped
     environment:
       NEXT_PUBLIC_SERVER_DOMAIN: ${WEB_DOMAIN}
+      NODE_TLS_REJECT_UNAUTHORIZED: 0
     ports:
       - ${SUNSET_PORT}:3000
     deploy:
