@@ -7,6 +7,106 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
+## 🏷️ [0.1.6](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.6) - 2026-02-01
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update submodules [`50e6ffa`](https://github.com/SunriseCommunity/Solar-System/commit/50e6ffa2a750ec7861f60c46ee1a54c509ecc51f)
+
+
+</details>
+
+
+
+
+### 🌅 Sunrise
+
+
+#### 🔀 Pull Requests
+
+- Add User History Graph Api Endpoint by @richardscull in [#101](https://github.com/SunriseCommunity/Sunrise/pull/101)
+
+
+
+
+<details>
+<summary>📝 4 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- try to refactor tests workflow [`0452a1f`](https://github.com/SunriseCommunity/Sunrise/commit/0452a1f95a44fa4daa73eefbc2844b60526b4d3e)
+
+- try to refactor tests workflow [`f441ea9`](https://github.com/SunriseCommunity/Sunrise/commit/f441ea92c3d5f8be1ac0e2d7c4bb81affe826ae4)
+
+- add tests [`1903269`](https://github.com/SunriseCommunity/Sunrise/commit/1903269acc1b3c4bc450585fd25f0f2e63f0eb7f)
+
+- Add GetUserPlayHistoryGraphData [`ee19c09`](https://github.com/SunriseCommunity/Sunrise/commit/ee19c09c78fe80e6ee65b2875e13be444dc06575)
+
+
+##### 💼 Other
+
+- Merge pull request #101 from SunriseCommunity/feat/add-user-history-graph-api-endpoint [`b83a325`](https://github.com/SunriseCommunity/Sunrise/commit/b83a32546bf818597315ca4fb69b9c9082daaa0c)
+
+
+</details>
+
+
+### 🌇 Sunset
+
+
+#### 🔀 Pull Requests
+
+- Add User Play History Graph by @richardscull in [#34](https://github.com/SunriseCommunity/Sunset/pull/34)
+
+
+
+
+<details>
+<summary>📝 5 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- hide language selector if only language is english [`f6138b5`](https://github.com/SunriseCommunity/Sunset/commit/f6138b57f9980cc251a121da46c3004b00b6be26)
+
+- Implement UserPlayHistoryChart [`3918d6f`](https://github.com/SunriseCommunity/Sunset/commit/3918d6f8bca2626b1eed51de6149870e691a1d4f)
+
+- update api gen [`35f25af`](https://github.com/SunriseCommunity/Sunset/commit/35f25af96f2b3b3df7be7e5cca04d72900ffc3c0)
+
+- Add eslint lint for openapi [`319210f`](https://github.com/SunriseCommunity/Sunset/commit/319210fc7f78bed0b38e7afdd19b6c6cbb6f02ca)
+
+
+##### 🐛 Bug Fixes
+
+- filter user playstyle none from localisation tag [`155752a`](https://github.com/SunriseCommunity/Sunset/commit/155752a9ce800fff7a141ed34881f8a5a982aea0)
+
+
+##### 💼 Other
+
+- Merge pull request #34 from SunriseCommunity/feat/add-user-play-history-graph [`3c2d210`](https://github.com/SunriseCommunity/Sunset/commit/3c2d2103401d448d5a8e6a22d36bae2ffa2d8119)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.1.5...v0.1.6`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.5...v0.1.6)
+
 ## 🏷️ [0.1.5](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.5) - 2026-01-27
 
 
@@ -19,7 +119,7 @@
 
 
 <details>
-<summary>📝 3 commit(s)</summary>
+<summary>📝 4 commit(s)</summary>
 
 
 #### 🚀 Features
@@ -33,6 +133,8 @@
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`23ecfec`](https://github.com/SunriseCommunity/Solar-System/commit/23ecfece82b92925e32b4dc55ee9ecfcf2f1eaea)
 
 - update submodules [`5c6be53`](https://github.com/SunriseCommunity/Solar-System/commit/5c6be53185cfed56776ecd279bff4ebe2fac4395)
 
