@@ -7,7 +7,7 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
-## 🏷️ [0.1.7](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.7) - 2026-02-01
+## 🏷️ [0.1.8](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.8) - 2026-02-01
 
 
 
@@ -23,6 +23,69 @@
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update submodules [`d428d22`](https://github.com/SunriseCommunity/Solar-System/commit/d428d22c10a2f5730f0ca445349ebf0263aeb47d)
+
+
+</details>
+
+
+
+
+### 🌅 Sunrise
+
+
+#### 🔀 Pull Requests
+
+- Update Defualt Beatmap Statuses For Hype by @richardscull in [#103](https://github.com/SunriseCommunity/Sunrise/pull/103)
+
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- Update default not eligible beatmap statuses for hype [`0943905`](https://github.com/SunriseCommunity/Sunrise/commit/094390523fe79faafb421475e2fadd316e2746dd)
+
+
+##### 🐛 Bug Fixes
+
+- tests [`3980b04`](https://github.com/SunriseCommunity/Sunrise/commit/3980b043a7520560f8f3b5410a5582d03050df15)
+
+
+##### 💼 Other
+
+- Merge pull request #103 from SunriseCommunity/chore/update-defualt-beatmap-statuses-for-hype [`c5a0ea2`](https://github.com/SunriseCommunity/Sunrise/commit/c5a0ea2028df3b0e5842afe4fe996accd457399c)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.1.7...v0.1.8`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.7...v0.1.8)
+
+## 🏷️ [0.1.7](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.7) - 2026-02-01
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`4057a68`](https://github.com/SunriseCommunity/Solar-System/commit/4057a688e44e3c5ee395a0f39eb09bd86a6fd9e2)
 
 - update submodules [`d209d25`](https://github.com/SunriseCommunity/Solar-System/commit/d209d250d27f91069e79dba485824d3c10d69f18)
 
