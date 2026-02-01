@@ -7,7 +7,7 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
-## 🏷️ [0.1.8](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.8) - 2026-02-01
+## 🏷️ [0.1.9](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.9) - 2026-02-01
 
 
 
@@ -23,6 +23,69 @@
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update submodules [`c53b556`](https://github.com/SunriseCommunity/Solar-System/commit/c53b556a8ded7342bb3363860ca77b9bb4652ebb)
+
+
+</details>
+
+
+
+
+### 🌇 Sunset
+
+
+#### 🔀 Pull Requests
+
+- Show Small Dot For Single Month Of Play History by @richardscull in [#35](https://github.com/SunriseCommunity/Sunset/pull/35)
+
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- show dot only if user has a single month [`44dbe49`](https://github.com/SunriseCommunity/Sunset/commit/44dbe497d9ee58bd4d8ac01540c71b08eecb5e25)
+
+
+##### 🐛 Bug Fixes
+
+- show dots for play history [`0572804`](https://github.com/SunriseCommunity/Sunset/commit/0572804c8283e58359d485597a0ffab3598eea93)
+
+
+##### 💼 Other
+
+- Merge pull request #35 from SunriseCommunity/fix/show-small-dot-for-single-month-of-play-history [`5685643`](https://github.com/SunriseCommunity/Sunset/commit/56856438ed2105b6f193771a5d8a251bf2cd7e37)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.1.8...v0.1.9`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.8...v0.1.9)
+
+## 🏷️ [0.1.8](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.8) - 2026-02-01
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`6fbce1c`](https://github.com/SunriseCommunity/Solar-System/commit/6fbce1c41c3b9309eb0e85b289bdefade813195f)
 
 - update submodules [`d428d22`](https://github.com/SunriseCommunity/Solar-System/commit/d428d22c10a2f5730f0ca445349ebf0263aeb47d)
 
