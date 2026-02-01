@@ -7,7 +7,7 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
-## 🏷️ [0.1.6](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.6) - 2026-02-01
+## 🏷️ [0.1.7](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.7) - 2026-02-01
 
 
 
@@ -23,6 +23,66 @@
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update submodules [`d209d25`](https://github.com/SunriseCommunity/Solar-System/commit/d209d250d27f91069e79dba485824d3c10d69f18)
+
+
+</details>
+
+
+
+
+### 🌅 Sunrise
+
+
+#### 🔀 Pull Requests
+
+- Exclude Some Beatmap Statuses From Being Hyped by @richardscull in [#102](https://github.com/SunriseCommunity/Sunrise/pull/102)
+
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- add tests [`af86986`](https://github.com/SunriseCommunity/Sunrise/commit/af869860680042c5d437982afbfadc7caf25e3ac)
+
+- Add ability to setup eligible beatmap statuses for hype [`1ef83fa`](https://github.com/SunriseCommunity/Sunrise/commit/1ef83fa9370c859e4859d8937856380b7a770e65)
+
+
+##### 💼 Other
+
+- Merge pull request #102 from SunriseCommunity/feat/exclude-some-beatmap-statuses-from-being-hyped [`56dbd99`](https://github.com/SunriseCommunity/Sunrise/commit/56dbd99d048d83744db4309e9c5d3779ee5fb88b)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.1.6...v0.1.7`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.6...v0.1.7)
+
+## 🏷️ [0.1.6](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.6) - 2026-02-01
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`ef535cf`](https://github.com/SunriseCommunity/Solar-System/commit/ef535cfc51ffd20f8dfd7daeeae79b24d9fc0740)
 
 - update submodules [`50e6ffa`](https://github.com/SunriseCommunity/Solar-System/commit/50e6ffa2a750ec7861f60c46ee1a54c509ecc51f)
 
