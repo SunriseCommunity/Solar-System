@@ -7,7 +7,7 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
-## 🏷️ [0.1.10](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.10) - 2026-02-04
+## 🏷️ [0.1.11](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.11) - 2026-02-04
 
 
 
@@ -23,6 +23,71 @@
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update submodules [`134f381`](https://github.com/SunriseCommunity/Solar-System/commit/134f38102d0e89caeb91f16055e8597344fd58ad)
+
+
+</details>
+
+
+
+
+### 🌅 Sunrise
+
+
+#### 🔀 Pull Requests
+
+- Add New Medals by @richardscull in [#105](https://github.com/SunriseCommunity/Sunrise/pull/105)
+- Update Medal Beatmap Status Requirements by @richardscull in [#104](https://github.com/SunriseCommunity/Sunrise/pull/104)
+
+
+
+
+<details>
+<summary>📝 3 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- Add new medals [`fb85bd8`](https://github.com/SunriseCommunity/Sunrise/commit/fb85bd894468530fb45d46febd32c1140a5b7fc1)
+
+- Add test case for the medal changes [`fef0ce6`](https://github.com/SunriseCommunity/Sunrise/commit/fef0ce6b80c668c24cdc156290bf4ecba14e702b)
+
+- Pass/FC medals shouldn't be awarder for scores with EZ/NF/HT [`0fdeb18`](https://github.com/SunriseCommunity/Sunrise/commit/0fdeb18d8c9cfea41e5f83d67e2c872c632fd7ab)
+
+
+##### 💼 Other
+
+- Merge pull request #105 from SunriseCommunity/feat/add-new-medals [`5a74088`](https://github.com/SunriseCommunity/Sunrise/commit/5a74088213e494d988fe4d0fae9c9deb730bc744)
+
+- Merge pull request #104 from SunriseCommunity/feat/update-medal-beatmap-status-requirements [`1818a36`](https://github.com/SunriseCommunity/Sunrise/commit/1818a366d3b5afd2fe9beb6b698b7db4891b2af9)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.1.10...v0.1.11`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.10...v0.1.11)
+
+## 🏷️ [0.1.10](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.10) - 2026-02-04
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`bab7aa0`](https://github.com/SunriseCommunity/Solar-System/commit/bab7aa09d3fdb05d757332fb0be3566c5019cb9d)
 
 - update submodules [`48306f7`](https://github.com/SunriseCommunity/Solar-System/commit/48306f772310d389ed18b2395eab0f5930b05052)
 
