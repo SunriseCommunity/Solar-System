@@ -7,7 +7,7 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
-## 🏷️ [0.1.9](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.9) - 2026-02-01
+## 🏷️ [0.1.10](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.10) - 2026-02-04
 
 
 
@@ -23,6 +23,82 @@
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update submodules [`48306f7`](https://github.com/SunriseCommunity/Solar-System/commit/48306f772310d389ed18b2395eab0f5930b05052)
+
+
+</details>
+
+
+
+
+### 🔭 Observatory
+
+
+#### 🔀 Pull Requests
+
+- Add Multiple Daily Ratelimits Support by @richardscull in [#10](https://github.com/SunriseCommunity/Observatory/pull/10)
+
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- add multiple daily ratelimits support + add download daily ratelimit for mino [`4ab6bb7`](https://github.com/SunriseCommunity/Observatory/commit/4ab6bb70d70e2c3e71015895ef2cf52deb179258)
+
+
+##### 💼 Other
+
+- Merge pull request #10 from SunriseCommunity/feat/add-multiple-daily-ratelimits-support [`bd14c16`](https://github.com/SunriseCommunity/Observatory/commit/bd14c16aa5f7819563ae793b9af845790ea38b72)
+
+
+</details>
+
+
+### 🌅 Sunrise
+
+
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- Support recalculating all scores [`acbcbc9`](https://github.com/SunriseCommunity/Sunrise/commit/acbcbc91d0041b14cd22ed939ac184a709d49ecd)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.1.9...v0.1.10`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.9...v0.1.10)
+
+## 🏷️ [0.1.9](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.9) - 2026-02-01
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`c35fdf8`](https://github.com/SunriseCommunity/Solar-System/commit/c35fdf8f00c90d596984140d5f850bdb2f7348ca)
 
 - update submodules [`c53b556`](https://github.com/SunriseCommunity/Solar-System/commit/c53b556a8ded7342bb3363860ca77b9bb4652ebb)
 
