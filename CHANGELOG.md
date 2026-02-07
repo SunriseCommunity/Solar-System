@@ -7,7 +7,7 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
-## 🏷️ [0.1.11](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.11) - 2026-02-04
+## 🏷️ [0.1.12](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.12) - 2026-02-07
 
 
 
@@ -23,6 +23,64 @@
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update submodules [`824c58d`](https://github.com/SunriseCommunity/Solar-System/commit/824c58de9b3240bc4a9d6aaccdd53c8b1d2dd41f)
+
+
+</details>
+
+
+
+
+### 🌇 Sunset
+
+
+#### 🔀 Pull Requests
+
+- Wiki Accordion Crash Due To Multiple Use Effect Resets by @richardscull in [#36](https://github.com/SunriseCommunity/Sunset/pull/36)
+
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+##### 🐛 Bug Fixes
+
+- page crash while using wiki accordion [`952f7c7`](https://github.com/SunriseCommunity/Sunset/commit/952f7c741485a96a9f22910604e32c6de1a52e99)
+
+
+##### 💼 Other
+
+- Merge pull request #36 from SunriseCommunity/fix/wiki-accordion-crash-due-to-multiple-use-effect-resets [`db257e7`](https://github.com/SunriseCommunity/Sunset/commit/db257e74b538143beebc3b07ae34842d22686cdb)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.1.11...v0.1.12`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.11...v0.1.12)
+
+## 🏷️ [0.1.11](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.11) - 2026-02-04
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`b024549`](https://github.com/SunriseCommunity/Solar-System/commit/b0245494f0a81af03c9bca79194bb0a8fc028a94)
 
 - update submodules [`134f381`](https://github.com/SunriseCommunity/Solar-System/commit/134f38102d0e89caeb91f16055e8597344fd58ad)
 
