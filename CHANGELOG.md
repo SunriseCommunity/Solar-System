@@ -7,7 +7,7 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
-## 🏷️ [0.1.12](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.12) - 2026-02-07
+## 🏷️ [0.1.13](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.13) - 2026-02-25
 
 
 
@@ -23,6 +23,83 @@
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update submodules [`0b5d693`](https://github.com/SunriseCommunity/Solar-System/commit/0b5d6936d730e6ca5da064ff289d8e173591d6a9)
+
+
+</details>
+
+
+
+
+### 🌅 Sunrise
+
+
+#### 🔀 Pull Requests
+
+- Improve Handling Bad Observatory Responses by @richardscull in [#106](https://github.com/SunriseCommunity/Sunrise/pull/106)
+
+
+
+
+<details>
+<summary>📝 9 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- Reject score with same hash if we are already processing it [`26151a6`](https://github.com/SunriseCommunity/Sunrise/commit/26151a618b4e2ace95a2dfc42f31bc99b3968b9c)
+
+- code improvements [`400c315`](https://github.com/SunriseCommunity/Sunrise/commit/400c3153c63a39b02852addca475b141f364e070)
+
+- Mock performance calculations for score submission tests [`325b7c7`](https://github.com/SunriseCommunity/Sunrise/commit/325b7c7a00902bab7bf132509040cfcaa68dc5fd)
+
+- Ignore user ratelimit notification while calcualting user pp score [`1d7e2ad`](https://github.com/SunriseCommunity/Sunrise/commit/1d7e2adea426bc6c431fa5d1a1a0b4b65999c22a)
+
+- Add tests [`43bba5f`](https://github.com/SunriseCommunity/Sunrise/commit/43bba5f902909e471317cfaf4b135a6142894db6)
+
+- Retry calculating score performance [`a5a40ee`](https://github.com/SunriseCommunity/Sunrise/commit/a5a40eed1f4e4f54089e365701c754620f3aff36)
+
+- Add server bad request codes to the error mesasge for http client service [`dae9916`](https://github.com/SunriseCommunity/Sunrise/commit/dae991690e7ba8494511f22800e2741451b9efc9)
+
+- Add observatorydebug command [`ddd9267`](https://github.com/SunriseCommunity/Sunrise/commit/ddd9267a612f4eb5895ff01bcb2f03b0be3c03d0)
+
+
+##### 🐛 Bug Fixes
+
+- test override [`461fd6f`](https://github.com/SunriseCommunity/Sunrise/commit/461fd6fa24df722725f98f95236e88a03555f7f6)
+
+
+##### 💼 Other
+
+- Merge pull request #106 from SunriseCommunity/feat/improve-handling-bad-observatory-responses [`dac079f`](https://github.com/SunriseCommunity/Sunrise/commit/dac079f080fa7c10600e1837be78965f082694de)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.1.12...v0.1.13`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.12...v0.1.13)
+
+## 🏷️ [0.1.12](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.12) - 2026-02-07
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`43540c1`](https://github.com/SunriseCommunity/Solar-System/commit/43540c1b83a9ef7ecedc137af80cccdefcc37c9c)
 
 - update submodules [`824c58d`](https://github.com/SunriseCommunity/Solar-System/commit/824c58de9b3240bc4a9d6aaccdd53c8b1d2dd41f)
 
