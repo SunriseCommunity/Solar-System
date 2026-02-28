@@ -7,7 +7,7 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
-## 🏷️ [0.1.14](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.14) - 2026-02-28
+## 🏷️ [0.1.15](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.15) - 2026-02-28
 
 
 
@@ -22,7 +22,38 @@
 <summary>📝 1 commit(s)</summary>
 
 
+#### 🚀 Features
+
+- Add binlog expire logs to 1 day [`5fddd7b`](https://github.com/SunriseCommunity/Solar-System/commit/5fddd7b93ad9be005c6cef9c2362d0061f995ada)
+
+
+</details>
+
+
+
+
+
+
+**Full Changelog**: [`v0.1.14...v0.1.15`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.14...v0.1.15)
+
+## 🏷️ [0.1.14](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.14) - 2026-02-28
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
 #### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`1d3ec0c`](https://github.com/SunriseCommunity/Solar-System/commit/1d3ec0c7da37e8cb0369d3bae47f7413ef1be338)
 
 - update submodules [`4533109`](https://github.com/SunriseCommunity/Solar-System/commit/4533109fa5e222b0ec14841a018d31cee903ae08)
 
