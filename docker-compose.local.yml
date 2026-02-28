@@ -210,6 +210,9 @@ services:
       - ${SUNRISE_MYSQL_PORT}:3306
     networks:
       - container_network
+    command:
+      - --binlog-expire-logs-seconds=86400
+      - --max-binlog-size=1073741824
     healthcheck:
       test: ["CMD-SHELL", "mysqladmin ping -h localhost"]
       interval: 10s
