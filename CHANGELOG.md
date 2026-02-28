@@ -7,7 +7,7 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
-## 🏷️ [0.1.13](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.13) - 2026-02-25
+## 🏷️ [0.1.14](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.14) - 2026-02-28
 
 
 
@@ -23,6 +23,64 @@
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update submodules [`4533109`](https://github.com/SunriseCommunity/Solar-System/commit/4533109fa5e222b0ec14841a018d31cee903ae08)
+
+
+</details>
+
+
+
+
+### 🌇 Sunset
+
+
+#### 🔀 Pull Requests
+
+- User Stats Chart Missing Snapshots by @richardscull in [#37](https://github.com/SunriseCommunity/Sunset/pull/37)
+
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+##### 🐛 Bug Fixes
+
+- iterate through all snapshots [`a322214`](https://github.com/SunriseCommunity/Sunset/commit/a32221462dbf3ae1de97de95059a1042a0fb398f)
+
+
+##### 💼 Other
+
+- Merge pull request #37 from SunriseCommunity/fix/user-stats-chart-missing-snapshots [`19ced7a`](https://github.com/SunriseCommunity/Sunset/commit/19ced7a766c372a930f023e575e76e5ef96b55e2)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.1.13...v0.1.14`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.13...v0.1.14)
+
+## 🏷️ [0.1.13](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.13) - 2026-02-25
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`c115325`](https://github.com/SunriseCommunity/Solar-System/commit/c1153259eba5c765e093c84d9a369fae2f02ba47)
 
 - update submodules [`0b5d693`](https://github.com/SunriseCommunity/Solar-System/commit/0b5d6936d730e6ca5da064ff289d8e173591d6a9)
 
