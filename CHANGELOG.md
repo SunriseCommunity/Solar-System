@@ -7,7 +7,7 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
-## 🏷️ [0.1.17](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.17) - 2026-03-11
+## 🏷️ [0.1.18](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.18) - 2026-03-11
 
 
 
@@ -23,6 +23,100 @@
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update submodules [`6bb2d43`](https://github.com/SunriseCommunity/Solar-System/commit/6bb2d43345f1ae1a92cc20d8f2bcf71090bba161)
+
+
+</details>
+
+
+
+
+### 🌇 Sunset
+
+
+#### 🔀 Pull Requests
+
+- Add Patcher Page by @richardscull in [#38](https://github.com/SunriseCommunity/Sunset/pull/38)
+
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- Add osu patcher page [`3bb300a`](https://github.com/SunriseCommunity/Sunset/commit/3bb300abf0a922db9def9c7ea964eb789b5b155e)
+
+
+##### 💼 Other
+
+- Merge pull request #38 from SunriseCommunity/feat/add-patcher-page [`be3c516`](https://github.com/SunriseCommunity/Sunset/commit/be3c5161ab1af5fd5bb92003fae5f38ec5ba6ce9)
+
+
+</details>
+
+
+### 🌻 Sunshine
+
+
+#### 🔀 Pull Requests
+
+- Escape Discord Markdown by @richardscull in [#4](https://github.com/SunriseCommunity/Sunshine/pull/4)
+
+
+
+
+<details>
+<summary>📝 4 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- Add tests to check that markdown is escaped [`9eca7dc`](https://github.com/SunriseCommunity/Sunshine/commit/9eca7dc8cab0481866d6a29192b542c90f737769)
+
+- Escape markdown in embeds [`00ff991`](https://github.com/SunriseCommunity/Sunshine/commit/00ff991f343bab9024b83ff7d354e0d2bf842414)
+
+
+##### 🐛 Bug Fixes
+
+- tests [`eba89d4`](https://github.com/SunriseCommunity/Sunshine/commit/eba89d4eb0a347c2c6556456a62c46d60c33b659)
+
+- tests [`17ac928`](https://github.com/SunriseCommunity/Sunshine/commit/17ac9281b901bdb3734b8befa86613798720e027)
+
+
+##### 💼 Other
+
+- Merge pull request #4 from SunriseCommunity/feat/escape-discord-markdown [`6f4d4fd`](https://github.com/SunriseCommunity/Sunshine/commit/6f4d4fde99fa8d4966e182346148da67513f141f)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.1.17...v0.1.18`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.17...v0.1.18)
+
+## 🏷️ [0.1.17](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.17) - 2026-03-11
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`601a0da`](https://github.com/SunriseCommunity/Solar-System/commit/601a0da2f38f0afe701e5f39291fbe77376ec7be)
 
 - update submodules [`6ad6d3f`](https://github.com/SunriseCommunity/Solar-System/commit/6ad6d3ff284587712d11b4590541d3b9d4ae5437)
 
