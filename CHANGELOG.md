@@ -7,7 +7,7 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
-## 🏷️ [0.1.21](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.21) - 2026-03-11
+## 🏷️ [0.1.22](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.22) - 2026-03-11
 
 
 
@@ -22,9 +22,70 @@
 <summary>📝 1 commit(s)</summary>
 
 
+#### ⚙️ Miscellaneous Tasks
+
+- update submodules [`de4d990`](https://github.com/SunriseCommunity/Solar-System/commit/de4d9901ed5149b2561f52e7ee227fb6ed30e44c)
+
+
+</details>
+
+
+
+
+### 🌅 Sunrise
+
+
+#### 🔀 Pull Requests
+
+- Small Replay Download Improvements by @richardscull in [#110](https://github.com/SunriseCommunity/Sunrise/pull/110)
+
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- Small replay download endpoint improvement [`fcb83a2`](https://github.com/SunriseCommunity/Sunrise/commit/fcb83a28adc51e9b526b8959024954e0ec7ddcd1)
+
+
+##### 💼 Other
+
+- Merge pull request #110 from SunriseCommunity/feat/small-replay-download-improvements [`d0c7f48`](https://github.com/SunriseCommunity/Sunrise/commit/d0c7f4819f429ba236c24db64b0660a0ee5de41f)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.1.21...v0.1.22`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.21...v0.1.22)
+
+## 🏷️ [0.1.21](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.21) - 2026-03-11
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
 #### 🔀 Merge Commits
 
 - [chore] Merge Branch 'main' of https://github.com/SunriseCommunity/Solar-System [`051f068`](https://github.com/SunriseCommunity/Solar-System/commit/051f06851380bad41011d2bced1fe2784317653a)
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`63fcd89`](https://github.com/SunriseCommunity/Solar-System/commit/63fcd8977ffd65aae647becfb525a24960eb7193)
 
 
 </details>
