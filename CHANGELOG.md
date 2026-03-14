@@ -7,7 +7,7 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
-## 🏷️ [0.1.23](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.23) - 2026-03-13
+## 🏷️ [0.1.24](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.24) - 2026-03-14
 
 
 
@@ -23,6 +23,68 @@
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update submodules [`647e61c`](https://github.com/SunriseCommunity/Solar-System/commit/647e61c9d18ce12717f2e8a9cc817ba380dcd7c4)
+
+
+</details>
+
+
+
+
+### 🌅 Sunrise
+
+
+#### 🔀 Pull Requests
+
+- Dont Disregard User Stats If Disabled by @richardscull in [#114](https://github.com/SunriseCommunity/Sunrise/pull/114)
+
+
+
+
+<details>
+<summary>📝 3 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- Improve query [`471e25c`](https://github.com/SunriseCommunity/Sunrise/commit/471e25cd6cc94c004b08d48737ef1072183cd199)
+
+- Allow saving snapshots for disabled/restricted users [`dd281c8`](https://github.com/SunriseCommunity/Sunrise/commit/dd281c829b48c23b6f84ad7c8246ee257e66d947)
+
+- deprecate user stats refresh on user being disabled [`687513e`](https://github.com/SunriseCommunity/Sunrise/commit/687513e046d87bcb99f658a2315798ce59587b4b)
+
+
+##### 💼 Other
+
+- Merge pull request #114 from SunriseCommunity/feat/dont-disregard-user-stats-if-disabled [`d3ca85e`](https://github.com/SunriseCommunity/Sunrise/commit/d3ca85e5b5ba0bb9d418bf3b0f71c5eb2874c7af)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.1.23...v0.1.24`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.23...v0.1.24)
+
+## 🏷️ [0.1.23](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.23) - 2026-03-13
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`b049f01`](https://github.com/SunriseCommunity/Solar-System/commit/b049f01d1134dfbfbc5dfab5614af488c421dc75)
 
 - update submodules [`a7e7599`](https://github.com/SunriseCommunity/Solar-System/commit/a7e7599b987ad8d2af04d5253057b2d39639835b)
 
