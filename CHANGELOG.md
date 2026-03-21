@@ -7,7 +7,7 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
-## 🏷️ [0.1.29](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.29) - 2026-03-21
+## 🏷️ [0.1.30](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.30) - 2026-03-21
 
 
 
@@ -23,6 +23,60 @@
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update submodules [`bfe89ec`](https://github.com/SunriseCommunity/Solar-System/commit/bfe89ec7d273766d506cd09d08b9369bb966b4da)
+
+
+</details>
+
+
+
+
+### 🔭 Observatory
+
+
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+##### 🐛 Bug Fixes
+
+- Properly fetch second page [`1485fae`](https://github.com/SunriseCommunity/Observatory/commit/1485fae1123fb2154fa09015cff405c5ae540440)
+
+
+##### 💼 Other
+
+- handle ranked status for bancho search as one and handle osu bancho query as sorting if required [`37119fa`](https://github.com/SunriseCommunity/Observatory/commit/37119fab53cbff1ef8828594b9fb0bc6461b65b1)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.1.29...v0.1.30`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.29...v0.1.30)
+
+## 🏷️ [0.1.29](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.29) - 2026-03-21
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`ca9189b`](https://github.com/SunriseCommunity/Solar-System/commit/ca9189bc9fa15ced43384734c20037a99972159d)
 
 - update submodules [`5632d3f`](https://github.com/SunriseCommunity/Solar-System/commit/5632d3fc65adf19942803959440c383e6f9326df)
 
