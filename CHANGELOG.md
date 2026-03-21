@@ -7,7 +7,7 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
-## 🏷️ [0.1.28](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.28) - 2026-03-21
+## 🏷️ [0.1.29](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.29) - 2026-03-21
 
 
 
@@ -23,6 +23,55 @@
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update submodules [`5632d3f`](https://github.com/SunriseCommunity/Solar-System/commit/5632d3fc65adf19942803959440c383e6f9326df)
+
+
+</details>
+
+
+
+
+### 🔭 Observatory
+
+
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+##### 🐛 Bug Fixes
+
+- bancho search doesn't apply correct query [`77d4cd2`](https://github.com/SunriseCommunity/Observatory/commit/77d4cd20d4e054c1f3f84c3211c2f1f22110981c)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.1.28...v0.1.29`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.28...v0.1.29)
+
+## 🏷️ [0.1.28](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.28) - 2026-03-21
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`dcf8082`](https://github.com/SunriseCommunity/Solar-System/commit/dcf8082ed8b1e2635f2ca5bdbab574ea7efc9480)
 
 - update submodules [`0a55db2`](https://github.com/SunriseCommunity/Solar-System/commit/0a55db28b4159360225346ed4baf1432e2529d82)
 
