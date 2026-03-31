@@ -19,10 +19,12 @@
 
 
 <details>
-<summary>📝 1 commit(s)</summary>
+<summary>📝 2 commit(s)</summary>
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`6559872`](https://github.com/SunriseCommunity/Solar-System/commit/655987256cb4f6ec9b47ba8762aa987f1f1f0615)
 
 - update submodules [`2e45367`](https://github.com/SunriseCommunity/Solar-System/commit/2e45367f2f0f218877f3e78faf32b864facede74)
 
