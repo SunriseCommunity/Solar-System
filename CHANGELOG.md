@@ -7,6 +7,104 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
+## 🏷️ [0.1.39](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.39) - 2026-04-20
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 6 commit(s)</summary>
+
+
+#### 🚀 Features
+
+- Add generate-database scripts and improve scripts security [`e58f77f`](https://github.com/SunriseCommunity/Solar-System/commit/e58f77f6920dfb1f1986a577e183f938b5da8a66)
+
+- Don't expose port DBs by default [`44423dc`](https://github.com/SunriseCommunity/Solar-System/commit/44423dcb19791f915f73c5345125c2475f8941e1)
+
+- Setup NEXT_PUBLIC_UNOPTIMIZED_IMAGES for local instances [`efc1af1`](https://github.com/SunriseCommunity/Solar-System/commit/efc1af1bca79a4de3308ef5acb8e54e1991babcc)
+
+
+#### 🔀 Merge Commits
+
+- [chore] Merge Branch 'main' of https://github.com/SunriseCommunity/Solar-System [`34b0e56`](https://github.com/SunriseCommunity/Solar-System/commit/34b0e56c4ec2897abefbaf3b59223fe02cd9f777)
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update submodules [`aedae6b`](https://github.com/SunriseCommunity/Solar-System/commit/aedae6bbefb19e80232acedecc971509b51ce4a4)
+
+- Update README.md [`666b7e8`](https://github.com/SunriseCommunity/Solar-System/commit/666b7e8bbdca6ba546d3bddfdb62f3e6b47e7d54)
+
+
+</details>
+
+
+
+
+### 🌅 Sunrise
+
+
+#### 🔀 Pull Requests
+
+- Use Tar Gz Backup by @richardscull in [#118](https://github.com/SunriseCommunity/Sunrise/pull/118)
+
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- Use tag gz based backups [`3054ea5`](https://github.com/SunriseCommunity/Sunrise/commit/3054ea52380ac521a95c53e7a4e86e9c53301daf)
+
+
+##### 💼 Other
+
+- Merge pull request #118 from SunriseCommunity/feat/use-tar-gz-backup [`29ba611`](https://github.com/SunriseCommunity/Sunrise/commit/29ba611a899cc6283d8d19bd929e53d373569bc0)
+
+
+</details>
+
+
+### 🌇 Sunset
+
+
+#### 🔀 Pull Requests
+
+- Patch 1 by @richardscull in [#43](https://github.com/SunriseCommunity/Sunset/pull/43)
+
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+##### 💼 Other
+
+- Merge pull request #43 from miniblack0662/patch-1 [`6fde152`](https://github.com/SunriseCommunity/Sunset/commit/6fde152c32220c31ab64e2a99ab4a9dea967b0b0)
+
+- Update UserSocials.tsx [`c887fc8`](https://github.com/SunriseCommunity/Sunset/commit/c887fc8987e9abf02d9cdf535f3bd130fa9078a7)
+
+- Update UserSocials.tsx [`bdd4242`](https://github.com/SunriseCommunity/Sunset/commit/bdd42421c6fb75439116daccdc57187ad0d8b149)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.1.38...v0.1.39`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.38...v0.1.39)
+
 ## 🏷️ [0.1.38](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.38) - 2026-04-09
 
 
@@ -19,10 +117,12 @@
 
 
 <details>
-<summary>📝 1 commit(s)</summary>
+<summary>📝 2 commit(s)</summary>
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`cdc7477`](https://github.com/SunriseCommunity/Solar-System/commit/cdc7477c01bd761834f81d2979b9df5afb69c29e)
 
 - update submodules [`695cfb3`](https://github.com/SunriseCommunity/Solar-System/commit/695cfb302557b1a0a0f42d6c3a9176f32427fd21)
 
@@ -265,7 +365,7 @@
 
 
 <details>
-<summary>📝 3 commit(s)</summary>
+<summary>📝 4 commit(s)</summary>
 
 
 #### 🚀 Features
@@ -278,6 +378,8 @@
 - update CHANGELOG.md and .version [`969b8f8`](https://github.com/SunriseCommunity/Solar-System/commit/969b8f8e63583ab70776c5ef8fcec5f7058dba29)
 
 - update submodules [`1b60803`](https://github.com/SunriseCommunity/Solar-System/commit/1b6080368c8ccbf00f4882a8b138c8db3963015b)
+
+- update submodules [`6c9d457`](https://github.com/SunriseCommunity/Solar-System/commit/6c9d4575f2e77e6fad509be1257206de30be20e7)
 
 
 </details>
