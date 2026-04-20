@@ -88,7 +88,7 @@ Before you begin, ensure you have the following installed:
 
 3. **Generate API keys:**
    
-   Generate the token secret for Sunrise API requests:
+   #### 3.1 Generate the token secret for Sunrise API requests:
    
    ```console
    chmod +x lib/scripts/generate-api-sunrise-key.sh
@@ -97,12 +97,24 @@ Before you begin, ensure you have the following installed:
 
    This will generate a token secret for the Sunrise API requests.
    
-   Generate the Observatory API key (allows Sunrise to request Observatory without internal rate limits):
+   #### 3.2 Generate the Observatory API key (allows Sunrise to request Observatory without internal rate limits):
    
    ```console
    chmod +x lib/scripts/generate-observatory-api-key.sh
    ./lib/scripts/generate-observatory-api-key.sh
    ```
+
+   This will generate an API key for the Observatory to ignore rate limits for requests coming from Sunrise.
+
+   #### 3.3 Generate secure database passwords:
+
+   ```console
+   chmod +x lib/scripts/generate-database-passwords.sh
+   ./lib/scripts/generate-database-passwords.sh
+   ```
+   This will generate secure passwords for both MySQL and PostgreSQL databases. 
+  
+   Make sure to not lose these credentials as they are required to access the databases! You can find them in the `.env` file under `SUNRISE_MYSQL_ROOT_PASSWORD` and `OBSERVATORY_POSTGRES_PASSWORD`.
    
   > [!TIP]
   > You will be prompted to run multiple `.sh` scripts during setup, if you are using **Windows**, please use `.bat` equivalent scripts located in the same folder.
@@ -169,6 +181,11 @@ To make your server accessible on the internet:
   > [!IMPORTANT]
   > If you are intending to use **Grafana** for monitoring, make sure to uncomment the Grafana section in the `Caddyfile` before starting Caddy.
   > After starting Caddy, make sure to visit `grafana.*` subdomain and change the default password for the admin account!
+
+  > [!CAUTION]
+  > Make sure you have the correct ports open in your firewall (80 and 443) for the server to be accessible from the internet.
+  >
+  > Also to readers notice, docker containers are capable of overriding firewall rules, which can expose your server to the internet even if you don't want it to. We recommend setting up ufw-docker to manage this. You can find the instructions in the [ufw-docker](https://github.com/chaifeng/ufw-docker#install) repository.
 
 ## Contributing 💖
 
