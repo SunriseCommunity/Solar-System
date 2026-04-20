@@ -7,7 +7,7 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
-## 🏷️ [0.1.32](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.32) - 2026-03-22
+## 🏷️ [0.1.38](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.38) - 2026-04-09
 
 
 
@@ -23,6 +23,326 @@
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update submodules [`695cfb3`](https://github.com/SunriseCommunity/Solar-System/commit/695cfb302557b1a0a0f42d6c3a9176f32427fd21)
+
+
+</details>
+
+
+
+
+### 🌇 Sunset
+
+
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+##### 🐛 Bug Fixes
+
+- typo [`8d02973`](https://github.com/SunriseCommunity/Sunset/commit/8d0297364370037b680c6100bb16820eead6f2d3)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.1.37...v0.1.38`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.37...v0.1.38)
+
+## 🏷️ [0.1.37](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.37) - 2026-03-31
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`7e3bf81`](https://github.com/SunriseCommunity/Solar-System/commit/7e3bf81dbad1e55ce4c3d28d2cbcea61c46a56fd)
+
+- update submodules [`4f4fa68`](https://github.com/SunriseCommunity/Solar-System/commit/4f4fa687c036551d5f594cff25b2e43774bebe56)
+
+
+</details>
+
+
+
+
+### 🌅 Sunrise
+
+
+#### 🔀 Pull Requests
+
+- Invalidate Tables One By One by @richardscull in [#117](https://github.com/SunriseCommunity/Sunrise/pull/117)
+
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+##### 🐛 Bug Fixes
+
+- invalidate table one by one [`46d23d7`](https://github.com/SunriseCommunity/Sunrise/commit/46d23d7ca763725a2bea68f7c94e1ee172b7091b)
+
+
+##### 💼 Other
+
+- Merge pull request #117 from SunriseCommunity/fix/invalidate-tables-one-by-one [`1c18e58`](https://github.com/SunriseCommunity/Sunrise/commit/1c18e58127d9b51a9bbc75ac6508a6198b440e4d)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.1.36...v0.1.37`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.36...v0.1.37)
+
+## 🏷️ [0.1.36](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.36) - 2026-03-31
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`e363b73`](https://github.com/SunriseCommunity/Solar-System/commit/e363b7370bef20450b8ed64449ad025b6a25c56f)
+
+- update submodules [`9cd4938`](https://github.com/SunriseCommunity/Solar-System/commit/9cd49383e938aa4a1e0f1bc4bb942b3ec437e40e)
+
+
+</details>
+
+
+
+
+### 🌅 Sunrise
+
+
+#### 🔀 Pull Requests
+
+- Clean Db Second Layer Cache After Transaction by @richardscull in [#116](https://github.com/SunriseCommunity/Sunrise/pull/116)
+
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- Clear db second layer cache after transaction [`2e660e1`](https://github.com/SunriseCommunity/Sunrise/commit/2e660e1a8130b75a00fd7d8c9fa9949f561153f3)
+
+
+##### 🐛 Bug Fixes
+
+- make cache service provider nullable [`a93596e`](https://github.com/SunriseCommunity/Sunrise/commit/a93596ea91603cc78a1b3589acb6b3f2852d4437)
+
+
+##### 💼 Other
+
+- Merge pull request #116 from SunriseCommunity/feat/clean-db-second-layer-cache-after-transaction [`c5c781c`](https://github.com/SunriseCommunity/Sunrise/commit/c5c781c746f5889ec4d4b5e7cb42f4533f17942d)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.1.35...v0.1.36`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.35...v0.1.36)
+
+## 🏷️ [0.1.35](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.35) - 2026-03-31
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`4735ea8`](https://github.com/SunriseCommunity/Solar-System/commit/4735ea852a989939249d6e7b534b00973e97ddad)
+
+
+</details>
+
+
+
+
+
+
+**Full Changelog**: [`v0.1.34...v0.1.35`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.34...v0.1.35)
+
+## 🏷️ [0.1.34](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.34) - 2026-03-26
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`6559872`](https://github.com/SunriseCommunity/Solar-System/commit/655987256cb4f6ec9b47ba8762aa987f1f1f0615)
+
+- update submodules [`2e45367`](https://github.com/SunriseCommunity/Solar-System/commit/2e45367f2f0f218877f3e78faf32b864facede74)
+
+
+</details>
+
+
+
+
+### 🔭 Observatory
+
+
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+##### 🐛 Bug Fixes
+
+- disable search result inserting into the database [`7f0b3d0`](https://github.com/SunriseCommunity/Observatory/commit/7f0b3d0e8148a696b3e68c13a1ad8fb14e78a00f)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.1.33...v0.1.34`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.33...v0.1.34)
+
+## 🏷️ [0.1.33](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.33) - 2026-03-26
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 3 commit(s)</summary>
+
+
+#### 🚀 Features
+
+- Add local scripts [`89fc560`](https://github.com/SunriseCommunity/Solar-System/commit/89fc5604960e7ec2f95ea600c2275b07c419af7f)
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`969b8f8`](https://github.com/SunriseCommunity/Solar-System/commit/969b8f8e63583ab70776c5ef8fcec5f7058dba29)
+
+- update submodules [`1b60803`](https://github.com/SunriseCommunity/Solar-System/commit/1b6080368c8ccbf00f4882a8b138c8db3963015b)
+
+
+</details>
+
+
+
+
+### 🔭 Observatory
+
+
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+##### 🐛 Bug Fixes
+
+- fallback to proper objects for databaseToObject [`127e276`](https://github.com/SunriseCommunity/Observatory/commit/127e276958a5f91ccb5d77343092f0328e0e888d)
+
+
+</details>
+
+
+### 🌇 Sunset
+
+
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- Add env option to unoptimize images [`c7c7ffc`](https://github.com/SunriseCommunity/Sunset/commit/c7c7ffcd9f06726f134cb9e21384078a680533af)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.1.32...v0.1.33`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.32...v0.1.33)
+
+## 🏷️ [0.1.32](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.32) - 2026-03-22
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`02913a4`](https://github.com/SunriseCommunity/Solar-System/commit/02913a4c6a5ef9cea4d87f4ada12a484e40a59c5)
 
 - update submodules [`e09afd8`](https://github.com/SunriseCommunity/Solar-System/commit/e09afd8ef7c51cbdcaece4544fca93f3cd036fe1)
 
