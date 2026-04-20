@@ -128,10 +128,12 @@ services:
         NEXT_PUBLIC_BOOSTY_LINK: ${SUNSET_NEXT_PUBLIC_BOOSTY_LINK}
         NEXT_PUBLIC_STATUS_PAGE_LINK: ${SUNSET_NEXT_PUBLIC_STATUS_PAGE_LINK}
         NEXT_PUBLIC_PATCHER_PAGE_ENABLED: ${SUNSET_NEXT_PUBLIC_PATCHER_PAGE_ENABLED}
+        NEXT_PUBLIC_UNOPTIMIZED_IMAGES: true # Disable image optimization since we are using self-signed certificate
     restart: unless-stopped
     environment:
       NEXT_PUBLIC_SERVER_DOMAIN: ${WEB_DOMAIN}
       NODE_TLS_REJECT_UNAUTHORIZED: 0
+      NEXT_PUBLIC_UNOPTIMIZED_IMAGES: true
     ports:
       - ${SUNSET_PORT}:3000
     deploy:
