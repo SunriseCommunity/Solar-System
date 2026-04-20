@@ -203,8 +203,9 @@ services:
       MYSQL_DATABASE: ${SUNRISE_MYSQL_DATABASE}
     volumes:
       - mysql_data:/var/lib/mysql
-    ports:
-      - ${SUNRISE_MYSQL_PORT}:3306
+    # ports:
+    #   - ${SUNRISE_MYSQL_PORT}:3306
+    # We don't expose MySQL to the host for security reasons, but you can still connect to it from the host using `docker exec`. You are free to uncomment the above lines if you want to expose it to the host.
     networks:
       - container_network
     command:
@@ -223,8 +224,9 @@ services:
       POSTGRES_USER: ${OBSERVATORY_POSTGRES_USER}
       POSTGRES_PASSWORD: ${OBSERVATORY_POSTGRES_PASSWORD}
       POSTGRES_DB: ${OBSERVATORY_POSTGRES_DB}
-    ports:
-      - ${OBSERVATORY_POSTGRES_PORT}:5432
+    # ports:
+    #   - ${OBSERVATORY_POSTGRES_PORT}:5432
+    # We don't expose Postgres to the host for security reasons, but you can still connect to it from the host using `docker exec`. You are free to uncomment the above lines if you want to expose it to the host.
     volumes:
       - observatory_data:/var/lib/postgresql/data:Z
     networks:
