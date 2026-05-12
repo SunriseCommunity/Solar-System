@@ -7,6 +7,88 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
+## 🏷️ [0.1.40](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.40) - 2026-05-12
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update submodules [`cd54805`](https://github.com/SunriseCommunity/Solar-System/commit/cd548057b2d8366060956648776fd0c4088d015f)
+
+
+</details>
+
+
+
+
+### 🌅 Sunrise
+
+
+#### 🔀 Pull Requests
+
+- [dependency] Update Opentelemetry by @richardscull in [#121](https://github.com/SunriseCommunity/Sunrise/pull/121)
+- General Multiplayer Fixes by @richardscull in [#120](https://github.com/SunriseCommunity/Sunrise/pull/120)
+
+
+
+
+<details>
+<summary>📝 11 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- bump opentelemetry packages [`900666e`](https://github.com/SunriseCommunity/Sunrise/commit/900666e2021e6ba065a3283e47905e52c7dd3752)
+
+- Don't announce match creation if we couldnt create it [`7969302`](https://github.com/SunriseCommunity/Sunrise/commit/7969302a6868a4043c4de3cbde06b40e682369b1)
+
+- gracefully kick players when closing matches [`92ba3cb`](https://github.com/SunriseCommunity/Sunrise/commit/92ba3cb5e21d7e31932a2bbe45039375852b8891)
+
+- Add close inactive multiplayer matches [`49239c6`](https://github.com/SunriseCommunity/Sunrise/commit/49239c62ffba7055cd47f25472de6f656fa428e8)
+
+- Disable hangfire dashboard [`3406c1f`](https://github.com/SunriseCommunity/Sunrise/commit/3406c1f6c1e555e4ba6164f788f39f6d1cd40326)
+
+- Add temp patch fix for size user kick [`c3291a1`](https://github.com/SunriseCommunity/Sunrise/commit/c3291a109cdb84d0ed8f8193751ce46137cd1a27)
+
+- add tests [`a5f2545`](https://github.com/SunriseCommunity/Sunrise/commit/a5f2545c27a4931a1951865560a55cbca105eabd)
+
+- Reuse match id if possible [`0710f38`](https://github.com/SunriseCommunity/Sunrise/commit/0710f382b19c54ebcbebc301d6234486f3e48cc8)
+
+- Remove match if we couldn't add host to the match players [`64b58ae`](https://github.com/SunriseCommunity/Sunrise/commit/64b58ae180d9da195ebb4533983c0ccf8b3bb0b5)
+
+
+##### 🐛 Bug Fixes
+
+- human slop 2 [`e7ac374`](https://github.com/SunriseCommunity/Sunrise/commit/e7ac374c68414d08d7c9f06b865d121a7e1b6118)
+
+- human slop [`52ce197`](https://github.com/SunriseCommunity/Sunrise/commit/52ce197a2d04ce5ffbd6dc67008df7f6adb0d272)
+
+
+##### 💼 Other
+
+- Merge pull request #121 from SunriseCommunity/feat/bump-opentelemetry [`3d8c692`](https://github.com/SunriseCommunity/Sunrise/commit/3d8c692d40e4a357684f7630b44fbc656879e4a3)
+
+- Merge pull request #120 from SunriseCommunity/feat/general-multiplayer-fixes [`e0063fd`](https://github.com/SunriseCommunity/Sunrise/commit/e0063fddeeb50f36971a93368a2b801be1d3fbc8)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.1.39...v0.1.40`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.39...v0.1.40)
+
 ## 🏷️ [0.1.39](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.39) - 2026-04-20
 
 
@@ -19,7 +101,7 @@
 
 
 <details>
-<summary>📝 6 commit(s)</summary>
+<summary>📝 7 commit(s)</summary>
 
 
 #### 🚀 Features
@@ -37,6 +119,8 @@
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`33af3fe`](https://github.com/SunriseCommunity/Solar-System/commit/33af3fec344e3569b26fea959cb4623cdc8e23c2)
 
 - update submodules [`aedae6b`](https://github.com/SunriseCommunity/Solar-System/commit/aedae6bbefb19e80232acedecc971509b51ce4a4)
 
