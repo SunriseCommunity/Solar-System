@@ -318,7 +318,7 @@ services:
       retries: 3
 
   tempo:
-    image: grafana/tempo:latest
+    image: grafana/tempo:2.9.2
     command: ["--config.file=/etc/tempo.yml"]
     restart: unless-stopped
     volumes:
