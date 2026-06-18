@@ -7,6 +7,53 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
+## 🏷️ [0.1.42](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.42) - 2026-06-18
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update submodules [`1606476`](https://github.com/SunriseCommunity/Solar-System/commit/1606476b9ed65b5d4fb37954540d7b62868eef74)
+
+
+</details>
+
+
+
+
+### 🌅 Sunrise
+
+
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- Use osu.direct as default mirror for redirect beatmap set download; Add option to select your own mirror; [`0deca5a`](https://github.com/SunriseCommunity/Sunrise/commit/0deca5afa3619e3f50a6dbde312c3d2f15119c69)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.1.41...v0.1.42`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.41...v0.1.42)
+
 ## 🏷️ [0.1.41](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.41) - 2026-06-02
 
 
@@ -19,7 +66,7 @@
 
 
 <details>
-<summary>📝 2 commit(s)</summary>
+<summary>📝 3 commit(s)</summary>
 
 
 #### 🚀 Features
@@ -28,6 +75,8 @@
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`f57ae61`](https://github.com/SunriseCommunity/Solar-System/commit/f57ae61a7202eaf4d191e40f89d7893a9293614f)
 
 - update submodules [`0416d06`](https://github.com/SunriseCommunity/Solar-System/commit/0416d065d0894be4e132eab831b7bcaa50f53e89)
 
