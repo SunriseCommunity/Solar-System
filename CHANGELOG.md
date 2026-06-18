@@ -7,7 +7,7 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
-## 🏷️ [0.1.42](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.42) - 2026-06-18
+## 🏷️ [0.1.43](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.43) - 2026-06-18
 
 
 
@@ -23,6 +23,55 @@
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update submodules [`8aadd16`](https://github.com/SunriseCommunity/Solar-System/commit/8aadd1666d857fe64da887083317d97fa175fe28)
+
+
+</details>
+
+
+
+
+### 🌅 Sunrise
+
+
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+##### 🐛 Bug Fixes
+
+- Add missing Configuration.cs changes [`2be95a8`](https://github.com/SunriseCommunity/Sunrise/commit/2be95a878a0b5b8f7d902e34533c2469024bcb8a)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.1.42...v0.1.43`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.42...v0.1.43)
+
+## 🏷️ [0.1.42](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.42) - 2026-06-18
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`ffc2e95`](https://github.com/SunriseCommunity/Solar-System/commit/ffc2e95362dbee5197aa0a32825ee1e1e9028791)
 
 - update submodules [`1606476`](https://github.com/SunriseCommunity/Solar-System/commit/1606476b9ed65b5d4fb37954540d7b62868eef74)
 
