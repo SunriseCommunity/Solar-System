@@ -7,6 +7,67 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
+## 🏷️ [0.1.44](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.44) - 2026-08-28
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+#### 🔀 Merge Commits
+
+- [chore] Merge Branch 'main' of https://github.com/SunriseCommunity/Solar-System [`7d08f79`](https://github.com/SunriseCommunity/Solar-System/commit/7d08f798604e54111ff3ead0cf26709678d8d2d2)
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update submodules [`4507443`](https://github.com/SunriseCommunity/Solar-System/commit/45074433988a6ba84f98c876a42daf05536555e3)
+
+
+</details>
+
+
+
+
+### 🌇 Sunset
+
+
+#### 🔀 Pull Requests
+
+- Scroll Up Crashes Runtime by @richardscull in [#46](https://github.com/SunriseCommunity/Sunset/pull/46)
+
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+##### 🐛 Bug Fixes
+
+- don't return scroll for result since it doesn't have destroy [`6b83bbd`](https://github.com/SunriseCommunity/Sunset/commit/6b83bbd3b16699ce332702efde7d11adc2b006b7)
+
+
+##### 💼 Other
+
+- Merge pull request #46 from SunriseCommunity/fix/scroll-up-crashes-runtime [`68caeaf`](https://github.com/SunriseCommunity/Sunset/commit/68caeaffcb216bb7ebe2a5e3a3cb5b0599b24fe7)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.1.43...v0.1.44`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.43...v0.1.44)
+
 ## 🏷️ [0.1.43](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.43) - 2026-06-18
 
 
@@ -19,10 +80,12 @@
 
 
 <details>
-<summary>📝 1 commit(s)</summary>
+<summary>📝 2 commit(s)</summary>
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`748f354`](https://github.com/SunriseCommunity/Solar-System/commit/748f354bab7024f9989e7a72b23e3ccf0edc3614)
 
 - update submodules [`8aadd16`](https://github.com/SunriseCommunity/Solar-System/commit/8aadd1666d857fe64da887083317d97fa175fe28)
 
@@ -115,12 +178,17 @@
 
 
 <details>
-<summary>📝 3 commit(s)</summary>
+<summary>📝 4 commit(s)</summary>
 
 
 #### 🚀 Features
 
 - Lock major tempo version [`ec8304d`](https://github.com/SunriseCommunity/Solar-System/commit/ec8304d517a90e737b69f0129bfdfcf69068c2a8)
+
+
+#### 🐛 Bug Fixes
+
+- dasboard memory data grafana [`bfca0b4`](https://github.com/SunriseCommunity/Solar-System/commit/bfca0b46f57b6bf6881180a6ef5c06d56d1de0d2)
 
 
 #### ⚙️ Miscellaneous Tasks
