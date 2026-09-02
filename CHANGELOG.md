@@ -7,6 +7,62 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
+## 🏷️ [0.1.45](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.45) - 2026-09-02
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update submodules [`1dba23c`](https://github.com/SunriseCommunity/Solar-System/commit/1dba23c1450e9b4727ecb573057523d5f159b142)
+
+
+</details>
+
+
+
+
+### 🌅 Sunrise
+
+
+#### 🔀 Pull Requests
+
+- Show User Profile Country If Location Hidden by @richardscull in [#132](https://github.com/SunriseCommunity/Sunrise/pull/132)
+
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- Add UseUserProfileCountryIfLocationHidden and use user profile location if enabled [`d9d20a6`](https://github.com/SunriseCommunity/Sunrise/commit/d9d20a6982d532f3e4628685d876018b59b56209)
+
+
+##### 💼 Other
+
+- Merge pull request #132 from SunriseCommunity/feat/show-user-profile-country-if-location-hidden [`d319893`](https://github.com/SunriseCommunity/Sunrise/commit/d319893948ed78fdc78f649856fac0e6560822d8)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.1.44...v0.1.45`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.44...v0.1.45)
+
 ## 🏷️ [0.1.44](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.44) - 2026-08-28
 
 
@@ -19,7 +75,12 @@
 
 
 <details>
-<summary>📝 2 commit(s)</summary>
+<summary>📝 4 commit(s)</summary>
+
+
+#### 🐛 Bug Fixes
+
+- dasboard memory data grafana [`bfca0b4`](https://github.com/SunriseCommunity/Solar-System/commit/bfca0b46f57b6bf6881180a6ef5c06d56d1de0d2)
 
 
 #### 🔀 Merge Commits
@@ -28,6 +89,8 @@
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`61d1c0d`](https://github.com/SunriseCommunity/Solar-System/commit/61d1c0d8072ed7b36a00c0ec52c7adc9fa8e279e)
 
 - update submodules [`4507443`](https://github.com/SunriseCommunity/Solar-System/commit/45074433988a6ba84f98c876a42daf05536555e3)
 
@@ -178,17 +241,12 @@
 
 
 <details>
-<summary>📝 4 commit(s)</summary>
+<summary>📝 3 commit(s)</summary>
 
 
 #### 🚀 Features
 
 - Lock major tempo version [`ec8304d`](https://github.com/SunriseCommunity/Solar-System/commit/ec8304d517a90e737b69f0129bfdfcf69068c2a8)
-
-
-#### 🐛 Bug Fixes
-
-- dasboard memory data grafana [`bfca0b4`](https://github.com/SunriseCommunity/Solar-System/commit/bfca0b46f57b6bf6881180a6ef5c06d56d1de0d2)
 
 
 #### ⚙️ Miscellaneous Tasks
@@ -335,7 +393,7 @@
 
 
 <details>
-<summary>📝 7 commit(s)</summary>
+<summary>📝 8 commit(s)</summary>
 
 
 #### 🚀 Features
@@ -359,6 +417,8 @@
 - update submodules [`aedae6b`](https://github.com/SunriseCommunity/Solar-System/commit/aedae6bbefb19e80232acedecc971509b51ce4a4)
 
 - Update README.md [`666b7e8`](https://github.com/SunriseCommunity/Solar-System/commit/666b7e8bbdca6ba546d3bddfdb62f3e6b47e7d54)
+
+- update submodules [`6c9d457`](https://github.com/SunriseCommunity/Solar-System/commit/6c9d4575f2e77e6fad509be1257206de30be20e7)
 
 
 </details>
@@ -683,7 +743,7 @@
 
 
 <details>
-<summary>📝 4 commit(s)</summary>
+<summary>📝 3 commit(s)</summary>
 
 
 #### 🚀 Features
@@ -696,8 +756,6 @@
 - update CHANGELOG.md and .version [`969b8f8`](https://github.com/SunriseCommunity/Solar-System/commit/969b8f8e63583ab70776c5ef8fcec5f7058dba29)
 
 - update submodules [`1b60803`](https://github.com/SunriseCommunity/Solar-System/commit/1b6080368c8ccbf00f4882a8b138c8db3963015b)
-
-- update submodules [`6c9d457`](https://github.com/SunriseCommunity/Solar-System/commit/6c9d4575f2e77e6fad509be1257206de30be20e7)
 
 
 </details>
@@ -1469,7 +1527,12 @@
 
 
 <details>
-<summary>📝 2 commit(s)</summary>
+<summary>📝 3 commit(s)</summary>
+
+
+#### 🚀 Features
+
+- Update Sunset.Dockerfile [`58d7913`](https://github.com/SunriseCommunity/Solar-System/commit/58d79131091106df8c0fe5040cb16af32334a8fa)
 
 
 #### 🔀 Merge Commits
@@ -1503,12 +1566,7 @@
 
 
 <details>
-<summary>📝 3 commit(s)</summary>
-
-
-#### 🚀 Features
-
-- Update Sunset.Dockerfile [`58d7913`](https://github.com/SunriseCommunity/Solar-System/commit/58d79131091106df8c0fe5040cb16af32334a8fa)
+<summary>📝 2 commit(s)</summary>
 
 
 #### 🐛 Bug Fixes
@@ -2466,12 +2524,17 @@
 
 
 <details>
-<summary>📝 4 commit(s)</summary>
+<summary>📝 5 commit(s)</summary>
 
 
 #### 🚀 Features
 
 - Split local docker compose settings to docker-compose.local.yml [`6cba2aa`](https://github.com/SunriseCommunity/Solar-System/commit/6cba2aa9b0eb6c867cd1e00a4af2771f22ee87ea)
+
+
+#### 🐛 Bug Fixes
+
+- Mapping for observatory data volume [`6be7c81`](https://github.com/SunriseCommunity/Solar-System/commit/6be7c81d9d52e0eb4b2bbc18e46922dabfe85a7c)
 
 
 #### 🔀 Merge Commits
@@ -2635,9 +2698,9 @@
 <summary>📝 3 commit(s)</summary>
 
 
-#### 🐛 Bug Fixes
+#### 🚀 Features
 
-- Mapping for observatory data volume [`6be7c81`](https://github.com/SunriseCommunity/Solar-System/commit/6be7c81d9d52e0eb4b2bbc18e46922dabfe85a7c)
+- Use observatory_data volume for obseravtory [`cd84f34`](https://github.com/SunriseCommunity/Solar-System/commit/cd84f346bd2595231737afa0a16b91ad826cf3d6)
 
 
 #### 🔀 Merge Commits
@@ -2671,12 +2734,7 @@
 
 
 <details>
-<summary>📝 3 commit(s)</summary>
-
-
-#### 🚀 Features
-
-- Use observatory_data volume for obseravtory [`cd84f34`](https://github.com/SunriseCommunity/Solar-System/commit/cd84f346bd2595231737afa0a16b91ad826cf3d6)
+<summary>📝 2 commit(s)</summary>
 
 
 #### ⚙️ Miscellaneous Tasks
@@ -2811,7 +2869,7 @@
 
 
 <details>
-<summary>📝 3 commit(s)</summary>
+<summary>📝 4 commit(s)</summary>
 
 
 #### 🔀 Merge Commits
@@ -2824,6 +2882,8 @@
 - update CHANGELOG.md and .version [`a281d63`](https://github.com/SunriseCommunity/Solar-System/commit/a281d63a409f024267df4850a019df5a23f9c169)
 
 - update submodules [`e0808b4`](https://github.com/SunriseCommunity/Solar-System/commit/e0808b4b4e2c0baf90bb22751e269f1b28b5e15a)
+
+- Adapt multiple bash commands for macos and docker-compose [`1d58d59`](https://github.com/SunriseCommunity/Solar-System/commit/1d58d59287cbf8178218fd2af055b58ee1952a17)
 
 
 </details>
@@ -2883,7 +2943,7 @@
 
 - update CHANGELOG.md and .version [`46c3f62`](https://github.com/SunriseCommunity/Solar-System/commit/46c3f62b43f872f8a1be33b8ad7ee0083a8b2848)
 
-- Adapt multiple bash commands for macos and docker-compose [`1d58d59`](https://github.com/SunriseCommunity/Solar-System/commit/1d58d59287cbf8178218fd2af055b58ee1952a17)
+- Add new sunrsie env variables in docker compose and .env.example [`72e7c8e`](https://github.com/SunriseCommunity/Solar-System/commit/72e7c8ef73f459a66a08dad93b0084f757a7b05b)
 
 
 </details>
@@ -2919,9 +2979,9 @@
 
 - update CHANGELOG.md and .version [`d72d74a`](https://github.com/SunriseCommunity/Solar-System/commit/d72d74a060b98c565e3e672b5a48e6197be8b304)
 
-- Add new sunrsie env variables in docker compose and .env.example [`72e7c8e`](https://github.com/SunriseCommunity/Solar-System/commit/72e7c8ef73f459a66a08dad93b0084f757a7b05b)
-
 - Update cliff.toml [`d2c47b6`](https://github.com/SunriseCommunity/Solar-System/commit/d2c47b6c4d4b2970d69a0e7169ab5eb956b618d4)
+
+- Update changelog_prev.png [`b9b81be`](https://github.com/SunriseCommunity/Solar-System/commit/b9b81be04c5fd82b55b277affc2b769192220e6e)
 
 
 </details>
@@ -2945,12 +3005,18 @@
 
 
 <details>
-<summary>📝 14 commit(s)</summary>
+<summary>📝 18 commit(s)</summary>
 
 
 #### 🚀 Features
 
 - Add GITHUB_TOKEN env for git cliff [`56f13aa`](https://github.com/SunriseCommunity/Solar-System/commit/56f13aa66bb7b9a76eae2f8439bec31f495d2f9e)
+
+- Add generate-observatory-api-key.sh [`12a03b1`](https://github.com/SunriseCommunity/Solar-System/commit/12a03b1f2b6ca9ecbfa6ff7fd6730c902164feaf)
+
+- Add version check in start.sh [`ee2fe2a`](https://github.com/SunriseCommunity/Solar-System/commit/ee2fe2a05ae5fbaf14e161a8b5ae99c03ae612b1)
+
+- Add start.sh [`4c9703e`](https://github.com/SunriseCommunity/Solar-System/commit/4c9703e4bc674cdedcde99139d4893174301bbe8)
 
 
 #### 🐛 Bug Fixes
@@ -2971,8 +3037,6 @@
 
 - update CHANGELOG.md and .version [`bb9c6c6`](https://github.com/SunriseCommunity/Solar-System/commit/bb9c6c64eb5fb266f9282e4fe77dda7ed50be575)
 
-- Update changelog_prev.png [`b9b81be`](https://github.com/SunriseCommunity/Solar-System/commit/b9b81be04c5fd82b55b277affc2b769192220e6e)
-
 - Update cliff.toml [`9e23b02`](https://github.com/SunriseCommunity/Solar-System/commit/9e23b024475949903f60d211a1eb130edc65bfbd)
 
 - update submodules [`655d60c`](https://github.com/SunriseCommunity/Solar-System/commit/655d60ca62bf6246a012094728a735fa41fb7882)
@@ -2986,6 +3050,10 @@
 - Update .env.example [`6b6fd95`](https://github.com/SunriseCommunity/Solar-System/commit/6b6fd95392c23190851ef79e84ebbc2305117ad4)
 
 - Fix image path for README.md [`0d8c3a1`](https://github.com/SunriseCommunity/Solar-System/commit/0d8c3a1454926fc56e69eb199ee3f53e6551d060)
+
+- Update README.md [`5a42158`](https://github.com/SunriseCommunity/Solar-System/commit/5a4215840373bfe5f1f78dcde6c1b86099fb1fac)
+
+- Update README.md [`1e0c9a6`](https://github.com/SunriseCommunity/Solar-System/commit/1e0c9a64d9522c2e441ea7decfd078266bc2d985)
 
 
 </details>
@@ -3063,25 +3131,12 @@
 
 
 <details>
-<summary>📝 6 commit(s)</summary>
-
-
-#### 🚀 Features
-
-- Add generate-observatory-api-key.sh [`12a03b1`](https://github.com/SunriseCommunity/Solar-System/commit/12a03b1f2b6ca9ecbfa6ff7fd6730c902164feaf)
-
-- Add version check in start.sh [`ee2fe2a`](https://github.com/SunriseCommunity/Solar-System/commit/ee2fe2a05ae5fbaf14e161a8b5ae99c03ae612b1)
-
-- Add start.sh [`4c9703e`](https://github.com/SunriseCommunity/Solar-System/commit/4c9703e4bc674cdedcde99139d4893174301bbe8)
+<summary>📝 1 commit(s)</summary>
 
 
 #### ⚙️ Miscellaneous Tasks
 
 - update CHANGELOG.md and .version [`e58f875`](https://github.com/SunriseCommunity/Solar-System/commit/e58f87569de94e8471e93d5ad4ef1ab8aea3799a)
-
-- Update README.md [`5a42158`](https://github.com/SunriseCommunity/Solar-System/commit/5a4215840373bfe5f1f78dcde6c1b86099fb1fac)
-
-- Update README.md [`1e0c9a6`](https://github.com/SunriseCommunity/Solar-System/commit/1e0c9a64d9522c2e441ea7decfd078266bc2d985)
 
 
 </details>
@@ -4151,7 +4206,7 @@
 
 
 <details>
-<summary>📝 3 commit(s)</summary>
+<summary>📝 4 commit(s)</summary>
 
 
 #### 🔀 Merge Commits
@@ -4164,6 +4219,8 @@
 - update submodules [`cce39c4`](https://github.com/SunriseCommunity/Solar-System/commit/cce39c4aaa3cc0e6015a4968f43004c9a8b6f066)
 
 - update CHANGELOG.md [`ca612fc`](https://github.com/SunriseCommunity/Solar-System/commit/ca612fc452e168f1d6e452ad668e2d5daaa28068)
+
+- Add emoji postprocessors [`6155629`](https://github.com/SunriseCommunity/Solar-System/commit/61556297e769783fbaf4fb0da6aa506456f91f88)
 
 
 </details>
@@ -4187,7 +4244,7 @@
 
 
 <details>
-<summary>📝 6 commit(s)</summary>
+<summary>📝 5 commit(s)</summary>
 
 
 #### 🚀 Features
@@ -4203,8 +4260,6 @@
 #### ⚙️ Miscellaneous Tasks
 
 - update submodules [`3692168`](https://github.com/SunriseCommunity/Solar-System/commit/369216862cd97905d5c3f4084f810479d7217b2d)
-
-- Add emoji postprocessors [`6155629`](https://github.com/SunriseCommunity/Solar-System/commit/61556297e769783fbaf4fb0da6aa506456f91f88)
 
 - update CHANGELOG.md [`148af1f`](https://github.com/SunriseCommunity/Solar-System/commit/148af1f50952c7785b3de933dfea5cf4e737ab7f)
 
@@ -4232,7 +4287,12 @@
 
 
 <details>
-<summary>📝 1 commit(s)</summary>
+<summary>📝 2 commit(s)</summary>
+
+
+#### 🚀 Features
+
+- Prettify changelog [`a14daab`](https://github.com/SunriseCommunity/Solar-System/commit/a14daabcedad2a12fdb502ba98657d82ac8c0974)
 
 
 #### 🔀 Merge Commits
@@ -4261,12 +4321,10 @@
 
 
 <details>
-<summary>📝 3 commit(s)</summary>
+<summary>📝 2 commit(s)</summary>
 
 
 #### 🚀 Features
-
-- Prettify changelog [`a14daab`](https://github.com/SunriseCommunity/Solar-System/commit/a14daabcedad2a12fdb502ba98657d82ac8c0974)
 
 - [dependency] Update cliff version [`85378c0`](https://github.com/SunriseCommunity/Solar-System/commit/85378c060c0221730a7efb40d145a4d5a6eb9fa8)
 
