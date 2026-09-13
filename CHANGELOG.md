@@ -7,7 +7,7 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
-## 🏷️ [0.1.45](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.45) - 2026-09-02
+## 🏷️ [0.1.46](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.46) - 2026-09-13
 
 
 
@@ -23,6 +23,55 @@
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update submodules [`ad5ebb7`](https://github.com/SunriseCommunity/Solar-System/commit/ad5ebb78707fba7b435bf20622d1c2a7ded9e044)
+
+
+</details>
+
+
+
+
+### 🌅 Sunrise
+
+
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+##### 🐛 Bug Fixes
+
+- install curl for health check on Dockerfile [`4cd4c7b`](https://github.com/SunriseCommunity/Sunrise/commit/4cd4c7bdba3ca1b95bbaaa7dfce32790f5588a8f)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.1.45...v0.1.46`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.45...v0.1.46)
+
+## 🏷️ [0.1.45](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.45) - 2026-09-02
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`e0e5b74`](https://github.com/SunriseCommunity/Solar-System/commit/e0e5b74543b6bf77de359ed5c2e99937fce29c9f)
 
 - update submodules [`1dba23c`](https://github.com/SunriseCommunity/Solar-System/commit/1dba23c1450e9b4727ecb573057523d5f159b142)
 
