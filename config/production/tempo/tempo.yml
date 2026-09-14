@@ -36,7 +36,7 @@ ingester:
 
 compactor:
   compaction:
-    block_retention: 168h # 7 days
+    block_retention: 48h # 2 days
 
 metrics_generator:
   registry:
@@ -59,8 +59,6 @@ metrics_generator:
         - http.method
         - http.route
         - http.status_code
-        - session.user_id
-        - session.is_guest
     service_graphs:
       dimensions:
         - service.name
