@@ -7,7 +7,7 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
-## 🏷️ [0.1.46](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.46) - 2026-09-13
+## 🏷️ [0.1.47](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.47) - 2026-09-14
 
 
 
@@ -22,7 +22,38 @@
 <summary>📝 1 commit(s)</summary>
 
 
+#### 🚀 Features
+
+- Decrease block retention and remove user id from metrics [`ef7f1f5`](https://github.com/SunriseCommunity/Solar-System/commit/ef7f1f59ec674e77b9be7e38323b432c86e756ac)
+
+
+</details>
+
+
+
+
+
+
+**Full Changelog**: [`v0.1.46...v0.1.47`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.46...v0.1.47)
+
+## 🏷️ [0.1.46](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.46) - 2026-09-13
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
 #### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`5761317`](https://github.com/SunriseCommunity/Solar-System/commit/576131715cc5ce199edd0925907850ecc2a6945e)
 
 - update submodules [`ad5ebb7`](https://github.com/SunriseCommunity/Solar-System/commit/ad5ebb78707fba7b435bf20622d1c2a7ded9e044)
 
