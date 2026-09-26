@@ -11,6 +11,11 @@ on:
           - minor
           - patch
           - initial
+      release_candidate:
+        description: "Create a release candidate instead of a stable release"
+        required: true
+        type: boolean
+        default: false
   push:
     tags:
       - "v*"
@@ -31,39 +36,18 @@ jobs:
           fetch-depth: 0
           submodules: recursive
 
-      - name: Update submodules
-        run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
-
-          # Initialize and update submodules to latest commits
-          git submodule update --init --recursive --remote
-
-          # Check if there are any changes to submodules
-          if [ -n "$(git status --porcelain)" ]; then
-            echo "Submodules have been updated"
-            git add .
-            git commit -m "chore: update submodules" || echo "No changes to commit"
-            git push origin HEAD:main || echo "Nothing to push"
-          else
-            echo "No submodule updates available"
-          fi
-
       - name: Get latest tag or set initial version
         id: version
         run: |
           if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
-            LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
+            LATEST_TAG=$(git tag -l 'v*' | grep -E '^v[0-9]+\.[0-9]+\.[0-9]+$' | sort -V | tail -n 1)
             BUMP_TYPE="${{ github.event.inputs.version_bump }}"
             
             if [ -z "$LATEST_TAG" ] || [ "$BUMP_TYPE" == "initial" ]; then
               NEW_VERSION="v0.0.1"
             else
               VERSION=${LATEST_TAG#v}
-              IFS='.' read -r -a VERSION_PARTS <<< "$VERSION"
-              MAJOR=${VERSION_PARTS[0]}
-              MINOR=${VERSION_PARTS[1]}
-              PATCH=${VERSION_PARTS[2]}
+              IFS='.' read -r MAJOR MINOR PATCH <<< "$VERSION"
               
               case "$BUMP_TYPE" in
                 major)
@@ -82,17 +66,51 @@ jobs:
               
               NEW_VERSION="v${MAJOR}.${MINOR}.${PATCH}"
             fi
+
+            if [ "${{ github.event.inputs.release_candidate }}" == "true" ]; then
+              if git rev-parse -q --verify "refs/tags/$NEW_VERSION" >/dev/null; then
+                echo "Cannot create a release candidate after $NEW_VERSION is stable" >&2
+                exit 1
+              fi
+              LAST_RC=$(git tag -l "${NEW_VERSION}-rc.*" | sed -nE "s/^${NEW_VERSION//./\.}-rc\.([0-9]+)$/\1/p" | sort -n | tail -n 1)
+              NEW_VERSION="${NEW_VERSION}-rc.$(( ${LAST_RC:--1} + 1 ))"
+            fi
+
+            if git rev-parse -q --verify "refs/tags/$NEW_VERSION" >/dev/null; then
+              echo "Tag $NEW_VERSION already exists" >&2
+              exit 1
+            fi
             
-            echo "new_version=$NEW_VERSION" >> $GITHUB_OUTPUT
+            echo "new_version=$NEW_VERSION" >> "$GITHUB_OUTPUT"
             echo "Created new version: $NEW_VERSION"
           else
-            echo "new_version=${{ github.ref_name }}" >> $GITHUB_OUTPUT
+            echo "new_version=${{ github.ref_name }}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Update submodules
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+
+          # Initialize and update submodules to latest commits
+          git submodule update --init --recursive --remote
+
+          # Check if there are any changes to submodules
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "Submodules have been updated"
+            git add .
+            git commit -m "chore: update submodules" || echo "No changes to commit"
+            git push origin HEAD:main || echo "Nothing to push"
+          else
+            echo "No submodule updates available"
           fi
 
       - name: Set up git-cliff
         uses: kenji-miyake/setup-git-cliff@v1
 
       - name: Generate changelog file
+        if: github.event_name == 'workflow_dispatch'
         uses: orhun/git-cliff-action@v4
         id: git-cliff
         with:
@@ -103,10 +121,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Update .version file
+        if: github.event_name == 'workflow_dispatch'
         run: |
           echo "SOLAR_SYSTEM_VERSION=${{ steps.version.outputs.new_version }}" > .version
 
       - name: Commit changelog and version file
+        if: github.event_name == 'workflow_dispatch'
         uses: EndBug/add-and-commit@v9
         with:
           add: "CHANGELOG.md .version"
@@ -128,5 +148,17 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           TAG_NAME="${{ steps.version.outputs.new_version }}"
+          if ! [[ "$TAG_NAME" =~ ^v[0-9]+\.[0-9]+\.[0-9]+(-rc\.[0-9]+)?$ ]]; then
+            echo "Unsupported release tag: $TAG_NAME" >&2
+            exit 1
+          fi
+          if gh release view "$TAG_NAME" >/dev/null 2>&1; then
+            echo "Release $TAG_NAME already exists"
+            exit 0
+          fi
           NOTES=$(git cliff --latest -c cliff.toml)
-          gh release create "$TAG_NAME" --verify-tag --title "$TAG_NAME" --notes "$NOTES"
+          if [[ "$TAG_NAME" == *-rc.* ]]; then
+            gh release create "$TAG_NAME" --verify-tag --prerelease --title "$TAG_NAME" --notes "$NOTES"
+          else
+            gh release create "$TAG_NAME" --verify-tag --title "$TAG_NAME" --notes "$NOTES"
+          fi
