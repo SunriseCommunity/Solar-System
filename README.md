@@ -145,6 +145,10 @@ Before you begin, ensure you have the following installed:
 > [!TIP]
 > Join our [Discord server](https://discord.gg/BjV7c9VRfn) if you have any questions or just want to chill with us!
 
+### Updating and rolling back
+
+Run `./update.sh` (or `update.bat` on Windows) to update to the latest **stable** tag. The menu also lets you choose an exact tag, including `vX.Y.Z-rc.N`, or roll back to an older stable tag. For an explicit selection, use `./update.sh --version vX.Y.Z-rc.0` (or `update.bat --version vX.Y.Z-rc.0`). The `update.local.sh` and `update.local.bat` variants use `docker-compose.local.yml` instead. The script asks before changing the checkout and separately asks whether to rebuild containers. Switching versions requires a clean working tree.
+
 ### Hosting to the Internet 🌐
 
 To make your server accessible on the internet:
