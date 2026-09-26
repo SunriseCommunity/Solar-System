@@ -7,6 +7,44 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
+## 🏷️ [0.1.48](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.48) - 2026-09-26
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+### 🔀 Pull Requests
+
+- Add Release Candidate Version And Update Updater Script by @richardscull in [#1](https://github.com/SunriseCommunity/Solar-System/pull/1)
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+#### 🚀 Features
+
+- Update update scripts to be able to select release candidates and rollback if needed [`63456d6`](https://github.com/SunriseCommunity/Solar-System/commit/63456d666563d53a6a512be78d439920472ec6b2)
+
+- Update release workflow to be able create release candidates [`52ac81d`](https://github.com/SunriseCommunity/Solar-System/commit/52ac81d21bf980c0d1ef2589c3139de262327f4a)
+
+
+#### 💼 Other
+
+
+</details>
+
+
+
+
+
+
+**Full Changelog**: [`v0.1.47...v0.1.48`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.47...v0.1.48)
+
 ## 🏷️ [0.1.47](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.47) - 2026-09-14
 
 
@@ -19,12 +57,17 @@
 
 
 <details>
-<summary>📝 1 commit(s)</summary>
+<summary>📝 2 commit(s)</summary>
 
 
 #### 🚀 Features
 
 - Decrease block retention and remove user id from metrics [`ef7f1f5`](https://github.com/SunriseCommunity/Solar-System/commit/ef7f1f59ec674e77b9be7e38323b432c86e756ac)
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`3a1318c`](https://github.com/SunriseCommunity/Solar-System/commit/3a1318c1aa7a97ef243b019317f8a9b597b25cb6)
 
 
 </details>
