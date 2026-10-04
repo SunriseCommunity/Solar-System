@@ -7,6 +7,55 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
+## 🏷️ [0.2.0-rc.1](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.2.0-rc.1) - 2026-10-04
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update submodules [`1bdce80`](https://github.com/SunriseCommunity/Solar-System/commit/1bdce80b067c848a6a7d558c3c6a848f97b28b16)
+
+- bump node for Sunset to 22 [`cab588c`](https://github.com/SunriseCommunity/Solar-System/commit/cab588c5580c2b8b3edd5c0c006e32f7fddf4a6a)
+
+
+</details>
+
+
+
+
+### 🌇 Sunset
+
+
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+##### ⚙️ Miscellaneous Tasks
+
+- bump node version in Dockerfile [`a001136`](https://github.com/SunriseCommunity/Sunset/commit/a0011369218d2b26c705494e2a16556148539b8f)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.2.0-rc.0...v0.2.0-rc.1`](https://github.com/SunriseCommunity/Solar-System/compare/v0.2.0-rc.0...v0.2.0-rc.1)
+
 ## 🏷️ [0.2.0-rc.0](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.2.0-rc.0) - 2026-10-04
 
 
@@ -19,10 +68,12 @@
 
 
 <details>
-<summary>📝 1 commit(s)</summary>
+<summary>📝 2 commit(s)</summary>
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`1ac813d`](https://github.com/SunriseCommunity/Solar-System/commit/1ac813df6d61145b36683049bacffbed42f3aa3e)
 
 - update submodules [`5ebcbfa`](https://github.com/SunriseCommunity/Solar-System/commit/5ebcbfa5fde8d98935dd5a7784e260d3fc50750c)
 
