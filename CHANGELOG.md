@@ -7,7 +7,7 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
-## 🏷️ [0.1.51](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.51) - 2026-10-04
+## 🏷️ [0.2.0-rc.0](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.2.0-rc.0) - 2026-10-04
 
 
 
@@ -23,6 +23,571 @@
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update submodules [`5ebcbfa`](https://github.com/SunriseCommunity/Solar-System/commit/5ebcbfa5fde8d98935dd5a7784e260d3fc50750c)
+
+
+</details>
+
+
+
+
+### 🌅 Sunrise
+
+
+#### 🔀 Pull Requests
+
+- 0.2.0 by @richardscull in [#134](https://github.com/SunriseCommunity/Sunrise/pull/134)
+- Add Global Recalculation Lock by @richardscull in [#135](https://github.com/SunriseCommunity/Sunrise/pull/135)
+- Score Submission Refactoring Cleanup by @richardscull in [#133](https://github.com/SunriseCommunity/Sunrise/pull/133)
+- Add Field Validation For Score Submission by @richardscull in [#131](https://github.com/SunriseCommunity/Sunrise/pull/131)
+- Add Single Transaction Lock For Score Processing by @richardscull in [#130](https://github.com/SunriseCommunity/Sunrise/pull/130)
+- Add Score Processing Api by @richardscull in [#128](https://github.com/SunriseCommunity/Sunrise/pull/128)
+- Add More For Update Locks For Score Processing by @richardscull in [#127](https://github.com/SunriseCommunity/Sunrise/pull/127)
+- Lock Userstats And Grades For Update by @richardscull in [#126](https://github.com/SunriseCommunity/Sunrise/pull/126)
+- Minor Performance Updates by @richardscull in [#125](https://github.com/SunriseCommunity/Sunrise/pull/125)
+- Migrate To Pomelo Mysql Provider by @richardscull in [#124](https://github.com/SunriseCommunity/Sunrise/pull/124)
+- Add Scores Processing Service by @richardscull in [#119](https://github.com/SunriseCommunity/Sunrise/pull/119)
+- Master by @richardscull in [#123](https://github.com/SunriseCommunity/Sunrise/pull/123)
+
+
+
+
+<details>
+<summary>📝 185 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- tests [`64f9ec9`](https://github.com/SunriseCommunity/Sunrise/commit/64f9ec91636ae861dd59025a75c89d12b4947271)
+
+- allow beatmap status change omit lock per score task score id column [`323588b`](https://github.com/SunriseCommunity/Sunrise/commit/323588bcb104c2cb97a41ecf3c820bd81c264621)
+
+- Simplify code and add new db repository changes [`d4d7d33`](https://github.com/SunriseCommunity/Sunrise/commit/d4d7d3323fd44c9e56e0c369e4a62812d8b2e089)
+
+- add beatmap status change [`3d2f25b`](https://github.com/SunriseCommunity/Sunrise/commit/3d2f25b1c110e9c1b45d93deaaf205c90bbb4477)
+
+- drop IsScoreable from the score [`cb04eaf`](https://github.com/SunriseCommunity/Sunrise/commit/cb04eafad99c7c6056a64e2dc9c443ba87ab0e84)
+
+- drop bgeatmap status from the score modal [`8cfb10a`](https://github.com/SunriseCommunity/Sunrise/commit/8cfb10a7f93a225f93ed9e7e7bb0cfc9afd120ac)
+
+- tests [`96db7ef`](https://github.com/SunriseCommunity/Sunrise/commit/96db7ef6f8b7248cbc8632eeb02e3739b8fdee01)
+
+- add superuser commands to check both beatmapcheck and calculation run jobs [`5326af6`](https://github.com/SunriseCommunity/Sunrise/commit/5326af64de3046eb27e5a514897dbc71f25dbfc6)
+
+- add test to check that we dont have missing db migrations (good (: ) [`5342156`](https://github.com/SunriseCommunity/Sunrise/commit/5342156730bbf30d9106c33aeadb9f889348fab3)
+
+- Register both calcualtion and beatmap check jobs [`2e88211`](https://github.com/SunriseCommunity/Sunrise/commit/2e8821192dc19916f838e2dc955d4679637fed6e)
+
+- Add BeatmapCheck job [`7df7fdf`](https://github.com/SunriseCommunity/Sunrise/commit/7df7fdfe07763f0e59760bdb6e75d714eceebfc6)
+
+- update scores to get beatmap stateus from new db table [`6ec28df`](https://github.com/SunriseCommunity/Sunrise/commit/6ec28dfd7b581a9d35debcef70faa9e33904d2be)
+
+- Update score processing to dont update leaderboard if freeze is enabled for the leaderboard [`e616b74`](https://github.com/SunriseCommunity/Sunrise/commit/e616b748e21b363f73fd47637629193048bf199a)
+
+- Add CalculationRun job [`fb456e2`](https://github.com/SunriseCommunity/Sunrise/commit/fb456e230e07d3f9ae044ceab4f9c130dc678cf2)
+
+- Add db changes for beatmap and global calculations [`7985061`](https://github.com/SunriseCommunity/Sunrise/commit/7985061a76588260e296ce716c874eae48f46904)
+
+- Get rosu version from calculations and add observatory new version endpoint [`efc90f1`](https://github.com/SunriseCommunity/Sunrise/commit/efc90f11dfb6b83b946f5c25ca5575cf3fbdef81)
+
+- Add clean up for hangfire service jobs in tests [`d0ff8f9`](https://github.com/SunriseCommunity/Sunrise/commit/d0ff8f9a4abbdcc8351b2d22168af627ee6bf6dd)
+
+- Deduplicate calls for the EnqueueForBackgroundRetry for the score submission [`cd8e0b3`](https://github.com/SunriseCommunity/Sunrise/commit/cd8e0b3c5fde105f706a749c2c501438c9855e12)
+
+- Add timeout handle for score processing job [`d4d7366`](https://github.com/SunriseCommunity/Sunrise/commit/d4d7366166c9bde6c68d8ed0a413611461b4c436)
+
+- Add regression tests for the scores with same value but different when played date [`27463c5`](https://github.com/SunriseCommunity/Sunrise/commit/27463c5974ed824a095fa70e1a96bae91bb41360)
+
+- Add tests to check bug from 0.1.x release version of no critical error on submitting score with wrong passhash [`04a09ca`](https://github.com/SunriseCommunity/Sunrise/commit/04a09ca0474e5e0001a07fd525558cf9b0ea58b5)
+
+- remove LocalProperties from the Score and UserStats model [`ff39f90`](https://github.com/SunriseCommunity/Sunrise/commit/ff39f90e83343b50d808aca90f3d470f67b96b28)
+
+- remove unused score index [`edc87d1`](https://github.com/SunriseCommunity/Sunrise/commit/edc87d19766cbbfa9ed9cfba02fea8696a5b5b39)
+
+- add more green tests [`fa0d824`](https://github.com/SunriseCommunity/Sunrise/commit/fa0d824f214adc642ddfeea7ec7ef6293c57f268)
+
+- canonicalise grades if they are incorrect [`e051ad1`](https://github.com/SunriseCommunity/Sunrise/commit/e051ad123a7232724118ae72b00591aa54c41418)
+
+- Use ParseStableInt for count and combo check in score extensions [`5e6924e`](https://github.com/SunriseCommunity/Sunrise/commit/5e6924e973605a35201a379f55de86d96262d0c5)
+
+- Use valid numbers for count300 and use osu version in score submission of the score itself [`6f044f9`](https://github.com/SunriseCommunity/Sunrise/commit/6f044f9300304ab7ecaa41367f5a178c1872500e)
+
+- Add some missed enrichments [`b82e2a3`](https://github.com/SunriseCommunity/Sunrise/commit/b82e2a332353987bd39755434b410fbb3b5eb010)
+
+- Update tests to use new PrepareForSubmission and ReconcileModsAndGameMode extensions [`e4f23d2`](https://github.com/SunriseCommunity/Sunrise/commit/e4f23d2acc00565de636e6f23a12e163fffea218)
+
+- Update and add tests related to business changes [`e51a8b1`](https://github.com/SunriseCommunity/Sunrise/commit/e51a8b15c58a26ec7a31e6b954b5d067f6ae85c1)
+
+- Create GetValidScore for test mocks [`bdd2b69`](https://github.com/SunriseCommunity/Sunrise/commit/bdd2b69d7a6dafbbe6c629a50bb57ca7177630e2)
+
+- Use ReadOnly set for ModsValidationUtil [`7d42f6c`](https://github.com/SunriseCommunity/Sunrise/commit/7d42f6c85d4f1fb8978350cdba19f8e7fd144e0a)
+
+- Validate count for score and remove score counts with enum check from TryParseBaseScore (moved) [`a216f88`](https://github.com/SunriseCommunity/Sunrise/commit/a216f884350789fb74e524307ac4f4e65a377fdf)
+
+- Approve score state assertion as reason for deny [`6bf3a2e`](https://github.com/SunriseCommunity/Sunrise/commit/6bf3a2e772932f3d57b568672f399aa4f267d191)
+
+- remove replay validation for now [`71bc89a`](https://github.com/SunriseCommunity/Sunrise/commit/71bc89a94c50245e0a90bb94e30752feb2116a08)
+
+- Add usage of ScoreGrade [`0ff9861`](https://github.com/SunriseCommunity/Sunrise/commit/0ff986159ba6108ed88ac49cce0d93f7737de0cc)
+
+- Use new validation only at log level and fix some bad assumptions [`520ec4f`](https://github.com/SunriseCommunity/Sunrise/commit/520ec4f66ea7cdd73d1fc97d943beedc4baf21b0)
+
+- Add replay validation for the score submission [`1f877ad`](https://github.com/SunriseCommunity/Sunrise/commit/1f877adea29e652a084b4c0f6e427520e45446de)
+
+- Add score counts/grades/version validation [`30e4edb`](https://github.com/SunriseCommunity/Sunrise/commit/30e4edbad4f75a3688195264b1d0bd66f3971f89)
+
+- Add designer for the db migration for AddUniqueUserDomainIndexes [`e1a4a10`](https://github.com/SunriseCommunity/Sunrise/commit/e1a4a10397abf31d1eb574cf963e452d23faf49b)
+
+- Add failure checks for all unique entities inserts [`62d281d`](https://github.com/SunriseCommunity/Sunrise/commit/62d281d07095d24ba143eb71306a0f0c01682bde)
+
+- update score processing tasks atomically for the failed status [`8c26050`](https://github.com/SunriseCommunity/Sunrise/commit/8c2605060045c68d30877144f0a5b1afe237b15c)
+
+- Make index unique for user one to one models [`3014c8a`](https://github.com/SunriseCommunity/Sunrise/commit/3014c8a2ee5a9187c87e0e2af357f7a15c9f18c5)
+
+- Add GitHubActionsTestLogger to the Sunrise.Processing.Tests [`ad6b0cc`](https://github.com/SunriseCommunity/Sunrise/commit/ad6b0ccb033bc5f4dfbdbd7a614efed71c0106f3)
+
+- Update ScoreProcessingMaxConcurrency value [`e83ac3b`](https://github.com/SunriseCommunity/Sunrise/commit/e83ac3baf64189967faeac74e94c59ac00d360ae)
+
+- Add ScorePrepareContext and improve lock for the scores [`9bf8d55`](https://github.com/SunriseCommunity/Sunrise/commit/9bf8d552fc41c57bfa84be62687a52b95c4e9a11)
+
+- Add score index for db locks [`95fd0cb`](https://github.com/SunriseCommunity/Sunrise/commit/95fd0cba3ec2e5e2791a43a1cabbc37224e2a494)
+
+- Use index id pagination for BulkScoreProcessingJob.EnqueueByFilter [`754599b`](https://github.com/SunriseCommunity/Sunrise/commit/754599b80fa0853184824283685a2dbab1f04ea6)
+
+- Simplify mods interface for the API usage [`01fc45f`](https://github.com/SunriseCommunity/Sunrise/commit/01fc45fea15466e94c66d1c6a3e73395d89c0119)
+
+- Always provide submitted date for beatmap set [`796d4c6`](https://github.com/SunriseCommunity/Sunrise/commit/796d4c60ef9f34cb7d601c5eb94f107c54fc4119)
+
+- Improve BulkScoreProcessingJobTests.cs [`f15e590`](https://github.com/SunriseCommunity/Sunrise/commit/f15e590719bfdf76eadc2ab6cf0defe207c58399)
+
+- Use UnitResult and UPDATE for TryRequeueFailedTask [`e15f744`](https://github.com/SunriseCommunity/Sunrise/commit/e15f744c94cf6f289f56bcc11d9a6d487c5e6ed8)
+
+- Add tests [`2356154`](https://github.com/SunriseCommunity/Sunrise/commit/235615492134728e89b0449e68d5a18a2eb29c95)
+
+- allow retry for enqueue by filter [`c0e8818`](https://github.com/SunriseCommunity/Sunrise/commit/c0e88186b8889e75e1a7720181cb83eeb4f7aaf9)
+
+- Add ability to fetch tasks by task id [`0aee527`](https://github.com/SunriseCommunity/Sunrise/commit/0aee527ac473d525e164f99d45138687d3acab44)
+
+- Add score processing events [`44b5a8e`](https://github.com/SunriseCommunity/Sunrise/commit/44b5a8e3dbf81c8aa9034d8d0a040c277f060612)
+
+- Add histogram metric for score processing task duration [`ae470ca`](https://github.com/SunriseCommunity/Sunrise/commit/ae470ca7260d91cc5d351ad2ea6a770490915bd7)
+
+- Set ScoreProcessingMaxConcurrency to 1 by default [`22a1103`](https://github.com/SunriseCommunity/Sunrise/commit/22a1103afe878cccce3c621826bcbde6bee70a30)
+
+- Add final for update locks for score processing [`58c526d`](https://github.com/SunriseCommunity/Sunrise/commit/58c526d47040bb44e70b1debfd72c650bc111bce)
+
+- early return for the grades update if they are equal [`edd2b76`](https://github.com/SunriseCommunity/Sunrise/commit/edd2b76345df0fea8510ab34ba19dee891424794)
+
+- Add more override methods for SlowQueryLoggerInterceptor [`b460ada`](https://github.com/SunriseCommunity/Sunrise/commit/b460ada70a1c177f4131ebb6e334d6d64897a87b)
+
+- Apply redis ranks updates only after transaction commit [`a4ab5d3`](https://github.com/SunriseCommunity/Sunrise/commit/a4ab5d3f267e9559279e109a3ae22bb2b2fe28ed)
+
+- Add user stats/grades FOR UPDATE lock during score processing [`361cbef`](https://github.com/SunriseCommunity/Sunrise/commit/361cbef365f978bb2ee68a752063c5d016135b97)
+
+- Clear http mocks after ResetAsync [`9407d93`](https://github.com/SunriseCommunity/Sunrise/commit/9407d93f2cffa82c0709aec251b2bbeaa37db78f)
+
+- Limit sunrise docker compose memory [`84c9ef8`](https://github.com/SunriseCommunity/Sunrise/commit/84c9ef8ab5b60f9c3927aa08bb3201d5b27edcf7)
+
+- On soft session removal remove all spectators and remove itself from multiplayer lobby [`0c9e0a3`](https://github.com/SunriseCommunity/Sunrise/commit/0c9e0a3c833c9a56e9582f42d89e13af9daa7a3b)
+
+- Remove abstract channels by key from ChatChannelRepository [`af09f39`](https://github.com/SunriseCommunity/Sunrise/commit/af09f39cb550a72693f207ddb1517604427fb61c)
+
+- Use single HttpClient for the HttpClientService with memory disposal [`711aab0`](https://github.com/SunriseCommunity/Sunrise/commit/711aab09a74edcdbee338579b5dedf004adebbb1)
+
+- Add isFinished and Timer dispose invocation for MultiplayerTimer.cs [`4411510`](https://github.com/SunriseCommunity/Sunrise/commit/441151036151d5dc9f22ec0b7b457594f52731d0)
+
+- Improve websocket memory clean up [`8e6dbc2`](https://github.com/SunriseCommunity/Sunrise/commit/8e6dbc2c42ef70b92444e7ba4a10da1d6c0b6705)
+
+- add Pomelo UseMySqlIdentityColumn migration [`ce8572e`](https://github.com/SunriseCommunity/Sunrise/commit/ce8572e92898ce62e861b88c60af821799a0f28f)
+
+- Add EntityFrameworkCore.Locking.MySql [`671dee3`](https://github.com/SunriseCommunity/Sunrise/commit/671dee36f42cb1b61552fd0904387d98aa14ab16)
+
+- Add TryGetSessionAsync for hot path; Add authentication for osu get replay controller [`353dac5`](https://github.com/SunriseCommunity/Sunrise/commit/353dac567821448e1cecd0cc56aba6b95e173faf)
+
+- Update all possible db sync paths to the proper await usages [`622d3cd`](https://github.com/SunriseCommunity/Sunrise/commit/622d3cdc112bf3570171ba3e46380748311b7f30)
+
+- Replace MySql.EntityFrameworkCore with Pomelo.EntityFrameworkCore.MySql [`0a17cc0`](https://github.com/SunriseCommunity/Sunrise/commit/0a17cc0acb8f51dcb1d7e7f50a8ece5d37eb6179)
+
+- Add more mods validation tests [`f0ca170`](https://github.com/SunriseCommunity/Sunrise/commit/f0ca17064bfda50139fa755f4bef00f5eaf55df1)
+
+- Add MedalScoreProcessor.cs [`e800c0f`](https://github.com/SunriseCommunity/Sunrise/commit/e800c0f14046281ab5d57456f412123e3759e68b)
+
+- Reset max combo to 0 after score deletion if its the only score in game mode for user [`02bf47e`](https://github.com/SunriseCommunity/Sunrise/commit/02bf47e8c3815c949106f355d5101be1cd88b864)
+
+- Update new db entity names [`378a656`](https://github.com/SunriseCommunity/Sunrise/commit/378a65660aa50cb2f555ef728c34143d2b48f176)
+
+- Add comment explanation + error log for the pp modifiers [`7ce1275`](https://github.com/SunriseCommunity/Sunrise/commit/7ce12751310aedde7571b2dd40ea8a2d2367910e)
+
+- Add Scores/Jobs tests [`7fe033e`](https://github.com/SunriseCommunity/Sunrise/commit/7fe033ee772f41efe6971bf3eeb2932ff60aeb62)
+
+- add missing method implementation [`cc92c06`](https://github.com/SunriseCommunity/Sunrise/commit/cc92c0682f09a8f44102d5eadad49b8d8c2cd55b)
+
+- Set PrepareInlineSubmissionAsync as internal; add new mock [`645a52d`](https://github.com/SunriseCommunity/Sunrise/commit/645a52d7e2f5fbaf3196a11df8b92256f3c371c7)
+
+- Add more tests in ScoreSubmissionHandlerTests.cs [`e0c7ba2`](https://github.com/SunriseCommunity/Sunrise/commit/e0c7ba27ca3ac0935691a0d61cdeb00cae5b608d)
+
+- ToScore require timeElapsed + use IsModeCombinationInvalid in ScoreCandidateBuilderUtil [`83b6fec`](https://github.com/SunriseCommunity/Sunrise/commit/83b6fec618e8f141502a1f123572ece0434cf3fb)
+
+- Enhance testing framework [`aafe910`](https://github.com/SunriseCommunity/Sunrise/commit/aafe9105ae6fecf8c15eb01d2ffe3e0261c87f1e)
+
+- Add ModsValidationUtil [`6da0b9d`](https://github.com/SunriseCommunity/Sunrise/commit/6da0b9d7604c41c43d3efa4d9454ca6d36f297c5)
+
+- make ScoreDeletionHandler override PrepareAsync to follow the pattern [`b90cb1e`](https://github.com/SunriseCommunity/Sunrise/commit/b90cb1e8614c5507679f27f83bc2ed9c42f7151d)
+
+- move PrepareAsync as internal for better testability [`1d2108f`](https://github.com/SunriseCommunity/Sunrise/commit/1d2108f7bd776dbee4407c331658e574666198ec)
+
+- forcefully reload localproperties for the score [`723ed85`](https://github.com/SunriseCommunity/Sunrise/commit/723ed8522d8972d80ec5f4dc283a1ee26c35099f)
+
+- Remove GetUnvalidatedScore [`b4be095`](https://github.com/SunriseCommunity/Sunrise/commit/b4be0953374ffc096e296c651ed0e384a5bf0608)
+
+- Use 15 secodns as starting point for ScoreProcessingBackoffSchedule [`8c57269`](https://github.com/SunriseCommunity/Sunrise/commit/8c572698e05f9a18785b65cfd741510e45ed266b)
+
+- Reserve 0 for the Unexpected ScoreProcessingErrorCode [`0eeea5f`](https://github.com/SunriseCommunity/Sunrise/commit/0eeea5f3631185d9e5ddfaa7202bd8be557c0512)
+
+- Add tests for CalculateAccuracyTests SubmittedScore [`534bb83`](https://github.com/SunriseCommunity/Sunrise/commit/534bb833b55d116ced72da266ba2f32660088098)
+
+- Remove UpdateWithDbScore from prod [`12d3b9c`](https://github.com/SunriseCommunity/Sunrise/commit/12d3b9c736360a2e5ecaf4b29e90f2ce82bfa1e6)
+
+- Each processor updates the db entry atomically [`e4bb3a8`](https://github.com/SunriseCommunity/Sunrise/commit/e4bb3a88a161e72d1986ce1066a624b208de7537)
+
+- Add Sunrise.Processing.Tests [`a24b3b2`](https://github.com/SunriseCommunity/Sunrise/commit/a24b3b269e63cf9429e1cf88114c2fd97a808e85)
+
+- Persist changes to score submission status to recalculate pp and acc for userstats [`50f718b`](https://github.com/SunriseCommunity/Sunrise/commit/50f718b70d5a7eff7e215184378fcae5e14414f1)
+
+- check the grade increment based on the if better than the best by total score [`7e15603`](https://github.com/SunriseCommunity/Sunrise/commit/7e1560334b9dd1d700a691646abc0dcd912c2f58)
+
+- Implement Sunrise.Processing.Scores [`be67a89`](https://github.com/SunriseCommunity/Sunrise/commit/be67a89af00fa413204fd1a9c5e469a0b490188b)
+
+- Implement ScoreProcessingQueue and ScoreTaskQueue [`cd0d9b5`](https://github.com/SunriseCommunity/Sunrise/commit/cd0d9b584ce3b3f67ae2405e920bf7cbf2200d98)
+
+- Use WhenPlayed for sorting grouped scores and add parsing to base score [`5920416`](https://github.com/SunriseCommunity/Sunrise/commit/5920416566db1ddb8bf9f01469361c3bde0fbbd5)
+
+- Add SubmittedScore entity [`b2f9dcc`](https://github.com/SunriseCommunity/Sunrise/commit/b2f9dcc322c9510c53b69e714dfefa3ef85edc61)
+
+- Implement CalculateUserWeightedStats which queries acc + pp scores once [`02f674a`](https://github.com/SunriseCommunity/Sunrise/commit/02f674a40654755f5aea6a15662c2c7fdfb3c7c2)
+
+- Add migration to limit scorehash to 32 characters [`fdad5a0`](https://github.com/SunriseCommunity/Sunrise/commit/fdad5a03650ece8443697a836b31b00224f8fa30)
+
+- Add TimeElapsed to the score entity [`2a69242`](https://github.com/SunriseCommunity/Sunrise/commit/2a69242260b5bc1aefced6fd622e795599c4c683)
+
+- User could be null on user_stats [`30bf8cf`](https://github.com/SunriseCommunity/Sunrise/commit/30bf8cfa81faeece9eb55335bf11f7ac09b03cca)
+
+- Make user undefined in Score model and add scoreHash unique index [`5f8e63c`](https://github.com/SunriseCommunity/Sunrise/commit/5f8e63cfd9b69b741a11c8a164468bc33b880cd6)
+
+- Remove processing scores lock on ScoreController [`b66b27b`](https://github.com/SunriseCommunity/Sunrise/commit/b66b27b9683b4ef6e2367b9d3ac3d7ac409028b4)
+
+- Move SubmitScoreHelper and simplify [`6cbcd61`](https://github.com/SunriseCommunity/Sunrise/commit/6cbcd61cdc2dd892967a2336d2113f27918e36ba)
+
+- Add get score announcement channel method [`0424ea9`](https://github.com/SunriseCommunity/Sunrise/commit/0424ea9ab10bedc2790f6604f8dfeb0d5f5128fd)
+
+- GetBeatmapSet returns non nullable beatmap set [`f29c799`](https://github.com/SunriseCommunity/Sunrise/commit/f29c799249c064a74c5f921ce4b745df1589ea35)
+
+- Don't require user session for RequestReturnedErrorCounterInc [`a74cab2`](https://github.com/SunriseCommunity/Sunrise/commit/a74cab25198ee8e50349f1debefa5da87fb68ea4)
+
+
+##### 🐛 Bug Fixes
+
+- update tests for merged BAT privilege and async command changes [`e01ca83`](https://github.com/SunriseCommunity/Sunrise/commit/e01ca834ac3370de57a6723dd8286dc68ef1c2f7)
+
+- for outdated scores mid run [`b50155d`](https://github.com/SunriseCommunity/Sunrise/commit/b50155da1115ea8817797fee15555de40688c701)
+
+- env manager for tests missing value [`c10e28e`](https://github.com/SunriseCommunity/Sunrise/commit/c10e28e500f350bb5ce76f71e5a552c4c013dd4e)
+
+- scores processing superuser commands [`ee41c7f`](https://github.com/SunriseCommunity/Sunrise/commit/ee41c7fde8badcb5d705d7f4a6bf8d8d9aa678fc)
+
+- Sort leaderboard positions by tierbreaker of WhenPlayed (oldest is the first place) [`763dae6`](https://github.com/SunriseCommunity/Sunrise/commit/763dae68068cc21c125ccf439b965d6a6b077ec6)
+
+- flaky test [`0f98b4d`](https://github.com/SunriseCommunity/Sunrise/commit/0f98b4d9b7c335a62722b96b135111c0db9f9eea)
+
+- tests [`50aa0c7`](https://github.com/SunriseCommunity/Sunrise/commit/50aa0c7e5881d6b6ddbb3bc0c0fcdaa02fcd94d7)
+
+- revert removal of replay header size check validation [`8ef71db`](https://github.com/SunriseCommunity/Sunrise/commit/8ef71db83378193cad6c37fc3cfab63f8259e620)
+
+- osu! standard can have gei and katu [`7c9f0f9`](https://github.com/SunriseCommunity/Sunrise/commit/7c9f0f96a297b9dd3b9c22a6281f52131432bdfa)
+
+- Use new grade utils instead which were missed in previous commit, bleh >< [`c60e686`](https://github.com/SunriseCommunity/Sunrise/commit/c60e6868655336990444434207c9c408a223a568)
+
+- ScoreGradeUtil should be able to process both Score and SubmittedScore [`0c2197c`](https://github.com/SunriseCommunity/Sunrise/commit/0c2197c6799b487497379534e9cb1f862fd6e4c9)
+
+- new assertions shouldn't cause failure [`4620f2e`](https://github.com/SunriseCommunity/Sunrise/commit/4620f2e5aaa5b785bd6d4277c9101182261ec4c6)
+
+- db migration [`e332b9b`](https://github.com/SunriseCommunity/Sunrise/commit/e332b9ba51a248af70ee38460b97aaacc145c02d)
+
+- remove outdated test [`ebef9ff`](https://github.com/SunriseCommunity/Sunrise/commit/ebef9ff1c9acde5ca24fbb60dbe005d46de5ed6d)
+
+- Create user scores as already persisted in the user stats processor tests (as leaderboard processor should have inserted them by now, same for submission status) [`dd3c74c`](https://github.com/SunriseCommunity/Sunrise/commit/dd3c74c8053135404c3a74fef00fce52b283156c)
+
+- Run processing tests for CI/CD [`dbe5aa0`](https://github.com/SunriseCommunity/Sunrise/commit/dbe5aa012067100b6447de39387ea511c7d8cc8c)
+
+- For ranked score decremention use overall peer for promotion value [`bf8b09c`](https://github.com/SunriseCommunity/Sunrise/commit/bf8b09cf97ca0c1b875977513d6d0e67c594ad3c)
+
+- Ignore null mods if not provided in api filters [`f5d3c62`](https://github.com/SunriseCommunity/Sunrise/commit/f5d3c62e6900d09ce5978991fd4970afa603c531)
+
+- test [`90ad745`](https://github.com/SunriseCommunity/Sunrise/commit/90ad745e790a53545bd495ee5e55ff81ca72ae89)
+
+- score processing API not including user [`fc1d52b`](https://github.com/SunriseCommunity/Sunrise/commit/fc1d52b1bfa0b79017defc153f4566d1db9c219f)
+
+- queue name for bulk score processing job [`22d16e5`](https://github.com/SunriseCommunity/Sunrise/commit/22d16e5888320077c5b6faa12380321fb6eb143c)
+
+- tests [`06b824f`](https://github.com/SunriseCommunity/Sunrise/commit/06b824f53150e4746c1775ad0aece1f3fa3cd7f5)
+
+- tests [`42f47a4`](https://github.com/SunriseCommunity/Sunrise/commit/42f47a4da9953f3fb3d9c9d415081a5d358d9489)
+
+- ! tests [`60e43f8`](https://github.com/SunriseCommunity/Sunrise/commit/60e43f8cbdc77f000f8f3bb1003854bafdea6b2c)
+
+- tests workflow [`d83cb13`](https://github.com/SunriseCommunity/Sunrise/commit/d83cb13429ff6a8cf9b889449a0076f81064065e)
+
+- Add Sunrise.Processing to Dockerfile [`7ce16c6`](https://github.com/SunriseCommunity/Sunrise/commit/7ce16c6783d73617768a8ee3774f8bee9623e9f6)
+
+- usage of sql raw query connection [`ea54727`](https://github.com/SunriseCommunity/Sunrise/commit/ea547276262c8b07e5d9cbc72d642bfbc8574553)
+
+- compilation errors [`296478e`](https://github.com/SunriseCommunity/Sunrise/commit/296478ebeea6c9a2feb26fc85492cd97b932290f)
+
+- mods validation [`4504ae7`](https://github.com/SunriseCommunity/Sunrise/commit/4504ae76d87ec7b802c2b2836bc9f2e51b531f0e)
+
+- allow non best scores for max combo replacement [`aa8f3e6`](https://github.com/SunriseCommunity/Sunrise/commit/aa8f3e6ce7289e47ef8bf0e9d3a34ac286bdb8b9)
+
+- misleading naming [`6beff44`](https://github.com/SunriseCommunity/Sunrise/commit/6beff44488d0ab9b62ee0a224a0d6717884dc316)
+
+- decrement ranked score on score deletion only if score was best globally; Use score value (total score for std, pp for relax and non score mods) to check if the current score is better than the peer [`d6c29e9`](https://github.com/SunriseCommunity/Sunrise/commit/d6c29e9d3c36ba071b161eab92bab2ba56186907)
+
+- Disable reuse scope in same db context by default [`5e22067`](https://github.com/SunriseCommunity/Sunrise/commit/5e22067600fb2836cfd1bbea6a76a75092831bf9)
+
+- Reuse scope in the test if possible in DatabaseTest [`e39319c`](https://github.com/SunriseCommunity/Sunrise/commit/e39319c1d453cfd8484774521148b91a867ae31a)
+
+- update benchmark test [`eb773fc`](https://github.com/SunriseCommunity/Sunrise/commit/eb773fcf6b9b5bbf8a09741c1ea497dfc87a4cef)
+
+- Don't return score result if beatmap is not scoreable [`0033113`](https://github.com/SunriseCommunity/Sunrise/commit/0033113a9cd295915495fe02ea3384bc5dbdd8fa)
+
+- test [`0611365`](https://github.com/SunriseCommunity/Sunrise/commit/06113659eafd54c5188b29513fa8c097c745d2d3)
+
+- test [`3546863`](https://github.com/SunriseCommunity/Sunrise/commit/3546863527150566a0e0b84bcd1a313fbeeea9f2)
+
+- retrieve only peers from the same gamemode [`1c42131`](https://github.com/SunriseCommunity/Sunrise/commit/1c4213196feccdb14b18cb9685a35e25efbf9911)
+
+- grammar [`84de90a`](https://github.com/SunriseCommunity/Sunrise/commit/84de90a4f264bbb07f117a6cfad48e7f53925098)
+
+- tests [`7a458b4`](https://github.com/SunriseCommunity/Sunrise/commit/7a458b4db81b858a3216d20bdb9ba2b760c0a961)
+
+- UpdateWithDbScore don't update userstats pp and acc [`989d6a8`](https://github.com/SunriseCommunity/Sunrise/commit/989d6a8aff3412c21e4dd023e0b7590efd7873f8)
+
+- Check if isFirstBeatmapScore to increment user stats [`9d3fa27`](https://github.com/SunriseCommunity/Sunrise/commit/9d3fa27dac4d976fdfe930545fab61922cb4846b)
+
+- tests [`98baaba`](https://github.com/SunriseCommunity/Sunrise/commit/98baaba0369cb554862bb2006901353b8b74f89a)
+
+
+##### 🔀 Merge Commits
+
+- [chore] Merge Branch 'master' into version/0.2.0 [`2914c5e`](https://github.com/SunriseCommunity/Sunrise/commit/2914c5e675084ea29e4d517e274280832bd360ea)
+
+- [chore] Merge Branch 'version/0.2.0' into feat/add-scores-processing-service [`38eee42`](https://github.com/SunriseCommunity/Sunrise/commit/38eee420fc451eb0b0659414615ccf73ee134e1d)
+
+
+##### 💼 Other
+
+- Merge pull request #134 from SunriseCommunity/version/0.2.0 [`36f1f4c`](https://github.com/SunriseCommunity/Sunrise/commit/36f1f4cc162854808d35b2cd1e9ca35c7bfa9f51)
+
+- Merge pull request #135 from SunriseCommunity/feat/add-global-recalculation-lock [`963eba5`](https://github.com/SunriseCommunity/Sunrise/commit/963eba5b597be861b354483445921e6bc0992d22)
+
+- Merge pull request #133 from SunriseCommunity/feat/score-submission-refactoring-cleanup [`643ee25`](https://github.com/SunriseCommunity/Sunrise/commit/643ee2540801e59803c6692669bd75b27f30b02a)
+
+- Merge pull request #131 from SunriseCommunity/feat/add-field-validation-for-score-submission [`7ccc761`](https://github.com/SunriseCommunity/Sunrise/commit/7ccc7611715755cff5f838758f0a9cae5e75e442)
+
+- Merge pull request #130 from SunriseCommunity/feat/add-single-transaction-lock-for-score-processing [`aa5c253`](https://github.com/SunriseCommunity/Sunrise/commit/aa5c2531b4bd56e98b462e19edf47b98ae7c65e7)
+
+- Merge pull request #128 from SunriseCommunity/feat/add-score-processing-api [`78787f6`](https://github.com/SunriseCommunity/Sunrise/commit/78787f6d504d8f39af8131fe3027a060d99cc4e4)
+
+- Merge pull request #127 from SunriseCommunity/feat/add-more-for-update-locks-for-score-processing [`b66bbd0`](https://github.com/SunriseCommunity/Sunrise/commit/b66bbd0b670ffbd735f1513edcd4dadb179b1eb9)
+
+- Merge pull request #126 from SunriseCommunity/feat/lock-userstats-and-grades-for-update [`2186232`](https://github.com/SunriseCommunity/Sunrise/commit/218623287b3cd37e0cc1c3edf3b4883d17aaaca2)
+
+- Merge pull request #125 from SunriseCommunity/feat/minor-performance-updates [`84724c5`](https://github.com/SunriseCommunity/Sunrise/commit/84724c5517e233455cb15ac620c557cce137f799)
+
+- Merge pull request #124 from SunriseCommunity/feat/migrate-to-pomelo-mysql-provider [`fd68eb9`](https://github.com/SunriseCommunity/Sunrise/commit/fd68eb9b684a9fe5c40322f76880dc15985fd5d6)
+
+- Merge pull request #119 from SunriseCommunity/feat/add-scores-processing-service [`c734f68`](https://github.com/SunriseCommunity/Sunrise/commit/c734f68053a23363a0ae2e43324d210c4f7785b0)
+
+- Merge pull request #123 from SunriseCommunity/master [`d0ec3ab`](https://github.com/SunriseCommunity/Sunrise/commit/d0ec3ab235117074284685a56e79c001ffac7331)
+
+- ScoreProcessingJobTests.cs [`28ad4f8`](https://github.com/SunriseCommunity/Sunrise/commit/28ad4f854613343b103c67cbbd102a03d5391bec)
+
+- score commit pipeline tests [`1fdaf7c`](https://github.com/SunriseCommunity/Sunrise/commit/1fdaf7c0b9128d3efd5beb5d45e16bf4216e904a)
+
+- test processors [`bd89ef2`](https://github.com/SunriseCommunity/Sunrise/commit/bd89ef213e8ef6c813d97ffdf8850853bbc409b9)
+
+- Sunrise.Processing.Tests services and utils [`3431202`](https://github.com/SunriseCommunity/Sunrise/commit/343120264ca9fc2e848c6629845df394cb463d0c)
+
+- ScoreSubmissionHandler and it's tests [`b6c15b1`](https://github.com/SunriseCommunity/Sunrise/commit/b6c15b1e4b1e938e42d3f0ad88ba8561d61e6d1c)
+
+- Processing handler tests [`d9da3fb`](https://github.com/SunriseCommunity/Sunrise/commit/d9da3fb43fe1c91ce21ac1a17ddd2be3bb0d48f6)
+
+- ScoreSideEffectsPublisherService.cs [`4a55d3b`](https://github.com/SunriseCommunity/Sunrise/commit/4a55d3b070e495bd5d29828865e1514f16bee68c)
+
+- ScoreSideEffectsPublisherService.cs [`526c867`](https://github.com/SunriseCommunity/Sunrise/commit/526c867c4aa740210e3c39b8f5145516a953993d)
+
+
+##### 🧪 Testing
+
+- Add ScoreDeletionProcessingJobTests.cs [`a629d90`](https://github.com/SunriseCommunity/Sunrise/commit/a629d90bccd1ba8867dca5aff21dbb007edd952c)
+
+
+##### ⚙️ Miscellaneous Tasks
+
+- Add BeatmapRankingTests [`1ca9187`](https://github.com/SunriseCommunity/Sunrise/commit/1ca9187632bb6a352fb964d6a60cc8946c0cebea)
+
+- rename primaryHits to primaryJudgments [`36acee6`](https://github.com/SunriseCommunity/Sunrise/commit/36acee6a6fa7f04111e6f1010d04d11b4969651f)
+
+- cleanup [`0eb5367`](https://github.com/SunriseCommunity/Sunrise/commit/0eb536786f55b991e8b039917ad9f26f0cff70a7)
+
+- Use FilterInProgressTasks instead [`ef95972`](https://github.com/SunriseCommunity/Sunrise/commit/ef9597245e35eb3b31872ecaba7c524bb9f32bad)
+
+- clean up unused methods [`f11379a`](https://github.com/SunriseCommunity/Sunrise/commit/f11379a616d64152a33c0c8f89537ef730ad8a54)
+
+- finetune  DOTNET_GC env values [`5a10203`](https://github.com/SunriseCommunity/Sunrise/commit/5a10203a36ab2e5cad873c7ae429567d6746d931)
+
+- Cleanup TODO and enums [`8b8cc14`](https://github.com/SunriseCommunity/Sunrise/commit/8b8cc144ee1ad513df89408ceee52520468ee103)
+
+- minor fixes [`7e276a0`](https://github.com/SunriseCommunity/Sunrise/commit/7e276a08dd5c986f4c884ef23a27c14991237c61)
+
+- remove doubtful TODO [`6dcfec9`](https://github.com/SunriseCommunity/Sunrise/commit/6dcfec9e679a8ac45c02da326b96ff4b97dfcfb2)
+
+- Remove tracing activity for each medal evaluation [`603cba5`](https://github.com/SunriseCommunity/Sunrise/commit/603cba5bf1e1011879470badd8878199bc449eee)
+
+- Add TODO [`bf3afcf`](https://github.com/SunriseCommunity/Sunrise/commit/bf3afcf0bb265032734d147342b59165ae0f874d)
+
+- cleanup [`a43cbb3`](https://github.com/SunriseCommunity/Sunrise/commit/a43cbb3062ab91302a96f2dce2d235f1e39354ff)
+
+- cleanup old tests [`ec9b20f`](https://github.com/SunriseCommunity/Sunrise/commit/ec9b20fa35e71862695d6757c584c25be662a401)
+
+- minor improvements [`c549f89`](https://github.com/SunriseCommunity/Sunrise/commit/c549f890dd945743b8b3873b69ff4a915c11ca15)
+
+- Update Sunrise.Server.csproj [`8c9829f`](https://github.com/SunriseCommunity/Sunrise/commit/8c9829fdf616c9ff639db5dd9ddc1d85656ef1e1)
+
+- lint [`d9a84aa`](https://github.com/SunriseCommunity/Sunrise/commit/d9a84aa0e2f40419ca4e203ab46d2be3f7a2e6c1)
+
+- Ignore csproj.lscache [`b50e1a3`](https://github.com/SunriseCommunity/Sunrise/commit/b50e1a3587b792ad70cb4a90763e86934c09e5bf)
+
+
+</details>
+
+
+### 🌇 Sunset
+
+
+#### 🔀 Pull Requests
+
+- 0.2.0 by @richardscull in [#47](https://github.com/SunriseCommunity/Sunset/pull/47)
+- [dependency] Update Npm Packages by @richardscull in [#48](https://github.com/SunriseCommunity/Sunset/pull/48)
+- Score Processing Admin Panel by @richardscull in [#45](https://github.com/SunriseCommunity/Sunset/pull/45)
+
+
+
+
+<details>
+<summary>📝 27 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- api gen [`c5aa9f0`](https://github.com/SunriseCommunity/Sunset/commit/c5aa9f0de07733e6268005afacbce20ae24186c7)
+
+- Add NEXT_PUBLIC_ALLOW_LOCAL_IP to the next config [`7ad39c3`](https://github.com/SunriseCommunity/Sunset/commit/7ad39c3387b84ad0c7cedd1ffe68b68b49d69769)
+
+- remove hey api client fetch [`401acfd`](https://github.com/SunriseCommunity/Sunset/commit/401acfdd3872bbf9edc6d2ae9db27852f77dd317)
+
+- remove fix for the prefetched false of links, as the prefetch was reworked in next 16 [`e935dd5`](https://github.com/SunriseCommunity/Sunset/commit/e935dd54929be0313f605ccf0fd8327ffe27ecf2)
+
+- use define config for openapi config [`f2f3d08`](https://github.com/SunriseCommunity/Sunset/commit/f2f3d089863b587b5e92b0f5e0cd2bac90b2925d)
+
+- Add api client generated files to eslint ignore [`cb4d9ae`](https://github.com/SunriseCommunity/Sunset/commit/cb4d9ae205deff655a10ae6423b97c8699f82ebb)
+
+- clean up and minor improvements [`c4c012e`](https://github.com/SunriseCommunity/Sunset/commit/c4c012e3f411ed4e9ff9ad6978ba20e8e9243e41)
+
+- Simplify build query [`31827a2`](https://github.com/SunriseCommunity/Sunset/commit/31827a20985a3300ff681cb059d3e45f01eb2abc)
+
+- Add confirm dialog for applying processing action to score [`e041274`](https://github.com/SunriseCommunity/Sunset/commit/e041274451234d4ba295a908705e6ad132c100e0)
+
+- refresh processing stats on refresh [`f1302a1`](https://github.com/SunriseCommunity/Sunset/commit/f1302a1ff51559fd7ca3b72035e7a0751080a544)
+
+- Add apply to all matching the filter for user action [`610bce6`](https://github.com/SunriseCommunity/Sunset/commit/610bce687fac0ffbe9db2543c3322dbc394c9703)
+
+- Add user scores edit page tab [`73369d2`](https://github.com/SunriseCommunity/Sunset/commit/73369d26b516da27badc69e8271432bb070dea4c)
+
+- Add scores processing events [`5183755`](https://github.com/SunriseCommunity/Sunset/commit/5183755714e1c3b28c655f2d7824691f8fffa31b)
+
+- Add score processing page wit hscores [`6174f15`](https://github.com/SunriseCommunity/Sunset/commit/6174f15a7bc033ae40ff35e20ca59aaddc87fc0e)
+
+- Add admin scores preview page [`9aab2e1`](https://github.com/SunriseCommunity/Sunset/commit/9aab2e1f8d40b262a5fd65d6b4f0e67b429e5bd8)
+
+- api gen [`0cfd6fd`](https://github.com/SunriseCommunity/Sunset/commit/0cfd6fdb597f8b385381265a4887e4279c8e2f64)
+
+
+##### 🐛 Bug Fixes
+
+- finally fix the error warning on the leaderboard page [`6bc4201`](https://github.com/SunriseCommunity/Sunset/commit/6bc42012a6027cfda1badc1333d7997a77cdba86)
+
+- image warning on front page [`7f535a7`](https://github.com/SunriseCommunity/Sunset/commit/7f535a7ca979d49c6bb07bcd921799d919c73605)
+
+- destroy video stream if user have canceled it early [`c01702f`](https://github.com/SunriseCommunity/Sunset/commit/c01702fe7ac9da3eab37fa3976bd8b40b23a3cf4)
+
+- infinite useCallback memorisation on createQueryString [`5281c81`](https://github.com/SunriseCommunity/Sunset/commit/5281c81bb0f711a9913b2018eeb7c9a45b3b0a49)
+
+- build error [`f95098a`](https://github.com/SunriseCommunity/Sunset/commit/f95098a12ec172be080ef50f99c477c63e512032)
+
+- Show submission status select for scores filter select [`db6a2ef`](https://github.com/SunriseCommunity/Sunset/commit/db6a2eff8fc123b529d31f56d59194e2d863220d)
+
+- status badge color for score [`502e161`](https://github.com/SunriseCommunity/Sunset/commit/502e16104a3a4857adbecbc7ef7ff5d3fe7dc88b)
+
+
+##### 🔀 Merge Commits
+
+- [chore] Merge Branch 'main' into version/0.2.0 [`971fe44`](https://github.com/SunriseCommunity/Sunset/commit/971fe44f984c4b8e3afc3e7aa7e5a733aa2f61db)
+
+- [chore] Merge Branch 'main' into version/0.2.0 [`1c52afd`](https://github.com/SunriseCommunity/Sunset/commit/1c52afd46d6e762cd176971987771381bf12aa21)
+
+
+##### 💼 Other
+
+- Merge pull request #47 from SunriseCommunity/version/0.2.0 [`987b1ab`](https://github.com/SunriseCommunity/Sunset/commit/987b1ab9ca818946e9fc434d41b0550c3b02f4ce)
+
+- Merge pull request #48 from SunriseCommunity/feat/bump-npm-packages [`13a1953`](https://github.com/SunriseCommunity/Sunset/commit/13a1953d934c73fc3c71badbf10661476841b9c3)
+
+- Merge pull request #45 from SunriseCommunity/feat/score-processing-admin-panel [`4789f0a`](https://github.com/SunriseCommunity/Sunset/commit/4789f0a25e28230c3778f717b130a27e07607478)
+
+
+##### ⚙️ Miscellaneous Tasks
+
+- bump node packages and drop turbo as it's enabled by default in next 16 [`0d1eaf3`](https://github.com/SunriseCommunity/Sunset/commit/0d1eaf382eda880277380c48541b84f04cad59a4)
+
+- improve key for score processing [`3e6e681`](https://github.com/SunriseCommunity/Sunset/commit/3e6e681acf288321714e06fe9eb56a9c528266c1)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.1.51...v0.2.0-rc.0`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.51...v0.2.0-rc.0)
+
+## 🏷️ [0.1.51](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.51) - 2026-10-04
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`d90112e`](https://github.com/SunriseCommunity/Solar-System/commit/d90112e560c3cc6fbb72eab9a5a1b116d199525d)
 
 - update submodules [`151285d`](https://github.com/SunriseCommunity/Solar-System/commit/151285d2a65414267f237d770549b3822ed749fc)
 
