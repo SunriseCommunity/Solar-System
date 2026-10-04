@@ -7,6 +7,117 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
+## 🏷️ [0.1.49](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.49) - 2026-10-04
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update submodules [`9776753`](https://github.com/SunriseCommunity/Solar-System/commit/97767539d8c7765996a02a805970994af63329ef)
+
+
+</details>
+
+
+
+
+### 🔭 Observatory
+
+
+#### 🔀 Pull Requests
+
+- Include Rosu Version In Responses by @richardscull in [#15](https://github.com/SunriseCommunity/Observatory/pull/15)
+
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- Create new /version endpoint and provide rosu version with calculation requests [`99903a9`](https://github.com/SunriseCommunity/Observatory/commit/99903a9c0189bdcb7755f985e5633b3f256a6459)
+
+
+##### 💼 Other
+
+- Merge pull request #15 from SunriseCommunity/feat/include-rosu-version-in-responses [`32242c4`](https://github.com/SunriseCommunity/Observatory/commit/32242c478f5999eca5270f4b006563e5accd6a43)
+
+
+</details>
+
+
+### 🌅 Sunrise
+
+
+#### 🔀 Pull Requests
+
+- Split Bat Role Per Gamemode by @richardscull in [#136](https://github.com/SunriseCommunity/Sunrise/pull/136)
+
+
+
+
+<details>
+<summary>📝 12 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- add tests [`e80407a`](https://github.com/SunriseCommunity/Sunrise/commit/e80407a84d29d5e8cfe1728253dc893cec10de23)
+
+- show bat commands for help [`0c70ffa`](https://github.com/SunriseCommunity/Sunrise/commit/0c70ffad2a7edfa3e9a320c0302e7e058b5d2ee5)
+
+- add new tests [`7593c6a`](https://github.com/SunriseCommunity/Sunrise/commit/7593c6a72a61da157eac09443483a158c7410946)
+
+- update tests [`597b2d5`](https://github.com/SunriseCommunity/Sunrise/commit/597b2d5f1b6e679edca23444fe6f0cf29545272b)
+
+- to update beatmap status check if user has correct gamemode bat role [`7fc1f3d`](https://github.com/SunriseCommunity/Sunrise/commit/7fc1f3de4c5cd857f739b6d1726c91e77140e649)
+
+- update auth policy [`0b7f25f`](https://github.com/SunriseCommunity/Sunrise/commit/0b7f25f8eefb72aac56e9fd0bd775a2b27e6ad3f)
+
+- Update middleware authorization [`7ea1276`](https://github.com/SunriseCommunity/Sunrise/commit/7ea127614ecedc64b1e856305a2131ff887e9b47)
+
+- Add privilege level for instead of getting highest privelege based on raw value [`80e4420`](https://github.com/SunriseCommunity/Sunrise/commit/80e4420e50b0f4883bff2e4df885dacb35c2f789)
+
+- Split BAT Privilege absed on gamemodes [`c99a5c6`](https://github.com/SunriseCommunity/Sunrise/commit/c99a5c62ffa3724dc5b90c690e006c717248c6bb)
+
+
+##### 🐛 Bug Fixes
+
+- use new GetPrivilegeLevel to check if user is above admin or not [`13571b8`](https://github.com/SunriseCommunity/Sunrise/commit/13571b8f859c1a67b829fd488527a03f60041843)
+
+- reject multi update if user doesnt have gamemode permissions for one of the beatmaps [`e03bc7e`](https://github.com/SunriseCommunity/Sunrise/commit/e03bc7e1c451539e60a863efa1c540b026baba0f)
+
+
+##### 💼 Other
+
+- Merge pull request #136 from SunriseCommunity/feat/split-bat-role-per-gamemode [`36d2b2f`](https://github.com/SunriseCommunity/Sunrise/commit/36d2b2fa18ffa40cbbca89a931b64fafceb05f8c)
+
+
+##### ⚙️ Miscellaneous Tasks
+
+- code cleanup [`a2d0ebe`](https://github.com/SunriseCommunity/Sunrise/commit/a2d0ebee65f149cc6e95644f48755839988ce7ec)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.1.48...v0.1.49`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.48...v0.1.49)
+
 ## 🏷️ [0.1.48](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.48) - 2026-09-26
 
 
@@ -23,7 +134,7 @@
 
 
 <details>
-<summary>📝 2 commit(s)</summary>
+<summary>📝 3 commit(s)</summary>
 
 
 #### 🚀 Features
@@ -34,6 +145,11 @@
 
 
 #### 💼 Other
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`3cc62e2`](https://github.com/SunriseCommunity/Solar-System/commit/3cc62e2c054b9972998eaa24f07cc41228c63ca5)
 
 
 </details>
