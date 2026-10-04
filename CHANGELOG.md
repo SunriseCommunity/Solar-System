@@ -7,6 +7,53 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
+## 🏷️ [0.2.0-rc.2](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.2.0-rc.2) - 2026-10-04
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update submodules [`da361e5`](https://github.com/SunriseCommunity/Solar-System/commit/da361e51cd2ad4d44379ada57705a8f2fdac5ee9)
+
+
+</details>
+
+
+
+
+### 🌅 Sunrise
+
+
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- bump timeout expire for migrations [`f44fa31`](https://github.com/SunriseCommunity/Sunrise/commit/f44fa316152a5b93e32cba6b4d48ca98535a2918)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.2.0-rc.1...v0.2.0-rc.2`](https://github.com/SunriseCommunity/Solar-System/compare/v0.2.0-rc.1...v0.2.0-rc.2)
+
 ## 🏷️ [0.2.0-rc.1](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.2.0-rc.1) - 2026-10-04
 
 
@@ -19,10 +66,12 @@
 
 
 <details>
-<summary>📝 2 commit(s)</summary>
+<summary>📝 3 commit(s)</summary>
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`8535f25`](https://github.com/SunriseCommunity/Solar-System/commit/8535f25402630a2a8895ee5d623bab4733e69002)
 
 - update submodules [`1bdce80`](https://github.com/SunriseCommunity/Solar-System/commit/1bdce80b067c848a6a7d558c3c6a848f97b28b16)
 
