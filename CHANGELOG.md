@@ -7,7 +7,7 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
-## 🏷️ [0.1.49](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.49) - 2026-10-04
+## 🏷️ [0.1.50](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.50) - 2026-10-04
 
 
 
@@ -23,6 +23,55 @@
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update submodules [`70570d4`](https://github.com/SunriseCommunity/Solar-System/commit/70570d41a6b085d2a8d4e3f400788806c2e29edb)
+
+
+</details>
+
+
+
+
+### 🌇 Sunset
+
+
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+##### ⚙️ Miscellaneous Tasks
+
+- bump api gen [`7ff57a2`](https://github.com/SunriseCommunity/Sunset/commit/7ff57a2465df3b90edf74dd15c0e10f9a468bb96)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.1.49...v0.1.50`](https://github.com/SunriseCommunity/Solar-System/compare/v0.1.49...v0.1.50)
+
+## 🏷️ [0.1.49](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.1.49) - 2026-10-04
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`d1d5bba`](https://github.com/SunriseCommunity/Solar-System/commit/d1d5bba06d844251e8f63007e9707ab27e0bf493)
 
 - update submodules [`9776753`](https://github.com/SunriseCommunity/Solar-System/commit/97767539d8c7765996a02a805970994af63329ef)
 
