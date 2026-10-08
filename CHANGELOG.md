@@ -7,7 +7,7 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
-## 🏷️ [0.2.0-rc.2](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.2.0-rc.2) - 2026-10-04
+## 🏷️ [0.2.0-rc.3](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.2.0-rc.3) - 2026-10-08
 
 
 
@@ -23,6 +23,74 @@
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update submodules [`8e9e7bc`](https://github.com/SunriseCommunity/Solar-System/commit/8e9e7bcacc22c2d9508629656d02a31ecd1fab01)
+
+
+</details>
+
+
+
+
+### 🌅 Sunrise
+
+
+#### 🔀 Pull Requests
+
+- Treat Cancellations Observability by @richardscull in [#138](https://github.com/SunriseCommunity/Sunrise/pull/138)
+- Allow Failed Score With No Fail To Not Have Replay by @richardscull in [#137](https://github.com/SunriseCommunity/Sunrise/pull/137)
+
+
+
+
+<details>
+<summary>📝 3 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- ignore cancellation exceptions [`a3ae1d6`](https://github.com/SunriseCommunity/Sunrise/commit/a3ae1d6f093a3f5ccbfe1025195c058c46a7105d)
+
+- Rely only on score.IsPassed ot know if score is passed or not [`f484199`](https://github.com/SunriseCommunity/Sunrise/commit/f484199e5552678ad9afe4f5b65da730b6037d65)
+
+
+##### 🐛 Bug Fixes
+
+- tests [`fdfb43c`](https://github.com/SunriseCommunity/Sunrise/commit/fdfb43c63ffd99188881c0b4c92b1bfd3025dcc9)
+
+
+##### 💼 Other
+
+- Merge pull request #138 from SunriseCommunity/feat/treat-cancellations-observability [`e06ac52`](https://github.com/SunriseCommunity/Sunrise/commit/e06ac52673bf22e221d8eec596a9d484efbf8ff6)
+
+- Merge pull request #137 from SunriseCommunity/fix/allow-failed-score-with-no-fail-to-not-have-replay [`49264e2`](https://github.com/SunriseCommunity/Sunrise/commit/49264e26cf0ee9c40ac8954e37a2b3bfc8903823)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.2.0-rc.2...v0.2.0-rc.3`](https://github.com/SunriseCommunity/Solar-System/compare/v0.2.0-rc.2...v0.2.0-rc.3)
+
+## 🏷️ [0.2.0-rc.2](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.2.0-rc.2) - 2026-10-04
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`42cf101`](https://github.com/SunriseCommunity/Solar-System/commit/42cf101f38ff70702409616b0c08ed055e3e4b0c)
 
 - update submodules [`da361e5`](https://github.com/SunriseCommunity/Solar-System/commit/da361e51cd2ad4d44379ada57705a8f2fdac5ee9)
 
