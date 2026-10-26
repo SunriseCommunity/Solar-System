@@ -7,7 +7,7 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
-## 🏷️ [0.2.0-rc.3](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.2.0-rc.3) - 2026-10-08
+## 🏷️ [0.2.0-rc.4](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.2.0-rc.4) - 2026-10-26
 
 
 
@@ -23,6 +23,74 @@
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update submodules [`33f1f04`](https://github.com/SunriseCommunity/Solar-System/commit/33f1f0472becc4d8242d91a9959957ee3df4966a)
+
+
+</details>
+
+
+
+
+### 🌅 Sunrise
+
+
+#### 🔀 Pull Requests
+
+- Skip Banned Username Check For Admin by @richardscull in [#139](https://github.com/SunriseCommunity/Sunrise/pull/139)
+
+
+
+
+<details>
+<summary>📝 3 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- skip username allowed check if admin change requeyst [`dc0b11e`](https://github.com/SunriseCommunity/Sunrise/commit/dc0b11ed6c1541efc3f0edbf24fd3edb59bbbcbf)
+
+
+##### 🐛 Bug Fixes
+
+- tests [`0609dc2`](https://github.com/SunriseCommunity/Sunrise/commit/0609dc2974275cf0eb62cf7f3284d7f884582f40)
+
+
+##### 🔀 Merge Commits
+
+- [chore] Merge Branch 'master' into feat/skip-banned-username-check-for-admin [`8048a24`](https://github.com/SunriseCommunity/Sunrise/commit/8048a241dc077af288aaf4ff4c98100599e0b3e0)
+
+
+##### 💼 Other
+
+- Merge pull request #139 from SunriseCommunity/feat/skip-banned-username-check-for-admin [`4e0366b`](https://github.com/SunriseCommunity/Sunrise/commit/4e0366bf119acd9c6f6886866f8e6fed245d7e32)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.2.0-rc.3...v0.2.0-rc.4`](https://github.com/SunriseCommunity/Solar-System/compare/v0.2.0-rc.3...v0.2.0-rc.4)
+
+## 🏷️ [0.2.0-rc.3](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.2.0-rc.3) - 2026-10-08
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`b08112e`](https://github.com/SunriseCommunity/Solar-System/commit/b08112e86590c4f52c6a589c7db3340b64b2e914)
 
 - update submodules [`8e9e7bc`](https://github.com/SunriseCommunity/Solar-System/commit/8e9e7bcacc22c2d9508629656d02a31ecd1fab01)
 
