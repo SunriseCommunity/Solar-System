@@ -7,7 +7,7 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
-## 🏷️ [0.2.0-rc.4](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.2.0-rc.4) - 2026-10-26
+## 🏷️ [0.2.0-rc.5](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.2.0-rc.5) - 2026-11-01
 
 
 
@@ -23,6 +23,123 @@
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update submodules [`8b4ba63`](https://github.com/SunriseCommunity/Solar-System/commit/8b4ba6346d5ee197d0e7180ab1e06b32f0641ba2)
+
+
+</details>
+
+
+
+
+### 🔭 Observatory
+
+
+#### 🔀 Pull Requests
+
+- Rosu Pp Experimental Version 4 by @richardscull in [#16](https://github.com/SunriseCommunity/Observatory/pull/16)
+
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- upgrade to experimental rosu pp v4 [`194ef95`](https://github.com/SunriseCommunity/Observatory/commit/194ef95320ed47fc3663aca1573bd55599048c64)
+
+
+##### 💼 Other
+
+- Merge pull request #16 from SunriseCommunity/feat/rosu-pp-experimental-version-4 [`7580fe0`](https://github.com/SunriseCommunity/Observatory/commit/7580fe0bdff3249862008948d3ecf5192ba597ff)
+
+
+</details>
+
+
+### 🌅 Sunrise
+
+
+#### 🔀 Pull Requests
+
+- Add Observatory Changes by @richardscull in [#140](https://github.com/SunriseCommunity/Sunrise/pull/140)
+
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- send legacy scores to observatory [`4786f25`](https://github.com/SunriseCommunity/Sunrise/commit/4786f253776e24c17371cb0f49fc61d975241d30)
+
+
+##### 💼 Other
+
+- Merge pull request #140 from SunriseCommunity/feat/add-observatory-changes [`cf30ec5`](https://github.com/SunriseCommunity/Sunrise/commit/cf30ec57f720d54e6960fbd94bfe96d41b15a872)
+
+
+</details>
+
+
+### 🌇 Sunset
+
+
+#### 🔀 Pull Requests
+
+- Score Processing Failed Scores Pagination by @richardscull in [#49](https://github.com/SunriseCommunity/Sunset/pull/49)
+
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- add first and last page controls to score processing list [`3d5abac`](https://github.com/SunriseCommunity/Sunset/commit/3d5abacd9d58f74071a00067c536914168edc34f)
+
+
+##### 🐛 Bug Fixes
+
+- render score processing tasks without saved scores and paginate the list [`97a2897`](https://github.com/SunriseCommunity/Sunset/commit/97a2897c919b76ad5868d361c2e4e6112e40c28b)
+
+
+##### 💼 Other
+
+- Merge pull request #49 from SunriseCommunity/fix/score-processing-failed-scores-pagination [`497702f`](https://github.com/SunriseCommunity/Sunset/commit/497702fcf885d50b9df30542ac80521ea847f8eb)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.2.0-rc.4...v0.2.0-rc.5`](https://github.com/SunriseCommunity/Solar-System/compare/v0.2.0-rc.4...v0.2.0-rc.5)
+
+## 🏷️ [0.2.0-rc.4](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.2.0-rc.4) - 2026-10-26
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`2ee98b6`](https://github.com/SunriseCommunity/Solar-System/commit/2ee98b6222178ad8682b87bf98ea47dd4459a142)
 
 - update submodules [`33f1f04`](https://github.com/SunriseCommunity/Solar-System/commit/33f1f0472becc4d8242d91a9959957ee3df4966a)
 
