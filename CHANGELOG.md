@@ -7,7 +7,7 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
-## 🏷️ [0.2.0-rc.5](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.2.0-rc.5) - 2026-11-01
+## 🏷️ [0.2.0-rc.6](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.2.0-rc.6) - 2026-11-02
 
 
 
@@ -23,6 +23,64 @@
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update submodules [`6510c99`](https://github.com/SunriseCommunity/Solar-System/commit/6510c993b7d676c4a66a520209077dab9313c348)
+
+
+</details>
+
+
+
+
+### 🌅 Sunrise
+
+
+#### 🔀 Pull Requests
+
+- Global Recalculation Improvements by @richardscull in [#141](https://github.com/SunriseCommunity/Sunrise/pull/141)
+
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+##### 🐛 Bug Fixes
+
+- improve global score recalculation throughput [`198fd73`](https://github.com/SunriseCommunity/Sunrise/commit/198fd732c2e1856da20c1c95aaeaa106c09f9612)
+
+
+##### 💼 Other
+
+- Merge pull request #141 from SunriseCommunity/feat/global-recalculation-improvements [`9b11283`](https://github.com/SunriseCommunity/Sunrise/commit/9b112836cbfef269e6b2a84a557e40ba4449ce9f)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.2.0-rc.5...v0.2.0-rc.6`](https://github.com/SunriseCommunity/Solar-System/compare/v0.2.0-rc.5...v0.2.0-rc.6)
+
+## 🏷️ [0.2.0-rc.5](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.2.0-rc.5) - 2026-11-01
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`7b4357d`](https://github.com/SunriseCommunity/Solar-System/commit/7b4357d23d8d8521d9f4b21bdcf612c6cce1c17f)
 
 - update submodules [`8b4ba63`](https://github.com/SunriseCommunity/Solar-System/commit/8b4ba6346d5ee197d0e7180ab1e06b32f0641ba2)
 
