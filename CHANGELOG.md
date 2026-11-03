@@ -7,7 +7,7 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
-## 🏷️ [0.2.0-rc.8](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.2.0-rc.8) - 2026-11-03
+## 🏷️ [0.2.0-rc.9](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.2.0-rc.9) - 2026-11-03
 
 
 
@@ -23,6 +23,91 @@
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update submodules [`4a76c59`](https://github.com/SunriseCommunity/Solar-System/commit/4a76c59d7caf9c95878ed002e8cc21a37bef8a2c)
+
+
+</details>
+
+
+
+
+### 🌅 Sunrise
+
+
+#### 🔀 Pull Requests
+
+- Immediate Retry Pending Score Tasks by @richardscull in [#143](https://github.com/SunriseCommunity/Sunrise/pull/143)
+
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- allow immediate retry of pending score tasks [`148b12c`](https://github.com/SunriseCommunity/Sunrise/commit/148b12cb2af22bba44da07e4596b7c466fa45c9a)
+
+
+##### 💼 Other
+
+- Merge pull request #143 from SunriseCommunity/codex/immediate-retry-pending-score-tasks [`3f80b79`](https://github.com/SunriseCommunity/Sunrise/commit/3f80b79e867926143523ae1d41cb054b4d3c0470)
+
+
+</details>
+
+
+### 🌇 Sunset
+
+
+#### 🔀 Pull Requests
+
+- Add Retry Button Score Submission by @richardscull in [#51](https://github.com/SunriseCommunity/Sunset/pull/51)
+
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- add score processing retry button [`d8bcc26`](https://github.com/SunriseCommunity/Sunset/commit/d8bcc26db82bd96abf454a8fc3eb7baf3b405e66)
+
+
+##### 💼 Other
+
+- Merge pull request #51 from SunriseCommunity/feat/add-retry-button-score-submission [`f8784c6`](https://github.com/SunriseCommunity/Sunset/commit/f8784c643e9db39446097e1fcfcf3266d75478fc)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.2.0-rc.8...v0.2.0-rc.9`](https://github.com/SunriseCommunity/Solar-System/compare/v0.2.0-rc.8...v0.2.0-rc.9)
+
+## 🏷️ [0.2.0-rc.8](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.2.0-rc.8) - 2026-11-03
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`a7cbe86`](https://github.com/SunriseCommunity/Solar-System/commit/a7cbe86385b1e606d41c6d4e2ad22503a159fdbf)
 
 - update submodules [`c4d3bad`](https://github.com/SunriseCommunity/Solar-System/commit/c4d3bad72707d15be456d13fad8301dad4423ea9)
 
