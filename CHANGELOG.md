@@ -7,7 +7,7 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
-## 🏷️ [0.2.0-rc.9](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.2.0-rc.9) - 2026-11-03
+## 🏷️ [0.2.0-rc.10](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.2.0-rc.10) - 2026-11-03
 
 
 
@@ -23,6 +23,91 @@
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update submodules [`b8035bb`](https://github.com/SunriseCommunity/Solar-System/commit/b8035bb661a34589ab7289cbc8496857d94c7ece)
+
+
+</details>
+
+
+
+
+### 🔭 Observatory
+
+
+#### 🔀 Pull Requests
+
+- Beatmap Lookup Indexes by @richardscull in [#17](https://github.com/SunriseCommunity/Observatory/pull/17)
+
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- index beatmap checksum and set lookups [`5ff47a9`](https://github.com/SunriseCommunity/Observatory/commit/5ff47a9d83f1c8cb0061fc44febe6ed8e76befc9)
+
+
+##### 💼 Other
+
+- Merge pull request #17 from SunriseCommunity/feat/beatmap-lookup-indexes [`43fde61`](https://github.com/SunriseCommunity/Observatory/commit/43fde61639fb48bf6aaeedff532fd1a7d730cfcc)
+
+
+</details>
+
+
+### 🌅 Sunrise
+
+
+#### 🔀 Pull Requests
+
+- Chunk Pagination For Background Crons by @richardscull in [#144](https://github.com/SunriseCommunity/Sunrise/pull/144)
+
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- enqueue background score tasks in ID-based chunks [`feb34e0`](https://github.com/SunriseCommunity/Sunrise/commit/feb34e0f90e478b88b3327911d0bf09e6db17a5b)
+
+
+##### 💼 Other
+
+- Merge pull request #144 from SunriseCommunity/feat/chunk-pagination-for-background-crons [`e6ba033`](https://github.com/SunriseCommunity/Sunrise/commit/e6ba033951cf6bf80ee37e2a881a7897b0fb0543)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.2.0-rc.9...v0.2.0-rc.10`](https://github.com/SunriseCommunity/Solar-System/compare/v0.2.0-rc.9...v0.2.0-rc.10)
+
+## 🏷️ [0.2.0-rc.9](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.2.0-rc.9) - 2026-11-03
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`39cc63f`](https://github.com/SunriseCommunity/Solar-System/commit/39cc63f0155aa9572f6562e6767eb7933713f235)
 
 - update submodules [`4a76c59`](https://github.com/SunriseCommunity/Solar-System/commit/4a76c59d7caf9c95878ed002e8cc21a37bef8a2c)
 
