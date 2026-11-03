@@ -7,7 +7,7 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
-## 🏷️ [0.2.0-rc.6](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.2.0-rc.6) - 2026-11-02
+## 🏷️ [0.2.0-rc.7](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.2.0-rc.7) - 2026-11-03
 
 
 
@@ -23,6 +23,64 @@
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update submodules [`3fc4cc2`](https://github.com/SunriseCommunity/Solar-System/commit/3fc4cc2861da550baad410cd743d95cf96a8621a)
+
+
+</details>
+
+
+
+
+### 🌅 Sunrise
+
+
+#### 🔀 Pull Requests
+
+- Bound Max Retries Global Recalculation by @richardscull in [#142](https://github.com/SunriseCommunity/Sunrise/pull/142)
+
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- bound global recalculation retries and pause throttled score work [`7ee6583`](https://github.com/SunriseCommunity/Sunrise/commit/7ee658303838ec369f34b4c139bbb9935d9e998f)
+
+
+##### 💼 Other
+
+- Merge pull request #142 from SunriseCommunity/feat/bound-max-retries-global-recalculation [`3ea1ddd`](https://github.com/SunriseCommunity/Sunrise/commit/3ea1ddd7a18d32a0b8b109d451c5b17db9a2f959)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.2.0-rc.6...v0.2.0-rc.7`](https://github.com/SunriseCommunity/Solar-System/compare/v0.2.0-rc.6...v0.2.0-rc.7)
+
+## 🏷️ [0.2.0-rc.6](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.2.0-rc.6) - 2026-11-02
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`ebe833d`](https://github.com/SunriseCommunity/Solar-System/commit/ebe833d837bf647deda653c80af59c0d997bd82a)
 
 - update submodules [`6510c99`](https://github.com/SunriseCommunity/Solar-System/commit/6510c993b7d676c4a66a520209077dab9313c348)
 
