@@ -7,7 +7,7 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
-## 🏷️ [0.2.0-rc.7](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.2.0-rc.7) - 2026-11-03
+## 🏷️ [0.2.0-rc.8](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.2.0-rc.8) - 2026-11-03
 
 
 
@@ -23,6 +23,61 @@
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update submodules [`c4d3bad`](https://github.com/SunriseCommunity/Solar-System/commit/c4d3bad72707d15be456d13fad8301dad4423ea9)
+
+
+</details>
+
+
+
+
+### 🌇 Sunset
+
+
+#### 🔀 Pull Requests
+
+- Show Error Message For Pending Scores by @richardscull in [#50](https://github.com/SunriseCommunity/Sunset/pull/50)
+
+
+
+
+<details>
+<summary>📝 1 commit(s)</summary>
+
+
+##### 💼 Other
+
+- Merge pull request #50 from SunriseCommunity/feat/show-error-message-for-pending-scores [`8cf4159`](https://github.com/SunriseCommunity/Sunset/commit/8cf415922827c14b2c2002e94b51ec434b0c3bce)
+
+- Show retry errors, next retry time, and score processing priority [`651bc9b`](https://github.com/SunriseCommunity/Sunset/commit/651bc9b9df9a7b8c0883fa72be81d46235ab43db)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.2.0-rc.7...v0.2.0-rc.8`](https://github.com/SunriseCommunity/Solar-System/compare/v0.2.0-rc.7...v0.2.0-rc.8)
+
+## 🏷️ [0.2.0-rc.7](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.2.0-rc.7) - 2026-11-03
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`86f49ad`](https://github.com/SunriseCommunity/Solar-System/commit/86f49ade402ce64a1057fc463b203a9a242466cf)
 
 - update submodules [`3fc4cc2`](https://github.com/SunriseCommunity/Solar-System/commit/3fc4cc2861da550baad410cd743d95cf96a8621a)
 
