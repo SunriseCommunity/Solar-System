@@ -7,7 +7,7 @@
 ![changelog-image](https://github.com/SunriseCommunity/Solar-System/blob/main/.github/changelog_prev.png?raw=true)
 
 
-## 🏷️ [0.2.0-rc.10](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.2.0-rc.10) - 2026-11-03
+## 🏷️ [0.2.0-rc.11](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.2.0-rc.11) - 2026-11-03
 
 
 
@@ -23,6 +23,66 @@
 
 
 #### ⚙️ Miscellaneous Tasks
+
+- update submodules [`0e6bde9`](https://github.com/SunriseCommunity/Solar-System/commit/0e6bde943c35f3ed069d99408239a056f8ddb302)
+
+
+</details>
+
+
+
+
+### 🌅 Sunrise
+
+
+#### 🔀 Pull Requests
+
+- Improve Slow Queries by @richardscull in [#145](https://github.com/SunriseCommunity/Sunrise/pull/145)
+
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+##### 🚀 Features
+
+- improve get best top scores [`915dacc`](https://github.com/SunriseCommunity/Sunrise/commit/915dacce2cd79006daa31247cbcb1ecc8bae739b)
+
+- improve score counts and profile queries [`e31baaf`](https://github.com/SunriseCommunity/Sunrise/commit/e31baafdd631f44ab3ddfbdc62930350478c299b)
+
+
+##### 💼 Other
+
+- Merge pull request #145 from SunriseCommunity/feat/improve-slow-queries [`88ca309`](https://github.com/SunriseCommunity/Sunrise/commit/88ca30900355a5af589f586766215aa3b39fedb8)
+
+
+</details>
+
+
+
+
+**Full Changelog**: [`v0.2.0-rc.10...v0.2.0-rc.11`](https://github.com/SunriseCommunity/Solar-System/compare/v0.2.0-rc.10...v0.2.0-rc.11)
+
+## 🏷️ [0.2.0-rc.10](https://github.com/SunriseCommunity/Solar-System/releases/tag/v0.2.0-rc.10) - 2026-11-03
+
+
+
+
+
+
+### 🚀 Solar System
+
+
+
+<details>
+<summary>📝 2 commit(s)</summary>
+
+
+#### ⚙️ Miscellaneous Tasks
+
+- update CHANGELOG.md and .version [`b63d8dd`](https://github.com/SunriseCommunity/Solar-System/commit/b63d8dd897b0bb09e8a76f6b503850a89544d00f)
 
 - update submodules [`b8035bb`](https://github.com/SunriseCommunity/Solar-System/commit/b8035bb661a34589ab7289cbc8496857d94c7ece)
 
